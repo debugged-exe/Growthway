@@ -11,10 +11,12 @@ const Blogs = () => {
 			{
 				BlogsList.map((item)=>{
 					return(
-						<div style={{background: `url(${item.image}) no-repeat center center`, backgroundSize: 'cover'}}
+						<div style={{background: `url(${item.image}) no-repeat center center`,height:'75vh', backgroundSize: 'cover'}}
 						className=" center">
-							<h1 className="white">{item.heading}</h1>
-							<img src={item.image}/>
+							<div className="white" style={{backgroundColor:'rgba(0,0,0,0.5)',width:'55vw',height:'50vh'}}>
+								<h1>{item.heading}</h1>
+								<p>{item.description}</p>
+							</div>
 						</div>
 					)
 				})
