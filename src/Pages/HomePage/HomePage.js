@@ -12,6 +12,7 @@ const HomePage = () => {
 			<Blogs/>
 			<Faqs/>
 			<Work/>
+			<Testimonial />
 		</div>
 	)
 }
