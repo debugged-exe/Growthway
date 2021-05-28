@@ -34,12 +34,12 @@ class Work extends React.PureComponent {
 	render() {
 		return (
 
-      <div className="work-container bg-black" style={{width:'100%'}}>
+      <div className="work-container bg-black">
   			<p className="tf white pt3 pl5"
         style={{fontSize:'3.5rem',fontWeight:'500'}}>
           Let's Work Together </p>
         <div className="flex flex-wrap white">
-          <img className="mb4 ml4" src={image} height='400' width='540'/>
+          <img className="mb4 ml4 handshake" src={image}/>
           <div className="contact-container">
             <form onSubmit ={this.handleSubmit} className="form-container center ">
               <FormInput
