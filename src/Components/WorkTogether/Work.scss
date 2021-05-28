@@ -3,20 +3,23 @@
 }
 .contact-container
 {
-	width: 50vw;
+	width: 45vw;
 	margin: 20px;
 	padding: 20px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
+
 .handshake{
-	width:55vw;
-	height:45vh;
+	width:45vw;
+	height:75vh;
 }
-	.title
-	{
-		font-size: 25px;
-		font-weight: bold;
-	}
+
+.work-title
+{
+	font-size: 45px;
+	font-weight: bold;
+	text-align: left;
+}
 
 .form-container{
 width:65%;
@@ -24,6 +27,13 @@ width:65%;
 @media only screen
    and (max-width : 768px)
 {
+	.work-title{
+		text-align: center;
+	}
+	.handshake {
+		width: 80vw;
+		margin-left: 10%;
+	}
 	.contact-container
 	{
 		width: 100vw;
@@ -41,6 +51,12 @@ width:65%;
 @media only screen
    and (max-width :425px)
 {
+	.handshake {
+		height: 50vh;
+	}
+	.work-title{
+		text-align: left;
+	}
 	.contact-container
 	{
 		width: 100vw;
@@ -58,6 +74,10 @@ width:65%;
 @media only screen
    and (max-width : 320px)
 {
+	.work-title{
+		text-align: left;
+		font-size: 25px;
+	}
 	.contact-container
 	{
 		width: 100vw;
@@ -73,7 +93,4 @@ width:65%;
 	}
 }
 
-
-//320-fix button
-// 425,375- perfect
 //768- fix image and form

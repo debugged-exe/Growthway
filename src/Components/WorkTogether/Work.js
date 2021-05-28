@@ -35,8 +35,8 @@ class Work extends React.PureComponent {
 		return (
 
       <div className="work-container bg-black">
-  			<p className="tf white pt3 pl5"
-        style={{fontSize:'3.5rem',fontWeight:'500'}}>
+  			<p className="white pt3 pl5 work-title"
+        style={{fontWeight:'500'}}>
           Let's Work Together </p>
         <div className="flex flex-wrap white">
           <img className="mb4 ml4 handshake" src={image}/>

@@ -53,9 +53,17 @@
 }
 
 @media only screen
-   and (max-width : 490px)
+   and (max-width : 425px)
 {
 	.custom-button{
-      margin-left:20%;
+      margin-left:23%;
+  }
+}
+
+@media only screen
+   and (max-width : 320px)
+{
+	.custom-button{
+      margin-left:15%;
   }
 }
