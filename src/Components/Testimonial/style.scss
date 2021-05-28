@@ -1,7 +1,53 @@
 .testimonials{
     background-image: url('./b&w.png');
+    overflow: hidden;
 }
 
 .client-card {
     box-shadow: 100px black;
+    padding: 0% 10%;
+    margin: 10% 5%;
+    height: 50vh;
+    border: 1px solid black;
 }
+
+
+.testimonial-heading {
+    margin-left: 8%;
+    text-align: left;
+    font-size: 55px;
+    font-weight: 500;
+}
+.testimonial-quote {
+    margin-left: 8%;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+    .client-card {
+        height: 65vh;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .client-card {
+        height: auto;
+        margin-top: 25%;
+    }
+
+    .testimonial-heading {
+        text-align: center;
+        font-size: 35px;
+        margin: 10% 0%;
+    }
+
+    .testimonial-quote{
+        text-align: center;
+        margin: 3%;
+        font-size: 17px;
+    }
+}
+
