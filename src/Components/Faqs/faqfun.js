@@ -57,7 +57,7 @@ function Faqs () {
 
   return (
     <div className="bg-black white">
-     <p className="tc pa5 f1 fw6">Faq's</p>
+     <p className="tc pa4 f1 fw6">Faq's</p>
       <div className="faqs">
         {faqs.map((faq, i) => (
           <div>

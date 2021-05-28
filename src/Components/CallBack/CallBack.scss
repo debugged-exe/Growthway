@@ -1,0 +1,15 @@
+.grid-design{
+  grid-template-rows:25% 25% 25% 25%;
+}
+.callback-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width:426px){
+  .callback-container{
+    margin-top:90vh;
+    display: flex;
+    flex-direction:column;
+  }
+}
