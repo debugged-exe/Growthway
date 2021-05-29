@@ -1,0 +1,25 @@
+.reach-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.reach-img{
+height:70vh;
+width:45vw;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width:426px){
+  .reach-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .reach-img{
+  height:75vh;
+  width:100vw;
+  }
+}
+
+//styling and bit responsive

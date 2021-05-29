@@ -11,7 +11,7 @@ const Pricing = () => {
        { Plans.map((plan) => {
          return (
           <div style={{height: 'fit-content',  marginTop: '0%', paddingTop: '0%', borderRight: '1px solid black'}}>
-              <p className="white pa4 bg-black" style={{ margin: '0%',fontSize: '3rem', fontWeight: '700'}}>{plan.planType}</p>
+              <p className="white pa3 bg-black" style={{ margin: '0%',fontSize: '2.6rem', fontWeight: '600'}}>{plan.planType}</p>
               <p style={{padding: '7%',fontSize: '2rem', fontWeight: '600'}}>{plan.planPrice}</p>
               <ul className='tc' style={{maxWidth: 'fit-content'}}>
                 <li>{plan.subHeading1}</li>
@@ -30,5 +30,3 @@ const Pricing = () => {
 }
 
 export default Pricing;
-
-

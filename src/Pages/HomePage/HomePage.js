@@ -6,6 +6,9 @@ import Testimonial from '../../Components/Testimonial/Testimonial.js';
 import Faqs from '../../Components/Faqs/faqfun.js';
 import Pricing from '../../Components/Pricing/Pricing.js';
 import CallBack from '../../Components/CallBack/CallBack.js';
+import ReachUsAt from '../../Components/ReachUsAt/ReachUsAt.js';
+import Aboutus from '../../Components/Aboutus/Aboutus.js';
+
 
 const HomePage = () => {
 	return (
@@ -17,6 +20,8 @@ const HomePage = () => {
 			<Testimonial/>
 			<Pricing/>
 			<CallBack/>
+			<Aboutus/>
+			<ReachUsAt/>
 		</div>
 	)
 }
