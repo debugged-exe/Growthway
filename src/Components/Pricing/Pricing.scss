@@ -1,8 +1,9 @@
 .grid{
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows:50% 50%;
-}
+  grid-template-rows: 33% 33% 34%;
+} 
+
 .button {
   border-radius: 4px;
   background-color:green;
@@ -14,6 +15,7 @@
   width:auto;
   transition: all 0.5s;
   cursor: pointer;
+  margin: 10%;
 }
 
 .button span {
@@ -41,10 +43,67 @@
   right: 0;
 }
 
+ul {
+  margin-left: 20%;
+}
+
+li {
+  font-size: 25px;
+  margin-bottom: 8%;
+}
+
+@media only screen and (max-width: 1024px) {
+  li{
+    font-size: 20px;
+  }
+  ul {
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  li{
+    font-size: 20px;
+  }
+  ul {
+    margin-left: 0%;
+  }
+}
+
 @media only screen and (max-width:426px){
   .grid{
     grid-template-columns:100%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+  }
+  li{
+    font-size: 25px;
+  }
+  ul {
+    margin-left: 20%;
   }
 }
+
+@media only screen and (max-width:375px){
+
+  li{
+    font-size: 25px;
+  }
+  ul {
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (max-width:320px){
+
+  li{
+    font-size: 25px;
+  }
+  ul {
+    margin-left: 10%;
+  }
+}
+
+
 
 //styling and a bit of responsive-remaining

@@ -9,7 +9,7 @@ class App extends React.Component {
 
 	render() {
     return (
-    <div>
+    <div stylle = {{overflow: 'hidden'}}>
        <HomePage />
   </div>
     );
