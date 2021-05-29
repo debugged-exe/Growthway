@@ -1,5 +1,15 @@
+.about-us{
+  background-image: url('./aboutUs.png');
+  background-size: cover;
+
+}
+
 .about{
-  margin:0% 8% 0% 8%;
+  align-items: center;
+  margin: 5% 10% 0% 10%;
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: 500;
 }
 
 @media only screen and (max-width:426px){

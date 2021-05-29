@@ -12,12 +12,14 @@ const ReachUsAt = () => {
 		<div className="reach-container bg-black white mt5">
        <img src={image} className="reach-img mb5 mt5"/>
        <div className="mt4 flex flex-column reach-text">
-         <p className="f2">Reach Us At</p>
-         <a href='mailto:debugged.exe@gmail.com' className="ma2"><GoMail size='2em'/>debugged.exe@gmail.com</a>
-         <a href="tel:919168894490" className="ma2"><FaPhoneAlt  size="1.5em"/>+91 9168894490</a>
-         <p ><GoLocation />Address is dummy, flat no 90, Sr 100, India</p>
+         <p className="f2" style={{textDecoration: '3px underline green'}}>Reach Us At</p>
+         <div className='tl' id='links'>
+          <a href='mailto:debugged.exe@gmail.com' className="mb2"><GoMail size='2em' style={{marginRight: '5px'}}/>debugged.exe@gmail.com</a>
+          <a href="tel:919168894490" className="mb2 mt2"><FaPhoneAlt  size="1.5em" style={{marginRight: '5px'}}/>+91 9168894490</a>
+          <p><GoLocation style={{marginRight: '5px'}}/>Address is dummy, flat no 90, Sr 100, India</p>
+         </div>
          <div>
-           <p className="f2">Useful Links</p>
+           <p className="f2" style={{textDecoration: '3px underline green'}}>Useful Links</p>
            <a href="https://twitter.com/ExeDebugged?s=08" ><AiFillTwitterCircle size="2em"/></a>
            <a href="https://www.linkedin.com/company/debugged-exe" > <AiFillLinkedin size="2em"/></a>
            <a href="https://www.facebook.com/Debuggedexe-103521081750705/" ><FaFacebookF size="1.8em"/></a>

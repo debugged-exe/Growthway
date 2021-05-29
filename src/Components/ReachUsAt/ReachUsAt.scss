@@ -4,7 +4,8 @@
 }
 
 .reach-text {
-  margin-left: 20%;
+  margin-left: 10%;
+  text-align: left;
 }
 
 .reach-text a {
@@ -21,12 +22,21 @@ width:45vw;
 a{
   text-decoration: none;
   color: white;
+  padding-right: 5%;
+}
+
+@media only screen and(max-width: 1024px) {
+  .reach-img{
+    height:70vh;
+    width:35vw;
+  }
 }
 
 @media only screen and(max-width: 768px) {
+
   .reach-img{
     height:75vh;
-    width:50vw;
+    width:45vw;
   }
   .reach-text {
     margin-left: 5%;
@@ -34,7 +44,7 @@ a{
   }
 }
 
-@media only screen and (max-width:425px){
+@media only screen and (max-width:426px){
   .reach-container{
     display: flex;
     flex-direction: column;
@@ -48,12 +58,12 @@ a{
     margin-left: 0%;
     display: block;
   }
-  .reach-text p,div {
+
+  .reach-text{
     text-align: center;
   }
-  a{
-    text-align: center;
-    padding-right: 5%;
+  #links {
+    margin-left:10%;
   }
 }
 

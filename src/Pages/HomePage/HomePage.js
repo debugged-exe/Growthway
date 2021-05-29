@@ -20,8 +20,8 @@ const HomePage = () => {
 			<Testimonial/>
 			<Pricing/>
 			<CallBack/>
-			<Aboutus/>
 			<ReachUsAt/>
+			<Aboutus/>
 		</div>
 	)
 }
