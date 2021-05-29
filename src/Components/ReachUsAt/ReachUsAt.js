@@ -11,10 +11,10 @@ const ReachUsAt = () => {
 	return (
 		<div className="reach-container bg-black white mt5">
        <img src={image} className="reach-img mb5 mt5"/>
-       <div className="mt4 ml5 flex flex-column">
+       <div className="mt4 flex flex-column reach-text">
          <p className="f2">Reach Us At</p>
-         <a href='mailto:debugged.exe@gmail.com'><GoMail size="2em"/>debugged.exe@gmail.com</a>
-         <a href="tel:919168894490" ><FaPhoneAlt  size="1.5em"/>+91 9168894490</a>
+         <a href='mailto:debugged.exe@gmail.com' className="ma2"><GoMail size='2em'/>debugged.exe@gmail.com</a>
+         <a href="tel:919168894490" className="ma2"><FaPhoneAlt  size="1.5em"/>+91 9168894490</a>
          <p ><GoLocation />Address is dummy, flat no 90, Sr 100, India</p>
          <div>
            <p className="f2">Useful Links</p>

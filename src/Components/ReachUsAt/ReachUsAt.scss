@@ -1,24 +1,59 @@
 .reach-container{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
 }
+
+.reach-text {
+  margin-left: 20%;
+}
+
+.reach-text a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .reach-img{
 height:70vh;
 width:45vw;
 }
+
 a{
   text-decoration: none;
   color: white;
 }
 
-@media only screen and (max-width:426px){
+@media only screen and(max-width: 768px) {
+  .reach-img{
+    height:75vh;
+    width:50vw;
+  }
+  .reach-text {
+    margin-left: 5%;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width:425px){
   .reach-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .reach-img{
   height:75vh;
   width:100vw;
+  }
+  .reach-text{
+    margin-left: 0%;
+    display: block;
+  }
+  .reach-text p,div {
+    text-align: center;
+  }
+  a{
+    text-align: center;
+    padding-right: 5%;
   }
 }
 
