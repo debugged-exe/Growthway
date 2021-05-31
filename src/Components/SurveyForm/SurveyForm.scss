@@ -10,8 +10,6 @@ $main-color:gray;
 width:80%;
 }
 
-
-
 @mixin shrinkLabel {
 	top: -14px;
 	font-size: 12px;
@@ -27,7 +25,7 @@ width:80%;
 	cursor: pointer;
 	width: 80%;
 	height:7.5vh;
-	border: 1px solid gray;
+	border: 1px solid #b3e5b4;
 	border-radius:6px;
 	margin:3%;
 }
@@ -40,7 +38,7 @@ select, .shortterm {
 		cursor: pointer;
 		width: 80%;
 		height:7.5vh;
-		border: 1px solid gray;
+		border: 1px solid #b3e5b4;
 		border-radius:6px;
 		margin:3%;
 
