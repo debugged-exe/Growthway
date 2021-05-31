@@ -1,0 +1,59 @@
+$sub-color: white;
+$main-color:gray;
+
+.contact-container2
+{
+	width: 80vw;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.form-container2{
+width:80%;
+}
+
+
+
+@mixin shrinkLabel {
+	top: -14px;
+	font-size: 12px;
+	color: $main-color;
+}
+
+.inputform{
+	background:#202020;
+	color: $sub-color;
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	cursor: pointer;
+	width: 80%;
+	height:7.5vh;
+	border: 1px solid gray;
+	border-radius:6px;
+	margin:3%;
+}
+select, .shortterm {
+		background:#202020;
+		color: $sub-color;
+		font-size: 18px;
+		padding: 10px 10px 10px 5px;
+		display: block;
+		cursor: pointer;
+		width: 80%;
+		height:7.5vh;
+		border: 1px solid gray;
+		border-radius:6px;
+		margin:3%;
+
+		&:focus {
+			outline: none;
+		}
+
+	}
+input[type="radio"]
+{
+	margin:2%;
+	transform: scale(1.5);
+}
+.hide{
+  display: none;
+}

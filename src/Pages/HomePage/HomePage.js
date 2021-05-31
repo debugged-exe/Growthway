@@ -8,7 +8,7 @@ import Pricing from '../../Components/Pricing/Pricing.js';
 import CallBack from '../../Components/CallBack/CallBack.js';
 import ReachUsAt from '../../Components/ReachUsAt/ReachUsAt.js';
 import Aboutus from '../../Components/Aboutus/Aboutus.js';
-
+import SurveyForm from '../../Components/SurveyForm/SurveyForm.js';
 
 const HomePage = () => {
 	return (
@@ -22,6 +22,7 @@ const HomePage = () => {
 			<CallBack/>
 			<ReachUsAt/>
 			<Aboutus/>
+			<SurveyForm/>
 		</div>
 	)
 }

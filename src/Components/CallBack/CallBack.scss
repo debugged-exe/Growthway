@@ -5,6 +5,28 @@
 .form-start{
   margin:10%;
 }
+.hidden{
+  display: none;
+}
+.alert {
+  padding:10%;
+  background-color:#b3e5b4;
+  color: black;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: black;
+}
 .para{
   font-size:1rem;
   font-weight:500;
