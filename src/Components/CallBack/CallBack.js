@@ -3,12 +3,15 @@ import './CallBack.scss';
 import FormInput from './FormInput/FormInput.js';
 import CustomButton from './CustomButton/CustomButton.js';
 import {FaPhoneAlt} from 'react-icons/fa';
+import {AiOutlineClose} from 'react-icons/ai';
 import 'tachyons';
+
 
 const initialState = {
 	name: '',
 	phone: '',
-	query:''
+	query:'',
+	show:false
 }
 
 class CallBack extends React.PureComponent {
@@ -22,7 +25,13 @@ class CallBack extends React.PureComponent {
 		event.prefentDefault();
 	}
 
-  handleForm = () =>{
+showfunction=(e)=>{
+		this.setState({show:e}, () => console.log(this.state.show));
+}
+  handleForm = (event) =>{
+		event.preventDefault();
+   	this.showfunction(true);
+
   }
 
 	handleChange = (event) => {
@@ -38,7 +47,7 @@ class CallBack extends React.PureComponent {
 					<div className=" pb4" style={{borderTop:'7px solid green',height:'auto',backgroundColor:'#ADB4B0'}}>
 							<h2 className="tc"><FaPhoneAlt/> Request a Call!</h2>
 							<div className="contact-container1">
-		            <form onSubmit ={this.handleSubmit} className="form-container1">
+		            <form onSubmit ={(event) => this.handleForm(event)} className="form-container1">
 		              <FormInput
 		              label="Name"
 		              name="name"
@@ -64,8 +73,13 @@ class CallBack extends React.PureComponent {
 		              required
 		              />
 
-		              <CustomButton onClick={this.handleForm}>Submit</CustomButton>
+		              <CustomButton type='submit'>Submit</CustomButton>
 		            </form>
+								<div className={` ${this.state.show===true?'alert':'hidden'}`} >
+								  <span onClick={() => this.showfunction(false)} className={`${this.state.show===true?'closebtn':' hidden'}`}><AiOutlineClose/></span>
+								  <strong>Thank you, you will recieve a call within 24 or 48 hrs.</strong>
+								</div>
+
 		          </div>
 		        </div>
 					</div>

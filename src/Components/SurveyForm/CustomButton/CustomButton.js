@@ -4,7 +4,6 @@ import 'tachyons';
 
 const CustomButton = ({children, isGoogleSignIn, inverted, ...otherProps}) => {
 	return(
-	
 		<button
 		className={
 			`${inverted?'inverted':''}
