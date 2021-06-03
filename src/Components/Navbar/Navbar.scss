@@ -1,0 +1,28 @@
+
+.Navbar-color {
+  background-color:black;
+  padding:2%;
+  text-align: right;
+}
+.active{
+  color: green;
+}
+.toggle{
+  color:#fff;
+  float: right;
+  font-size:24px;
+  cursor:pointer;
+  display: none;
+}
+
+@media only screen and (max-width:426px){
+  .Navbar-color {
+    padding:5%;
+  }
+  .toggle{
+    display: block;
+  }
+  .nav{
+    display:none;
+  }
+}
