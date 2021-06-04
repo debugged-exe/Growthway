@@ -1,0 +1,43 @@
+.inputfield{
+  background:#202020;
+  display: block;
+	color:white;
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	cursor: pointer;
+	width:30%;
+	height:7.5vh;
+	border: 1px solid #b3e5b4;
+	border-radius:6px;
+	margin:1.5%;
+}
+.button-style{
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0px 35px;
+  font-size: 15px;
+  background-color:green;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed';
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  margin-left:9%;
+}
+
+@media only screen and (max-width:426px){
+  .inputfield{
+    	width:70%;
+      margin:5%;
+  }
+  .button-style{
+    margin-left:23%;
+  }
+}

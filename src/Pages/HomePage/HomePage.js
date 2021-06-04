@@ -7,6 +7,8 @@ import Pricing from '../../Components/Pricing/Pricing.js';
 import CallBack from '../../Components/CallBack/CallBack.js';
 import ReachUsAt from '../../Components/ReachUsAt/ReachUsAt.js';
 import Aboutus from '../../Components/Aboutus/Aboutus.js';
+import Calculator from '../../Components/Calculator/Calculator.js';
+
 
 
 const HomePage = () => {
@@ -20,7 +22,7 @@ const HomePage = () => {
 			<CallBack/>
 			<ReachUsAt/>
 			<Aboutus/>
-
+      <Calculator/>
 		</div>
 	)
 }
