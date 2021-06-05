@@ -52,18 +52,8 @@ const Calculator =()=>
                   <option value="p2">Monthly (12 months)</option>
                   <option value="p3">Quatarly (4 months)</option>
                 </select>
-
-                  <input
-                  className="inputfield center"
-                  placeholder="Result"
-                  name="result"
-                  type="number"
-                  value={total}
-                  disabled={true}
-                  />
-
                <button type='submit' onClick={calculateTotal} class="button-style">Check</button>
-
+                  <div className="b f3 mv3" style={{marginLeft:'13%'}}>{total}</div>
                 </form>
               </div>
               </div>

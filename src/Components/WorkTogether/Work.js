@@ -37,11 +37,6 @@ class Work extends React.PureComponent {
     const {value, name} = event.target;
 	  this.setState({[name]: value});
   }
- dateValue=()=>{
-	 Date = new Date(new Date().getFullYear(), new Date().getMonth(), 10);
-	 this.setState({date:Date});
-	 console.log(this.state.date,Date);
- }
 	render() {
 		return (
 
@@ -111,15 +106,8 @@ class Work extends React.PureComponent {
 								<option value="Contract">Contract</option>
 								<option value="Volunteer">Volunteer</option>
 							</select>
-              6.Available from
-							<CalendarComponent
-							className="mt3 ml3"
-							value={this.dateValue}
-				      ></CalendarComponent>
-							<br/>
-							7.Resume, Proof of residence, PAN card
-							<button type="submit" className="button-upload "><a href={`mailto:harshikasmishra@outlook.com?subject=Want to apply for the position of ${this.state.role} &body=I am ${this.state.name} and would like to apply for position of ${this.state.role} as a ${this.state.job} job and I m Available from ${this.state.date} date.Land in Miami The air was hot from summer rain
-              Sweat dripping off me Before I even knew her name, la-la-la It felt like ooh, la-la-la.Yeah, no`}>Upload</a></button>
+							6.Resume, Proof of residence, PAN card
+							<button type="submit" className="button-upload "><a href={`mailto:harshikasmishra@outlook.com?subject=Want to apply for the position of ${this.state.role} &body=I am ${this.state.name} and would like to apply for position of ${this.state.role} as a ${this.state.job} job and I m Available from ${this.state.date} date.Land in Miami The air was hot from summer rain.Sweat dripping off me Before I even knew her name, la-la-la It felt like ooh, la-la-la.Yeah, no`}>Upload</a></button>
             </form>
           </div>
         </div>
