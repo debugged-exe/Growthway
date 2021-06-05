@@ -1,4 +1,4 @@
-.inputfield{
+.inputfield,#plan{
   background:#202020;
   display: block;
 	color:white;
@@ -9,7 +9,7 @@
 	height:7.5vh;
 	border: 1px solid #b3e5b4;
 	border-radius:6px;
-	margin:1.5%;
+	margin:3%;
 }
 .button-style{
   min-width: 165px;
@@ -29,7 +29,7 @@
   margin: 2px;
   display: flex;
   justify-content: center;
-  margin-left:9%;
+  margin-left:10%;
 }
 
 @media only screen and (max-width:426px){

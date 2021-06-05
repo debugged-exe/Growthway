@@ -21,7 +21,7 @@ class SurveyForm extends React.PureComponent {
 
 	handleSubmit = (event) =>
 	{
-		event.prefentDefault();
+		event.preventDefault();
 	}
 
   handleForm = () =>{
