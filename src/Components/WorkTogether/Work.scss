@@ -1,3 +1,4 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
 .work-container{
   width:100%;
 }
@@ -8,7 +9,39 @@
 	padding: 20px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-
+.button-upload{
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0px 35px;
+  font-size: 15px;
+  background-color:green;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed';
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+.inputval{
+  background:#202020;
+  display: block;
+	color:white;
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	cursor: pointer;
+	width:100%;
+	height:7.5vh;
+	border: 1px solid #b3e5b4;
+	border-radius:6px;
+	margin:5%;
+}
 .handshake{
 	width:45vw;
 	height:75vh;
