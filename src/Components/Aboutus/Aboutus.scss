@@ -1,48 +1,33 @@
-.about-us{
-  background: linear-gradient(45deg, black 8%, rgba(0, 0, 0, 0) 8%),
-                linear-gradient(225deg, black 10%, rgba(0, 0, 0, 0) 10%);
+// .about-us{
+//   background: linear-gradient(45deg, black 8%, rgba(0, 0, 0, 0) 8%),
+//                 linear-gradient(225deg, black 10%, rgba(0, 0, 0, 0) 10%);
+// }
+.about-grid{
+  display:flex;
+  flex-wrap: wrap;
+}
+.about-with-image
+{
+  display:grid;
+  grid-template-columns:45% 55%;
 }
 
 .about{
-  align-items: center;
   margin: 5% 10% 0% 10%;
-  font-size: 25px;
-  line-height: 1.4;
+  font-size: 20px;
+  text-align: left;
   font-weight: 500;
 }
 
-@media only screen and (max-width:1024px){
-  .about-us{
-    padding: 0% 4%;
-    margin-top: 3%;
-  }
-  .about {
-    font-size: 20px;
-    margin: 2% 0% 0% 0%;
-  }
-}
+
 @media only screen and (max-width:768px){
-  .about-us{
-    padding: 3% 4%;
-    margin-top: 3%;
+  .about-with-image
+  {
+    display:grid;
+    grid-template-columns:100%;
   }
   .about {
     font-size: 18px;
     margin: 0% 0% 0% 0%;
-  }
-}
-
-@media only screen and (max-width:426px){
-  .about-us{
-    background: linear-gradient(45deg, black 7%, rgba(0, 0, 0, 0) 7%),
-                  linear-gradient(225deg, black 7%, rgba(0, 0, 0, 0) 7%);
-  }
-  .about-us{
-    padding:10%;
-    margin-top: 3%;
-  }
-  .about {
-    font-size: 20px;
-    margin: 2% 0% 0% 0%;
   }
 }

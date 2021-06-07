@@ -2,7 +2,8 @@ import React from 'react';
 import NavBar from './Components/Navbar/Navbar.js';
 import HomePage from './Pages/HomePage/HomePage.js';
 import BlogPage from './Pages/BlogPage/BlogPage.js';
-import Faqs from './Components/Faqs/faqfun.js';
+import AboutPage from './Pages/AboutPage/AboutPage.js';
+
 import {
   HashRouter as Router,
   Switch,
@@ -24,7 +25,7 @@ class App extends React.Component {
          <Switch>
            <Route exact path='/' component={HomePage}/>
            <Route exact path="/blog" component={BlogPage} />
-					 <Route exact path='/faq' component={Faqs}/>
+					 <Route exact path='/about' component={AboutPage}/>
            <Route exact path='/surveyform' component={SurveyForm}/>
          </Switch>
         </Router>
