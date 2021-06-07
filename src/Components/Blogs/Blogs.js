@@ -1,44 +1,50 @@
 import React, {useState, useEffect } from 'react';
-import image from './cryptocurrency-market.jpg';
-import {BsChevronDoubleDown } from "react-icons/bs";
+import {BsChevronDoubleDown, BsCalendar } from "react-icons/bs";
 import { BlogsList } from './BlogsList.js';
 import 'tachyons';
 import './Blog.scss';
 
 const Blogs = () => {
 
-  const val=BlogsList.length;
 	const[setItems]=useState([]);
-	const [visible, setVisible] = useState(3);
-	const [len, setLen] = useState(val);
+	const [visible, setVisible] = useState(4);
+	const [len, setLen] = useState(BlogsList.length);
 
 	const showMoreItems = () => {
-		setVisible((prev) => prev + 3);
+		setVisible((prev) => prev + 4);
 	}
 
 	return (
 		<div>
 			<h1 className="tc">Blogs</h1>
-			<div>
+			<div className="blog-item-container">
 				{
-					BlogsList.slice(0, visible).map((item) => {
-						return (
-							<div style={{ background: `url(${item.image}) no-repeat center center`, backgroundSize: 'cover' }}
-								className=" center blog-container">
-								<p className="white blog-id">
-									{item.id}
-								</p>
-								<div className="blog-content white" style={{ backgroundColor: 'rgba(0,0,0,0.5)', position: 'relative' }}>
-									<h1 className="blog-heading">{item.heading}</h1>
-									<p>{item.description}</p>
+					BlogsList.slice(0,visible)
+					.map((item,index) => {
+						return(
+							<div className="blog-item">
+								<div>
+									<img src={item.image} alt="hehe" style={{width: '100%', objectFit: 'cover'}}/>
+								</div>
+								<div className="blog-item-header">
+									<h3 className="">{item.heading}</h3>
+									<span style={{display: 'flex', justifyContent: 'flex-start', alignItems: 'center'}}>
+										<BsCalendar color={'green'} size={'1.5rem'} />
+										<p className="mh2" style={{color: 'green', fontWeight: 'bold', fontSize: '1.3rem'}}>{item.date}</p>
+									</span>
+								</div>
+								<div>
+									<p className="blog-item-desc">{item.description}</p>
 								</div>
 							</div>
 						);
 					})
 				}
 			</div>
-			<h4 onClick={showMoreItems} className={`center pointer ${visible >= len ? 'hide' : ''}`} style= {{textAlign: 'center'}}>Show More</h4>
-			<BsChevronDoubleDown className={` arrowdown code ${visible >= len ? 'hide' : ''}`} size="3rem" style= {{width:'100%', textAlign: 'center'}}/>
+			<div className="pointer" onClick={showMoreItems}>
+				<p className={`center ${visible >= len ? 'hide' : ''}`} style= {{textAlign: 'center'}}>Show More</p>
+				<BsChevronDoubleDown className={` arrowdown code ${visible >= len ? 'hide' : ''}`} size="2rem" style= {{width:'100%', textAlign: 'center'}}/>
+			</div>
 		</div>
 	)
 }

@@ -1,0 +1,25 @@
+.blog-page{
+	text-align: center;
+	color: white;
+	width: 100vw;
+	padding-top: 10%;
+}
+
+.blog-page-para{
+
+}
+
+
+.blog-page-header{
+	padding: 0% 10% 5% 10%;
+}
+
+@media only screen and (max-width: 769px){
+	.blog-page-header{
+		padding: none;
+	}
+
+	.blog-page-para{
+		width: 80vw;
+	}
+}
