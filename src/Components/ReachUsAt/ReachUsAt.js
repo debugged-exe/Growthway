@@ -9,7 +9,7 @@ import 'tachyons';
 
 const ReachUsAt = () => {
 	return (
-		<div className="reach-container bg-black white mt5">
+		<div className="reach-container bg-black white">
        <img src={image} className="reach-img mb5 mt5"/>
        <div className="mt4 flex flex-column reach-text">
          <p className="f2" style={{textDecoration: '3px underline green'}}>Reach Us At</p>

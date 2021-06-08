@@ -2,8 +2,6 @@ import React, {useState, useEffect } from 'react';
 import image from './WorkImage.png';
 import 'tachyons';
 import './Work.scss';
-import {CalendarComponent} from '@syncfusion/ej2-react-calendars';
-
 
 const initialState = {
 	name: '',
@@ -40,7 +38,7 @@ class Work extends React.PureComponent {
 	render() {
 		return (
 
-      <div className="work-container bg-black">
+      <div className="work-container bg-black pt5">
   			<p className="white pt3 pl5 work-title"
         style={{fontWeight:'500'}}>
           Let's Work Together </p>

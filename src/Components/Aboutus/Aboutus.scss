@@ -5,13 +5,16 @@
 .about-grid{
   display:flex;
   flex-wrap: wrap;
+  margin-left:8%;
 }
 .about-with-image
 {
   display:grid;
   grid-template-columns:45% 55%;
 }
-
+.circle-div{
+  margin: 3% 6% 3% 6%;
+}
 .about{
   margin: 5% 10% 0% 10%;
   font-size: 20px;
@@ -29,5 +32,21 @@
   .about {
     font-size: 18px;
     margin: 0% 0% 0% 0%;
+    padding:0% 6% 6% 6%;
   }
+  .circle-div{
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width:426px){
+ .about-grid{
+  margin-left:26%;
+ }
+}
+
+@media only screen and (max-width:321px){
+ .about-grid{
+  margin-left:18%;
+ }
 }

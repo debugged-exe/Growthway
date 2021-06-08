@@ -1,5 +1,6 @@
 import React from 'react';
 import 'tachyons';
+import {BsArrowDown} from 'react-icons/bs';
 
 function FAQ ({faq, index, toggleFAQ}) {
 	return (
@@ -8,8 +9,9 @@ function FAQ ({faq, index, toggleFAQ}) {
 			key={index}
 			onClick={() => toggleFAQ(index)}
 		>
-			<div className="faq-question">
-				{faq.id}. {faq.question}
+			<div className="faq-question flex flex-wrap justify-between">
+			 <p>{faq.id}. {faq.question}</p>
+			 <p><BsArrowDown color="green" size="2rem"/></p>
 			</div>
 			<div className="faq-answer">
 				{faq.answer}
