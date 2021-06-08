@@ -9,7 +9,7 @@ import img from './aboutimage.jpg';
 import {BiUserCircle} from 'react-icons/bi';
 import {GiReceiveMoney} from 'react-icons/gi';
 import {FaHandHoldingUsd} from 'react-icons/fa';
-import { Parallax } from 'react-parallax';
+
 
 const Aboutus = () => {
 	return (
