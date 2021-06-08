@@ -4,6 +4,10 @@
 }
 
 .client-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     box-shadow: 100px black;
     padding: 0% 10%;
     margin: 10% 5%;
@@ -13,11 +17,15 @@
 
 
 .testimonial-heading {
+    border-left: 4px solid green;
+    padding-right: 1%;
+    padding-left: 1%;
     margin-left: 8%;
     text-align: left;
     font-size: 55px;
     font-weight: 500;
 }
+
 .testimonial-quote {
     margin-left: 8%;
     text-align: left;
@@ -38,6 +46,7 @@
 
     .client-card {
         height: auto;
+        width: 100vw;
         margin-top: 25%;
     }
 

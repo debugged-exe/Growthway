@@ -71,5 +71,3 @@ function Faqs () {
 }
 
 export default Faqs;
-
-// <div className="bb bw1 center mt3 " ></div>

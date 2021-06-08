@@ -8,6 +8,7 @@ function FAQ ({faq, index, toggleFAQ}) {
 			className={"faq " + (faq.open ? 'open' : '')}
 			key={index}
 			onClick={() => toggleFAQ(index)}
+			style={{borderBottom: '2px solid green'}}
 		>
 			<div className="faq-question flex flex-wrap justify-between">
 			 <p>{faq.id}. {faq.question}</p>

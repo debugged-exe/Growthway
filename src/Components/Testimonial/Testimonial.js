@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'tachyons';
 import { TestimonialData } from './TestimonialData.js';
 import Carousel from 'react-elastic-carousel';
-import './style.scss';
+import './Testimonial.scss';
 
 const Testimonial = () => {
     const breakPoints = [
@@ -16,18 +16,20 @@ const Testimonial = () => {
 
     return (
         <div className="testimonials" >
-            <p className="testimonial-heading">
-                Testimonial's </p>
+            <h2 className="testimonial-heading">
+                Testimonial's 
+            </h2>
             <p className=" testimonial-quote">
                 From our early days, we've been providing reliable service to our clientele.<br />
-                We've had the honor being the firm of choice of the following corporations:</p>
+                We've had the honor being the firm of choice of the following corporations
+            </p>
             <Carousel breakPoints={breakPoints}>
                 {
                     TestimonialData.map((item) => {
                         return (
                             <div className="bg-white client-card">
-                                <h3>{item.client}</h3>
-                                <p>{item.description}</p>
+                                <h2>{item.client}</h2>
+                                <p style={{textAlign: 'left'}}>{item.description}</p>
                             </div>
                         )
                     })
