@@ -17,6 +17,27 @@
   align-items: center;
 }
 
+.line{
+  position: relative;
+}
+
+.vertical{
+  position: absolute;
+  top: 53%;
+  left: 52%;
+  transform: rotate(90deg);
+  z-index: 2;
+  width: 100%;
+}
+
+.horizontal{
+  position: absolute;
+  top: 99%;
+  left: 5%;
+  z-index: 2;
+  width: 100%;
+}
+
 .reach-img{
 height:70vh;
 width:33vw;
@@ -81,12 +102,29 @@ a{
   #links {
     margin-left:10%;
   }
+
+  .vertical{
+    top: 55%;
+  }
+}
+
+@media only screen and (max-width:375px){
+  .reach-img{
+    height:70vh;
+    width:85vw;
+  }
+  .vertical{
+    top: 57%;
+  }
 }
 
 @media only screen and (max-width:320px){
   .reach-img{
     height:70vh;
     width:85vw;
+  }
+  .vertical{
+    top: 62%;
   }
 }
 
