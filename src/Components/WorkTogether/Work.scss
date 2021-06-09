@@ -1,13 +1,29 @@
 @import url("https://cdn.syncfusion.com/ej2/material.css");
-.work-container{
+// .work-container{
+//   width:100%;
+// }
+.work-background{
+  background: url('background.jpg');
+  width:100vw;
+  height:auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color:rgba(0,0,0,0.4);
+  background-blend-mode: darken;
+}
+.work-image{
+  background: url('WorkImage.jpg') no-repeat center center;
+  background-size: cover;
+  background-color:rgba(0,0,0,0.6);
+  background-blend-mode: darken;
+  height:50vh;
   width:100%;
 }
-.contact-container
-{
-	width: 45vw;
-	margin: 20px;
-	padding: 20px;
-	font-family: 'Open Sans Condensed', sans-serif;
+.work-main-div{
+  width:50vw;
+  border-bottom:2px solid green;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
 }
 .button-upload{
   min-width: 165px;
@@ -27,7 +43,7 @@
   margin: 2px;
   display: flex;
   justify-content: center;
-  margin:5% 5% 5% 30%;
+  margin:5% 5% 5% 37%;
 }
 .inputval{
   background:#202020;
@@ -36,95 +52,46 @@
 	font-size: 18px;
 	padding: 10px 10px 10px 5px;
 	cursor: pointer;
-	width:100%;
+	width:80%;
 	height:7.5vh;
 	border: 1px solid #b3e5b4;
 	border-radius:6px;
-	margin:5%;
-}
-.handshake{
-	width:45vw;
-	height:75vh;
-  margin-top:8%;
+	margin:5% 5% 5% 10%;
 }
 
-.work-title
-{
-	font-size: 45px;
-	font-weight: bold;
-	text-align: left;
-}
-
-.form-container{
-width:65%;
+@media only screen and (max-width:1024px){
+  .inputval{
+    height:10vh;
+  }
 }
 @media only screen
    and (max-width : 768px)
 {
-	.work-title{
-		text-align: center;
-	}
-	.handshake {
-		width: 80vw;
-		margin-left: 10%;
-	}
-	.contact-container
-	{
-		width: 100vw;
-		padding: none;
-		margin: none;
-	}
+ .work-image{
+   height: auto;
+   width:100%;
+ }
+ .work-main-div{
+   width:90vw;
+ }
+ .inputval{
+   height:12vh;
+ }
 
-	.form-container{
-	width:65%;
-	}
-	.work-container{
-	  width:100%;
-	}
 }
 @media only screen
-   and (max-width :425px)
+   and (max-width :426px)
 {
-	.handshake {
-		height: 50vh;
-	}
-	.work-title{
-		text-align: left;
-	}
-	.contact-container
-	{
-		width: 100vw;
-		padding: none;
-		margin: none;
-	}
-
-	.form-container{
-	width:95%;
-	}
-	.work-container{
-	  width:100%;
-	}
+  .button-upload{
+    margin:5% 5% 5% 28%;
+  }
 }
 @media only screen
    and (max-width : 320px)
 {
-	.work-title{
-		text-align: left;
-		font-size: 25px;
-	}
-	.contact-container
-	{
-		width: 100vw;
-		padding: none;
-		margin: none;
-	}
- //fix button
-	.form-container{
-	width:98%;
-	}
-	.work-container{
-	  width:100%;
-	}
+  .button-upload{
+    margin:5% 5% 5% 22%;
+  }
 }
 
 //768- fix image and form

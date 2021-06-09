@@ -17,7 +17,7 @@ const Testimonial = () => {
     return (
         <div className="testimonials" >
             <h2 className="testimonial-heading">
-                Testimonial's 
+                Testimonial's
             </h2>
             <p className=" testimonial-quote">
                 From our early days, we've been providing reliable service to our clientele.<br />

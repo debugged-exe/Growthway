@@ -1,11 +1,14 @@
 .reach-container{
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .reach-text {
   margin-left: 10%;
   text-align: left;
+  width:45%;
 }
 
 .reach-text a {
@@ -16,7 +19,8 @@
 
 .reach-img{
 height:70vh;
-width:45vw;
+width:33vw;
+margin:0;
 }
 
 a{
@@ -51,6 +55,7 @@ a{
   .reach-text {
     margin-left: 5%;
     font-size: 15px;
+
   }
 }
 
@@ -62,11 +67,12 @@ a{
   }
   .reach-img{
   height:75vh;
-  width:100vw;
+  width:80vw;
   }
   .reach-text{
     margin-left: 0%;
     display: block;
+      width:100%;
   }
 
   .reach-text{
@@ -74,6 +80,13 @@ a{
   }
   #links {
     margin-left:10%;
+  }
+}
+
+@media only screen and (max-width:320px){
+  .reach-img{
+    height:70vh;
+    width:85vw;
   }
 }
 

@@ -10,10 +10,12 @@ import 'tachyons';
 const ReachUsAt = () => {
 	return (
 		<div className="reach-container bg-black white">
-       <img src={image} className="reach-img mb5 mt5"/>
-       <div className="mt4 flex flex-column reach-text">
+       <div className="center mt4">
+			    <img src={image} className="reach-img" style={{borderRadius:'50%'}}/>
+			 </div>
+       <div className=" flex flex-column reach-text mb4" >
          <p className="f2"><span style={{borderBottom: '3px solid green'}}>Reach Us At</span></p>
-         <div className='tl' id='links'>
+         <div className='tl flex flex-column' id='links'>
           <a href='mailto:debugged.exe@gmail.com' className="mb2"><GoMail size='2em' style={{marginRight: '5px'}}/>debugged.exe@gmail.com</a>
           <a href="tel:919168894490" className="mb2 mt2"><FaPhoneAlt  size="1.5em" style={{marginRight: '5px'}}/>+91 9168894490</a>
           <p><GoLocation style={{marginRight: '5px'}}/>Address is dummy, flat no 90, Sr 100, India</p>
