@@ -10,9 +10,9 @@ function FAQ ({faq, index, toggleFAQ}) {
 			onClick={() => toggleFAQ(index)}
 			style={{borderBottom: '2px solid green'}}
 		>
-			<div className="faq-question flex flex-wrap justify-between">
+			<div className="faq-question flex justify-between">
 			 <p>{faq.id}. {faq.question}</p>
-			 <p><BsArrowDown color="green" size="2rem"/></p>
+			 <p ><BsArrowDown color="green" size="2rem"/></p>
 			</div>
 			<div className="faq-answer">
 				{faq.answer}

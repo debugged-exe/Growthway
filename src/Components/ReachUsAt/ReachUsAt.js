@@ -10,10 +10,10 @@ import 'tachyons';
 const ReachUsAt = () => {
 	return (
 		<div className="reach-container bg-black white pb4">
-       <div className="center mt3 line">
-        <hr className="vertical" style={{border: '2px solid green'}}/>
+       <div className="center mt3">
+
 	       <img src={image} className="reach-img" style={{borderRadius:'50%'}}/>
-        <hr className="horizontal" style={{border: '2px solid green'}}/>
+
 			 </div>
        <div className=" flex flex-column reach-text mb4" >
          <p className="f2"><span style={{borderBottom: '3px solid green'}}>Reach Us At</span></p>

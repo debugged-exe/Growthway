@@ -1,6 +1,6 @@
 
 .faqs {
-	width: 60%;
+	width: 65%;
 	margin: 0 auto;
 	padding: 15px;
 }
@@ -76,5 +76,6 @@
 	 	.faqs {
 			margin:0px;
 	 		padding: 0px;
+			width:100%;
 	 	}
   }
