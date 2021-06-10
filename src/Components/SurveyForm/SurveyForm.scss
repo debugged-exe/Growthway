@@ -8,8 +8,26 @@ $main-color:gray;
 	width: 80vw;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
+
+.form-card{
+	height: 80vh;
+	width: 70vw;
+	margin: 2%;
+	overflow-y: scroll;
+	border: 1px solid green;
+}
+
+.para
+{
+	font-size: 2rem;
+	font-weight: 500;
+	padding: 4%;
+	color: black;
+	text-align: left;
+}
+
 .form-container2{
-width:80%;
+	width:80%;
 }
 
 @mixin shrinkLabel {
@@ -19,33 +37,38 @@ width:80%;
 }
 
 .inputform{
-	background:#202020;
 	color: $sub-color;
 	font-size: 18px;
 	padding: 10px 10px 10px 5px;
 	display: block;
 	cursor: pointer;
-	width: 80%;
+	width: 50%;
 	height:7.5vh;
-	border: 1px solid #b3e5b4;
-	border-radius:6px;
+	border: none;
+	border-bottom: 2px solid #b3e5b4;
 	margin:3%;
+	transition: all 0.3s ease-out;
+
+	&:focus{
+		outline: none;
+		transform: scale(1.1);
+	}
 }
 select, .shortterm {
-		background:#202020;
-		color: $sub-color;
 		font-size: 18px;
 		padding: 10px 10px 10px 5px;
 		display: block;
 		cursor: pointer;
-		width: 80%;
-		height:7.5vh;
-		border: 1px solid #b3e5b4;
-		border-radius:6px;
+		width: 50%;
+		height:5%;
+		border: none;
+		border-bottom: 2px solid #b3e5b4;
 		margin:3%;
+		transition: all 0.3s ease-in;
 
 		&:focus {
 			outline: none;
+			transform: scale(1.1);
 		}
 
 	}
@@ -56,4 +79,31 @@ input[type="radio"]
 }
 .hide{
   display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.form-card{
+		width: 85vw;
+	}
+	.inputform
+	{
+		width: 80%;
+	}
+	select, .shortterm{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 426px) {
+	.form-card{
+		width: 85vw;
+	}
+	.inputform
+	{
+		width: 100%;
+	}
+	select, .shortterm{
+		width: 100%;
+	}
 }
