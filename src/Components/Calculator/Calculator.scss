@@ -1,18 +1,70 @@
-.inputfield,#plan{
-  background:#202020;
+.calc-1{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.inputfield{
+  font-size: 18px;
+  padding: 15px 15px 15px 10px;
   display: block;
-	color:white;
-	font-size: 18px;
-	padding: 10px 10px 10px 5px;
-	cursor: pointer;
-	width:30%;
-	height:7.5vh;
-	border: 1px solid #b3e5b4;
-	border-radius:6px;
-	margin:3%;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid #b3e5b4;
+  margin:3%;
+
+  &:focus {
+    outline: none;
+  }
+}
+.inputfield-result{
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid #b3e5b4;
+  margin: 2%;
+
+  &:focus {
+    outline: none;
+  }
+}
+#select-plan
+{
+  font-size: 18px;
+  padding: 15px 15px 15px 10px;
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid #b3e5b4;
+  margin:3%;
+
+  &:focus {
+    outline: none;
+  }
+}
+.form-calc{
+  width: 60%;
+}
+.result-grid{
+  display: grid;
+  grid-template-columns:auto auto auto;
+  width:57%;
+  margin:2%;
+}
+.profit-div{
+  height:auto;
+  width:70vw;
+  background-color:white;
+  border:2px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calc-def{
+  padding:0% 5% 0% 5%;
 }
 .button-style{
-  min-width: 165px;
   width: auto;
   height: 50px;
   letter-spacing: 0.5px;
@@ -26,18 +78,43 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s linear;
-  margin: 2px;
+  margin: 2%;
   display: flex;
   justify-content: center;
-  margin-left:10%;
+}
+
+@media only screen and (max-width:769px){
+  .calc-1{
+    	grid-template-columns: 100%;
+  }
+  #select-plan
+  {
+    width: 37vw;
+  }
+
 }
 
 @media only screen and (max-width:426px){
-  .inputfield{
-    	width:70%;
-      margin:5%;
+  .profit-div{
+    width:90vw;
   }
-  .button-style{
-    margin-left:23%;
+  .inputfield{
+    width: 100%;
+  }
+  .form-calc{
+    width:90%;
+  }
+  .inputfield-result{
+    width: 100%;
+  }
+  #select-plan
+  {
+    width:100%;
+  }
+  .result-grid{
+    width:100%;
+  }
+  .calc-def{
+    padding:2%;
   }
 }

@@ -41,7 +41,7 @@ showfunction=(e)=>{
 
 	render() {
 		return (
-			<div className="bg-black callback-container" style={{overflow:'hidden'}}>
+			<div className="bg-black callback-container " style={{overflow:'hidden'}}>
 
 				<div className="form-start">
 					<div className=" pb4" style={{borderTop:'7px solid green',height:'auto',backgroundColor:'#ADB4B0'}}>
@@ -89,7 +89,7 @@ showfunction=(e)=>{
 
 						<div className=" line flex flex-warp">
 							<p className="gray ma0 " style={{fontSize:'5rem',fontWeight:'500'}}>01</p>
-							<div className=" para">
+							<div className="para">
 								<h1>Tax Presentation</h1>
 								<p>We prepare everything you need for your tax return </p>
 							</div>

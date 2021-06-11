@@ -46,7 +46,7 @@ class SurveyForm extends React.PureComponent {
 			<div className="white survey-div flex flex-column justify-center items-center" style={{overflow:'hidden'}}>
 					<h1 className="black">Survey</h1>
 					<div className="center bg-white form-card">
-					  <p class="para">Let's understand your Short term investing needs better, with this Survey</p>
+					  <p class="para1">Let's understand your Short term investing needs better, with this Survey</p>
 							<form onSubmit ={this.handleSubmit} className="form-container2 center black">
 								<label htmlFor="name" className="label">Full Name<span className="red f3">*</span></label>
 								<input
@@ -70,8 +70,7 @@ class SurveyForm extends React.PureComponent {
 								/>
 								<div className="mt3 mb3">
 									<label htmlFor="gender" className="label">Gender<span className="red f3">*</span></label>
-									<br/>
-									<input
+									<br/><input
 									type="radio"
 									id="male"
 									name="gender"
@@ -116,7 +115,7 @@ class SurveyForm extends React.PureComponent {
 								/>
 								<label for="edu" handleChange={this.handleChange}  value={this.state.phone} className="label">
 								Education<span className="red f3">*</span></label>
-									<select id="edu" name="edu">
+									<select className="select-boom" id="edu" name="edu">
 										<option value=" ">Please select one option</option>
 										<option value="1">HSC</option>
 										<option value="2">SSC</option>
@@ -184,7 +183,7 @@ class SurveyForm extends React.PureComponent {
 							</div>
 
 							<label for="investwhere" className="label">Where do you invest?<span className="red f3">*</span></label>
-								<select id="investwhere" name="investwhere">
+								<select id="investwhere" name="investwhere" className="select-boom">
 									<option value=" ">Please select one option</option>
 									<option value="1">Bank fd/rd</option>
 									<option value="2">MF</option>
@@ -202,7 +201,7 @@ class SurveyForm extends React.PureComponent {
 									handleChange={this.handleChange} required/>
 									<label for="no">No</label>
 								</div>
-								
+
 								<div className="mt3 mb3">
 									<label htmlFor="shortterm" className="label">Do you plan your short term investments?<span className="red f3">*</span></label>
 									<br/>
@@ -239,12 +238,12 @@ class SurveyForm extends React.PureComponent {
 									<label for="yes">Yes</label><br/>
 									<input type="radio" id="no" name="deplays" value="No"  value={this.state.name}
 									handleChange={this.handleChange} required/>
-									<label for="no">No</label><br/>									
+									<label for="no">No</label><br/>
 								</div>
 
 								<div className="mt3 mb3">
 									<label for="choice" className="label">Your choice of investing short term?<span className="red f3">*</span></label>
-									<select id="choice" name="choice" onChange={this.enable}>
+									<select id="choice" name="choice" onChange={this.enable} className="select-boom">
 									<option value=" ">Please select one option</option>
 									<option value="1">Bank fd</option>
 									<option value="2">Liquid funds</option>
@@ -275,7 +274,7 @@ class SurveyForm extends React.PureComponent {
 								</div>
 
 									<label htmlFor="choice" className="label">What are your views about our Growmax 365 plan ?<span className="red f3">*</span></label>
-									<select id="select" name="choice" onChange={this.enable}>
+									<select id="select" name="choice" onChange={this.enable} className="select-boom">
 									<option value=" ">Please select one option</option>
 									<option value="1">Tempting</option>
 									<option value="2">Looking forward</option>
@@ -290,7 +289,7 @@ class SurveyForm extends React.PureComponent {
 									/><br/>
 
 							<label htmlFor="know" className="label">How did you get to know about us?<span className="red f3">*</span></label>
-							<select id="know" name="know">
+							<select id="know" name="know" className="select-boom">
 							<option value=" ">Please select one option</option>
 							<option value="1">Friend</option>
 							<option value="2">Online</option>
@@ -309,7 +308,7 @@ class SurveyForm extends React.PureComponent {
 							</div>
 							<div className="center">
 								<CustomButton onClick={this.handleForm}>Submit</CustomButton>
-							</div>	
+							</div>
 							</form>
 		        </div>
 					</div>
