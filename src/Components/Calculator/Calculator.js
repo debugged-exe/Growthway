@@ -34,7 +34,7 @@ const Calculator =()=>
 
     return (
        <div className="flex flex-column justify-center items-center">
-         <div className="profit-div tc ma5">
+         <div className="profit-div shadow-2 tc ma5">
             <h2>Profit <span style={{color:'green'}}>Calculator</span></h2>
             <p className="calc-def">You must know the calculation before investing in any plan, so you never make mistakes. Check the calculation and you will get as our calculator says.</p>
               <form className="form-calc pa2 flex flex-column justify-center align-items" onSubmit ={e=>handleSubmit(e.preventDefault())}>
@@ -66,7 +66,7 @@ const Calculator =()=>
               </form>
 
           </div>
-          <div className="profit-div ma4">
+          <div className="profit-div shadow-2 ma4">
             <h2>Wanna know how much to pay to achieve your goal amount?</h2>
               <form className="form-calc pa2 flex flex-column justify-center align-items" onSubmit ={e=>handleSubmit(e.preventDefault())}>
                 <input

@@ -40,7 +40,7 @@ class Work extends React.PureComponent {
 				   <div  className="work-main-div flex flex-column shadow-4 mb6 justify-center items-center bg-black">
 					   <div className="work-image tc">
 						   <p className="f1 ">Let's work together</p>
-							 <p className="f4 ">Please work with us....I m begging u plzz..mummyyyy</p>
+							 <p className="f4 ">Lorem Ipsum is a dummy or placeholder text. It's often used in laying out print, infographics, or web design. </p>
 						 </div>
 						 <div style={{width:'100%'}}>
 						 <form onSubmit ={this.handleSubmit} className="center" >

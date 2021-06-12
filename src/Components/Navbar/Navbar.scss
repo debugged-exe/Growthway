@@ -4,25 +4,46 @@
   padding:2%;
   text-align: right;
 }
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: flex-end;
+}
+.links{
+  padding:0% 2% 0% 2%;
+}
 .active{
   color: green;
 }
 .toggle{
-  color:#fff;
-  float: right;
-  font-size:24px;
-  cursor:pointer;
-  display: none;
-}
+  display:block;
 
+}
+  .hidden{
+    display: none;
+  }
+  .show-ham{
+    display: none;
+  }
 @media only screen and (max-width:426px){
   .Navbar-color {
     padding:5%;
   }
-  .toggle{
-    display: block;
-  }
+
   .nav{
-    display:none;
+    display: none;
   }
+ .toggle{
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:flex-start;
+   padding-left:10%;
+ }
+ .show-ham{
+   display:block;
+ }
+ .links{
+   padding:3%;
+ }
 }

@@ -9,17 +9,23 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const NavBar =()=>
 {
+  const[visible,setVisible]=useState(false);
+
+
   const location = useLocation();
     return (
       <Navbar style={{overflow:'hidden'}} fixed="top" variant="dark" className="Navbar-color" expand="lg">
-          <Nav className="mr-auto Navbar-text-color nav">
-             <Link to='/' ><span className={` f4 ${location.pathname==='/'?'active':''} `} >Home</span></Link>
-             <Link to='/surveyform' ><span className={` f4 ${location.pathname==='/surveyform'?'active':''} `}   >Survey</span></Link>
-             <Link to='/about' ><span className={` f4 ${location.pathname==='/about'?'active':''} `} >About Us</span></Link>
-              <Link to='/workwithus' ><span className={` f4 ${location.pathname==='/workwithus'?'active':''} `} >Work with Us</span></Link>
-             <Link to='/blog' ><span className={` f4 ${location.pathname==='/blog'?'active':''} `} >Blogs</span></Link>
+          <div className="white show-ham" onClick={()=>{setVisible(!visible)}} >
+            <BiMenu/>
+          </div>
+          <Nav className={`mr-auto Navbar-text-color nav ${visible?' toggle':''}`}>
+             <Link className=" links" to='/' ><span className={` f4 ${location.pathname==='/'?'active':''} `} >Home</span></Link>
+             <Link className=" links" to='/surveyform' ><span className={` f4 ${location.pathname==='/surveyform'?'active':''} `}   >Survey</span></Link>
+             <Link className=" links" to='/about' ><span className={` f4 ${location.pathname==='/about'?'active':''} `} >About Us</span></Link>
+              <Link className=" links" to='/workwithus' ><span className={` f4 ${location.pathname==='/workwithus'?'active':''} `} >Work with Us</span></Link>
+             <Link className=" links" to='/blog' ><span className={` f4 ${location.pathname==='/blog'?'active':''} `} >Blogs</span></Link>
           </Nav>
-          <div className="toggle" ><BiMenu/></div>
+
       </Navbar>
     );
   }
