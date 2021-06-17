@@ -4,16 +4,9 @@ import 'tachyons';
 
 const Header = () => {
 	return (
-		<div className="head white">
-		 <div className="heading-container">
-			<p className="heading mt0 flex" >Growthway Investments</p>
-			<div className="title gray">
-			  <h2>Expertise.</h2>
-				<h2>Commitment.</h2>
-				<h2>Value.</h2>
-			</div>
-			 <h3 style={{fontWeight:'300'}}>Since 2020 </h3>
-		 </div>
+		<div className="head-bg flex flex-column justify-center items-center white b">
+			<p className="ma0 pa0 f1">Growthway Investments</p>
+			<p className="ma0 pa0 f4">Since, 2020</p>
 		</div>
 	)
 }
