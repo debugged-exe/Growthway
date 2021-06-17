@@ -1,64 +1,36 @@
-// .blog-item-container{
-//     display: grid;
-//     grid-template-columns: 50% 50%;
-// }
-//
-// .blog-item{
-//     display: grid;
-//     grid-template-rows: auto auto auto;
-//     margin: 5%;
-//     background-color: #191b1a;
-//     color: white;
-//     border-radius: 3%;
-//     padding: 3%;
-//     overflow: hidden;
-//     border-bottom:3px solid green;
-// }
-//
-// .blog-item-desc{
-//     text-align: left;
-//     padding: 0% 3% 0% 3%;
-// }
-//
-// .blog-item-header{
-//     text-align: left;
-//     padding: 0% 3% 0% 3%;
-//
-// }
-//
-// @media only screen and (max-width: 769px) {
-//     .blog-item-container{
-//         grid-template-columns: 100%;
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .blog-container{
   display: grid;
   grid-template-columns:auto auto auto;
-  justify-content: center;
+
 }
 .item{
-  height:30vh;
-  width:50vh;
+  height:40vh;
+  width:28vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   background:white;
+  margin:5%;
   color: black;
+}
+.item:hover{
+     background:url('cryptocurrency-market.jpg') no-repeat center center/cover;
+     color:white;
+     background-color: rgba(0,0,0,0.5);
+     background-blend-mode: darken;
+     opacity:0.9;
+}
 
-   &:hover{
-      background:url('cryptocurrency-market.jpg') no-repeat center center/cover;
-      color:white;
-   }
+@media only screen and (max-width: 426px) {
+    .blog-container{
+        grid-template-columns: 100%;
+
+    }
+    .item{
+      width:70vw;
+      height:40vh;
+      margin:5%;
+    }
 }

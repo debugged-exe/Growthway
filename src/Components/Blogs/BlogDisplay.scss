@@ -1,0 +1,21 @@
+
+
+.blog-item{
+  display: grid;
+  grid-template-columns:50% 50%;
+  align-items: center;
+  text-align:left;
+  margin:5%;
+}
+.content{
+  padding-left:8%;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 769px) {
+    .blog-item{
+        grid-template-columns: 100%;
+        margin:5%;
+
+    }
+}

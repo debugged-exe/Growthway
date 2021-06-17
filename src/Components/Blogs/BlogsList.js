@@ -1,53 +1,61 @@
-import image1 from './cryptocurrency-market.jpg';
+import Image from './elements.svg';
+
 
 export const BlogsList=
 [{
   id:'01',
-  date: '12-12-12',
+  date: 'May 18th 2020',
   heading:'Your financial decisions are in the governments hands.',
   description:'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. Wikipedia. Sunt voluptate officia ut mollit sit ut eu excepteur eu commodo in sunt. Nulla do eu culpa culpa ut ut ut culpa amet qui esse dolore magna veniam magna incididunt ex nulla irure enim elit ullamco aliqua culpa commodo quis voluptate et in voluptate eiusmod cillum cupidatat in aliquip sed reprehenderit dolor.',
-  image:image1
+  image:Image,
+  display:'left'
 },
 {
   id:'02',
-  date: '12-12-12',
+  date: 'May 18th 2020',
   heading:'Your financial decisions are in the governments hands.',
   description:'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. WikipediaIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. Wikipedia',
-  image:image1
+  image:Image,
+  display:'right'
 
 },{
   id:'03',
-  date: '12-12-12',
+  date: 'May 18th 2020',
   heading:'Your financial decisions are in the governments hands.',
   description:'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. WikipediaIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. Wikipedia',
-  image:image1
+  image:Image,
+  display:'left'
 
 },{
   id:'04',
-  date: '12-12-12',
+  date: 'May 18th 2020',
   heading:'Invest now and win big',
   description:'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. WikipediaIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. Wikipedia',
-  image:image1
+  image:Image,
+  display:'right'
 
 },{
   id:'05',
-  date: '12-12-12',
+  date: 'May 18th 2020',
   heading:'Invest now and win big',
   description:'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. WikipediaIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. Wikipedia',
-  image:image1
+  image:Image,
+  display:'left'
 
 },{
   id:'06',
-  date: '12-12-12',
-  heading:'Invest now and win big',
+  date: 'May 18th 2020',
+  heading:'Invest now and win big1',
   description:'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. WikipediaIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. Wikipedia',
-  image:image1
+  image:Image,
+  display:'right'
 
 },{
   id:'07',
-  date: '12-12-12',
-  heading:'Invest now and win big',
+  date: 'May 18th 2020',
+  heading:'Invest now and win big2',
   description:'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. WikipediaIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. Wikipedia',
-  image:image1
+  image:Image,
+  display:'left'
 
 }];

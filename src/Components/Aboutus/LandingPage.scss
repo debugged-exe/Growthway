@@ -1,0 +1,20 @@
+.landing-div{
+  display:grid;
+  grid-template-columns:50% 50%;
+  align-items: center;
+  line-height: 1.5;
+}
+.left-div{
+  padding-left:6%;
+  padding-right:10%;
+}
+@media only screen and (max-width:426px) {
+  .landing-div{
+    display:grid;
+    grid-template-columns:100%;
+    padding:4%;
+  }
+  .left-div{
+    padding: 0;
+  }
+}
