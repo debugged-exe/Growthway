@@ -1,32 +1,68 @@
 import React from 'react';
 import './Pricing.scss';
-import {Plans} from './Plans.js'
+import {Plans} from './Plans.js';
+import {TiTick} from 'react-icons/ti';
 import 'tachyons';
 
 const Pricing = () => {
 	return (
-    <div >
-      <p className="tc" style={{fontSize:'2rem'}}>Pricing Panel</p>
-      <div className="grid tc">
-       { Plans.map((plan) => {
-         return (
-          <div style={{height: 'fit-content',  marginTop: '0%', paddingTop: '0%', borderRight: '1px solid black'}}>
-              <p className="white pa3 bg-black" style={{ margin: '0%',fontSize: '2.6rem', fontWeight: '600'}}>{plan.planType}</p>
-              <p style={{padding: '7%',fontSize: '2rem', fontWeight: '600'}}>{plan.planPrice}</p>
-              <ul className='tc' style={{maxWidth: 'fit-content'}}>
-                <li>{plan.subHeading1}</li>
-                <li>{plan.subHeading2}</li>
-                <li>{plan.subHeading3}</li>
-                <li>{plan.subHeading4}</li>
-              </ul>
-            <button className="button mt3"><span>Enroll Now!</span></button>
-          </div>
-         );
-       })
-       }
-      </div>
-    </div>
-	)
-}
+    <div className="main-container" style={{lineHeight:'1.5'}}>
+		  <div className="background-div tc" >
+			  <p style={{fontSize:'50px',fontWeight:'600'}}>Our Services</p>
+			</div>
+      <p className="tc fw5" style={{fontSize:'2.5rem'}}>Pricing Panel</p>
+
+      <div className="features-div">
+			   <div className="sub-div">
+				   <h1>Choose your plan</h1>
+					 <p>If you are unsure which pricing plan to choose, then register
+					    for a 14-day free trial to start building your business.</p>
+				 </div>
+			   <div className="sub-div">
+				   <h3 style={{color:'blue'}}>Features</h3>
+					   <p><TiTick color="blue"/> Business Architecture</p>
+						 <p><TiTick color="blue"/> Cognitive Architecture</p>
+						 <p><TiTick color="blue"/> Interior Architecture</p>
+						 <p><TiTick color="blue"/> Landscape Architecture</p>
+             <p><TiTick color="blue"/> UI/UX designs</p>
+						 <p><TiTick color="blue"/> SEO marketing</p>
+				 </div>
+				 <div className="sub-div">
+						 <h3 style={{color:'blue'}}>Benefits</h3>
+							<p><TiTick color="blue"/> Business Architecture</p>
+							<p><TiTick color="blue"/> Cognitive Architecture</p>
+							<p><TiTick color="blue"/> Interior Architecture</p>
+							<p><TiTick color="blue"/> Landscape Architecture</p>
+						  <p><TiTick color="blue"/> UI/UX designs</p>
+							<p><TiTick color="blue"/> SEO marketing</p>
+				 </div>
+			</div>
+
+					<div className="grid">
+					 {
+						 Plans.map((plan) => {
+						 return (
+							 <div className="price shadow-2 pl4">
+							     <p className="f4"><span className="fw5" style={{color:'blue',fontSize:'2.5rem'}}> {plan.interest}</span><sub> Rate of interest </sub></p>
+  						     <h2>{plan.planType}</h2>
+  								 <h3>( {plan.planPrice} )</h3>
+
+									 <p><TiTick color="blue"/>{plan.subHeading1}</p>
+									 <p><TiTick color="blue"/>{plan.subHeading2}</p>
+									 <p><TiTick color="blue"/>{plan.subHeading3}</p>
+									 <p><TiTick color="blue"/>{plan.subHeading4}</p>
+  						 <button className="button mt6"><span>Pay Now!</span></button>
+              </div>
+	              )
+              }
+					)}
+     </div>
+
+		  <div className="tc">
+			  <p style={{fontSize:'40px',fontWeight:'600'}}>Start working together?</p>
+				<button className="mb4 fw6 white pa3 ph4 f5 grow pointer" style={{borderRadius:'8px',border:'none',backgroundColor:'blue'}}>Find Out More</button>
+			</div>
+		</div>
+			)}
 
 export default Pricing;
