@@ -3,6 +3,7 @@ import Header from '../../Components/Header/Header.js';
 import Pricing from '../../Components/Pricing/Pricing.js';
 import CallBack from '../../Components/CallBack/CallBack.js';
 import Calculator from '../../Components/Calculator/Calculator.js';
+import OurServices from "../../Components/OurServices/OurServices";
 
 
 const HomePage = () => {
@@ -12,6 +13,7 @@ const HomePage = () => {
 			<Pricing/>
 			<CallBack/>
       <Calculator/>
+			<OurServices />
 		</div>
 	)
 }
