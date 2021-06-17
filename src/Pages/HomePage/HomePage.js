@@ -4,7 +4,7 @@ import Pricing from '../../Components/Pricing/Pricing.js';
 import CallBack from '../../Components/CallBack/CallBack.js';
 import Calculator from '../../Components/Calculator/Calculator.js';
 import OurServices from "../../Components/OurServices/OurServices";
-
+import OurClients from '../../Components/OurClients/OurClients';
 
 const HomePage = () => {
 	return (
@@ -12,8 +12,9 @@ const HomePage = () => {
 			<Header/>
 			<Pricing/>
 			<CallBack/>
-      <Calculator/>
+      		<Calculator/>
 			<OurServices />
+			<OurClients />
 		</div>
 	)
 }
