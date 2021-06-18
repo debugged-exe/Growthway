@@ -23,6 +23,7 @@ $main-color:gray;
 	margin: 1% 0% 1% 0%;
 	background-color: white;
 	box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); 
+	box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
 }
 
 .contact-container2
@@ -104,6 +105,14 @@ input[type="radio"], input[type="checkbox"]
 
 
 @media only screen and (max-width: 768px) {
+	.survey-form-container{
+		width: 80vw;
+	}
+
+	.input-div{
+		width: 80%;
+	}
+
 	.form-card{
 		width: 85vw;
 	}
@@ -112,19 +121,41 @@ input[type="radio"], input[type="checkbox"]
 		width: 80%;
 	}
 	select, .shortterm{
-		width: 80%;
+		width: 100%;
 	}
 }
 
 @media only screen and (max-width: 426px) {
+	.survey-form-container{
+		width: 90vw;
+	}
+
+	.inputform
+	{
+		width: 95%;
+		padding: 4%;
+		margin: 2% 0% 2% 0%;
+	}
+
 	.form-card{
 		width: 85vw;
 	}
 	.inputform
 	{
-		width: 100%;
+		width: 90%;
 	}
 	select, .shortterm{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 321px) {
+	.survey-form-container{
+		width: 95vw;
+	}
+
+	.inputform
+	{
 		width: 100%;
 	}
 }
