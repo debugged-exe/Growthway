@@ -1,5 +1,14 @@
 .tagline-component{
-    /* height: 300px; */
-    width: 300px;
+    height: 370px;
     padding: 14px;
+    background: white;
+    box-shadow: black;
+    width: 420px;
+    box-shadow: -1px 5px 20px 1px rgb(0 0 0 / 18%);
+    -webkit-box-shadow: -1px 5px 20px 1px rgb(0 0 0 / 18%);
+    border-radius: 4px;
+}
+
+.tagline-carousel-container{
+    margin-top: -13%;
 }

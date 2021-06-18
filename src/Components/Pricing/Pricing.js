@@ -7,10 +7,10 @@ import 'tachyons';
 const Pricing = () => {
 	return (
     <div className="main-container" style={{lineHeight:'1.5'}}>
-		  <div className="background-div tc" >
+		  <div className="background-div" >
 			  <p style={{fontSize:'50px',fontWeight:'600'}}>Our Services</p>
 			</div>
-      <p className="tc fw5" style={{fontSize:'2.5rem'}}>Pricing Panel</p>
+
 
       <div className="features-div">
 			   <div className="sub-div">
@@ -37,7 +37,7 @@ const Pricing = () => {
 							<p><TiTick color="blue"/> SEO marketing</p>
 				 </div>
 			</div>
-
+        <p className="tc fw5" style={{fontSize:'2.5rem'}}>Pricing Panel</p>
 					<div className="grid">
 					 {
 						 Plans.map((plan) => {
@@ -51,7 +51,9 @@ const Pricing = () => {
 									 <p><TiTick color="blue"/>{plan.subHeading2}</p>
 									 <p><TiTick color="blue"/>{plan.subHeading3}</p>
 									 <p><TiTick color="blue"/>{plan.subHeading4}</p>
-  						 <button className="button mt6"><span>Pay Now!</span></button>
+								 <div>
+  						      <button className="button mv6"><span>Pay Now!</span></button>
+								 </div>
               </div>
 	              )
               }
