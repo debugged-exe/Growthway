@@ -42,14 +42,14 @@ class CallBack extends React.PureComponent {
 	render() {
 		return (
 			<div className="callback-container " style={{ overflow: 'hidden' }}>
-				
+
 				<div className="grid-design white" style={{ marginLeft: '6%' }}>
 					<img src={calling_bg} alt=""/>
 				</div>
 
 				<div className="form-start">
 					<div className=" pb4" style={{height: 'auto' }}>
-						<h2 className="tc"><FaPhoneAlt /> Request a Call!</h2>
+						<h2 className="tc"><FaPhoneAlt color="blue"/> Request a Call!</h2>
 						<p className="tc">Request a Call!</p>
 						<div className="contact-container1">
 							<form onSubmit={(event) => this.handleForm(event)} className="form-container1">
@@ -78,7 +78,7 @@ class CallBack extends React.PureComponent {
 									required
 								/>
 
-								<CustomButton type='submit'>Submit</CustomButton>
+								<CustomButton style={{backgroundColor:'blue',border:'1px solid blue'}} type='submit'>Submit</CustomButton>
 							</form>
 							<div className={` ${this.state.show === true ? 'alert' : 'hidden'}`} >
 								<span onClick={() => this.showfunction(false)} className={`${this.state.show === true ? 'closebtn' : ' hidden'}`}><AiOutlineClose /></span>

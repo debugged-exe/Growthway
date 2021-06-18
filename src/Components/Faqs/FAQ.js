@@ -8,13 +8,13 @@ function FAQ ({faq, index, toggleFAQ}) {
 			className={"faq " + (faq.open ? 'open' : '')}
 			key={index}
 			onClick={() => toggleFAQ(index)}
-			style={{borderBottom: '2px solid green'}}
+			style={{borderBottom: '2px solid blue'}}
 		>
 			<div className="faq-question flex justify-between">
 			 <p>{faq.id}. {faq.question}</p>
-			 <p ><BsArrowDown color="green" size="2rem"/></p>
+			 <p><BsArrowDown color="blue" size="2rem"/></p>
 			</div>
-			<div className="faq-answer">
+			<div className="faq-answer" style={{color:'black'}}>
 				{faq.answer}
 			</div>
 		</div>

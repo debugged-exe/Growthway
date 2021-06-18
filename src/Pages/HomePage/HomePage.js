@@ -19,8 +19,9 @@ const HomePage = () => {
 			<CallBack/>
 			<OurClients />
 			<OurServices />
+			<Calculator/>
 			<Blogs />
-  		<Calculator/>
+
 
 
 		</div>
