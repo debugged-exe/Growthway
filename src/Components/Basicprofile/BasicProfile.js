@@ -1,0 +1,38 @@
+import React from 'react';
+import './Basicprofile.css';
+import * as AiIcons from 'react-icons/ai';
+import * as FaIcons from 'react-icons/fa';
+import basicprofile from './basicprofile.svg';
+
+function BasicProfile(){
+    return(
+        <div className="basic-profile flex justify-around w-100 mt4 pa2">
+            <div classname="w-50">
+                <img src={basicprofile} className="profile-image"/>
+            </div>
+
+            <div className=" w-100-m w-50-ns w-100">
+                <h2 className="pl3-m">Basic Profile</h2>
+                <div className="basic-profile-data  flex justify-space-around  w-100 " >
+                    <div className="w-50-l w-50-m-ns pl3-m w-100 pl0-ns pl3" >
+                        <h4>Biography</h4>
+                        <p style={{lineHeight:"1.5"}}>I work with clients from all over the world. I had worked with and serving over 2000 customers and 1000 global companies  across 13 countries with over 90% satisfaction rate achieved.</p>
+                    </div>
+                    <div className="w-50-l w-50-m-ns pl3-m w-100 pl0-ns pl3" >
+                        <h4>My focus</h4>
+                        <p style={{lineHeight:"1.5"}}>I claim that the quality of service assessment involves controlling and managing resources by setting priorities for specific types of clients and projects on the system.</p>
+                    </div>
+                </div>
+                <div className="pt4">
+                            <AiIcons.AiFillFacebook className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
+                            <AiIcons.AiOutlineTwitter className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
+                            <AiIcons.AiOutlineInstagram className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
+                            <AiIcons.AiOutlineDribbble className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
+                            <FaIcons.FaPinterest className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
+                 </div>
+            </div>
+        </div>
+    )
+}
+
+export default BasicProfile;
