@@ -18,7 +18,6 @@ const HomePage = () => {
       		<Calculator/>
 			<OurServices />
 			<OurClients />
-			<Footer />
 		</div>
 	)
 }

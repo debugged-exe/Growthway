@@ -12,7 +12,7 @@ import {Link} from 'react-router-dom';
 const Footer = () => {
     return (
         <section className={'footer-section'}>
-            <footer className={'footer-container pt6-l pb4-l pb2-m pb2 ph6-l pv4-m ph4-m'}>
+            <footer className={'footer-container pt4-l pb4-l pb2-m pb2 ph6-l pv4-m ph4-m'}>
                 <div className={'footer-responsive-grid'}>
                     <div className={'footer-col-1 pl0-ns pl4'}>
                         <h1>Growthway</h1>
