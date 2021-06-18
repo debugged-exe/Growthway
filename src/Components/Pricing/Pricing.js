@@ -42,7 +42,8 @@ const Pricing = () => {
 					 {
 						 Plans.map((plan) => {
 						 return (
-							 <div className="price shadow-2 pl4">
+							 <div className="tc">
+							  <div className="price shadow-2 ">
 							     <p className="f4"><span className="fw5" style={{color:'blue',fontSize:'2.5rem'}}> {plan.interest}</span><sub> Rate of interest </sub></p>
   						     <h2>{plan.planType}</h2>
   								 <h3>( {plan.planPrice} )</h3>
@@ -55,6 +56,7 @@ const Pricing = () => {
   						      <button className="button mv6"><span>Pay Now!</span></button>
 								 </div>
               </div>
+						</div>
 	              )
               }
 					)}
