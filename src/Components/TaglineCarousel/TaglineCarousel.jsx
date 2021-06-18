@@ -6,7 +6,7 @@ import { Taglines } from './Taglines';
 
 const TaglineComponent = ({quote,author}) => {
     return(
-        <div className="grow tagline-component flex flex-column justify-center ma5">
+        <div className="grow tagline-component flex flex-column justify-center ma4">
             <FaQuoteLeft/>
             <p className="i f4">{quote}</p>
             <FaQuoteRight/>

@@ -6,7 +6,7 @@ import 'tachyons';
 const LandingPage =()=>
 {
   return(
-    <div className="landing-div">
+    <div className="landing-div pa5">
      <div className="left-div">
        <p style={{fontSize:'45px',fontWeight:'600'}}>Awesome landing <span style={{color:'blue'}}>page design</span></p>
        <p className="f4">We learn from landing page's best practices and great landing pages in order to create a clear,
