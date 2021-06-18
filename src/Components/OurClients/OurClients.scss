@@ -15,6 +15,7 @@
 	justify-content: center;
 }
 
+
 .testimon-card{
 	background: white;
 	margin: 3.25%;
@@ -25,6 +26,23 @@
 	align-items: center;
 	padding-left: 3%;
 	padding-right: 3%;
+	transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+	.quote{
+		color: #0069FF;
+		transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+
+	&:hover{
+		background: #0069FF;
+		color: white;
+		transform: translateY(-5px);
+
+		.quote{
+			color: white;
+		}
+	}
+
 }
 
 .profile-intro{

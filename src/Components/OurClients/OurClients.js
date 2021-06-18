@@ -1,6 +1,6 @@
 import React from 'react';
 import * as BsIcons from "react-icons/bs";
-import Quotes from './quotes-fill.svg';
+import { Quotes } from "phosphor-react";
 import Icon1 from './undraw1.svg';
 import Icon2 from './undraw2.svg';
 import Icon3 from './undraw3.svg';
@@ -53,7 +53,7 @@ const OurClients = () => {
 									</div>
 								</div>
 								<div className="flex justify-end items-center" style={{height: '12%', width: '100%'}}>
-									<img style={{height: '100%', marginRight: '10%'}} src={Quotes} alt="" />
+									<Quotes className="quote" size={48} weight="fill"/>
 								</div>
 							</div>
 						);
