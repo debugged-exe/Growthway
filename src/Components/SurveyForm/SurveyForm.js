@@ -43,11 +43,24 @@ class SurveyForm extends React.PureComponent {
 	render() {
     console.log(this.state.others);
 		return (
-			<div className="white survey-div flex flex-column justify-center items-center" style={{overflow:'hidden'}}>
-					<h1 className="black">Survey</h1>
-					<div className="center bg-white form-card">
-					  <p class="para1">Let's understand your Short term investing needs better, with this Survey</p>
-							<form onSubmit ={this.handleSubmit} className="form-container2 center black">
+			<div className="survey-div">
+					<h3 className="survey-header">
+						Survey Form
+					</h3>
+					<form className="survey-form-container">
+						<div className="input-div">
+								<label htmlFor="email" className="label">Email<span className="red f3">*</span></label>
+								<input
+								className="inputform"
+								placeholder="Email Id"
+								name="email"
+								type="email"
+								value={this.state.phone}
+								handleChange={this.handleChange}
+								required
+								/>
+						</div>
+						<div className="input-div">
 								<label htmlFor="name" className="label">Full Name<span className="red f3">*</span></label>
 								<input
 								className="inputform"
@@ -57,7 +70,9 @@ class SurveyForm extends React.PureComponent {
 								value={this.state.name}
 								handleChange={this.handleChange}
 								required
-								/><br/>
+								/>
+						</div>
+						<div className="input-div">
 								<label htmlFor="age" className="label">Age<span className="red f3">*</span></label>
 								<input
 								className="inputform"
@@ -68,9 +83,10 @@ class SurveyForm extends React.PureComponent {
 								handleChange={this.handleChange}
 								required
 								/>
-								<div className="mt3 mb3">
-									<label htmlFor="gender" className="label">Gender<span className="red f3">*</span></label>
-									<br/><input
+						</div>
+						<div className="input-div">
+									<label htmlFor="gender" className="label">Gender<span className="red f3">*</span></label><br/>
+									<input
 									type="radio"
 									id="male"
 									name="gender"
@@ -91,8 +107,34 @@ class SurveyForm extends React.PureComponent {
 									for="female" className="label">
 									Female
 									</label>
-								</div>
-
+									<br/>
+									<input
+									type="radio"
+									id="transgender"
+									name="gender"
+									value="transgender"
+									handleChange={this.handleChange}
+									required
+									/>
+									<label
+									for="transgender" className="label">
+									Transgender
+									</label>
+									<br/>
+									<input
+									type="radio"
+									id="not_to_say"
+									name="gender"
+									value="not_to_say"
+									handleChange={this.handleChange}
+									required
+									/>
+									<label
+									for="not_to_say" className="label">
+									Prefer Not to Say
+									</label>
+						</div>
+						<div className="input-div">
 								<label htmlFor="phone" className="label">Phone Number<span className="red f3">*</span></label>
 								<input
 								className="inputform"
@@ -103,26 +145,19 @@ class SurveyForm extends React.PureComponent {
 								handleChange={this.handleChange}
 								required
 								/>
-								<label htmlFor="email" className="label">Email<span className="red f3">*</span></label>
-								<input
-								className="inputform"
-								placeholder="Email Id"
-								name="email"
-								type="email"
-								value={this.state.phone}
-								handleChange={this.handleChange}
-								required
-								/>
+						</div>
+						<div className="input-div">
 								<label for="edu" handleChange={this.handleChange}  value={this.state.phone} className="label">
 								Education<span className="red f3">*</span></label>
-									<select className="select-boom" id="edu" name="edu">
-										<option value=" ">Please select one option</option>
-										<option value="1">HSC</option>
-										<option value="2">SSC</option>
-										<option value="3">Graduation</option>
-										<option value="4">Masters</option>
-									</select>
-								<br/>
+								<select className="select-boom" id="edu" name="edu">
+									<option value=" ">Please select one option</option>
+									<option value="1">HSC</option>
+									<option value="2">SSC</option>
+									<option value="3">Graduation</option>
+									<option value="4">Masters</option>
+								</select>
+						</div>
+						<div className="input-div">
 								<label htmlFor="occupation" className="label">Occupation<span className="red f3">*</span></label>
 								<input
 								name="occupation"
@@ -133,6 +168,8 @@ class SurveyForm extends React.PureComponent {
 								handleChange={this.handleChange}
 								required
 								/>
+						</div>
+						<div className="input-div">
 								<label htmlFor="location" className="label">Location<span className="red f3">*</span></label>
 								<input
 								name="location"
@@ -143,9 +180,9 @@ class SurveyForm extends React.PureComponent {
 								handleChange={this.handleChange}
 								required
 								/>
-
-							<div className="mt3 mb3">
-								<label htmlFor="invest" className="label">Do you invest for short term (1 year) ?<span className="red f3">*</span></label><br/>
+						</div>
+						<div className="input-div">
+								<label htmlFor="invest" className="label">Do you prefer investing for short term (1 year) ?<span className="red f3">*</span></label><br/>
 								<input type="radio" id="yes" name="invest" value="Yes"  value={this.state.name}
 								handleChange={this.handleChange} required/>
 								<label for="yes">Yes</label><br/>
@@ -156,20 +193,73 @@ class SurveyForm extends React.PureComponent {
 
 								<input type="radio" id="female" name="invest" value="Idk"  value={this.state.name}
 								handleChange={this.handleChange} required/>
-								<label for="female">I would like to</label>
+								<label for="female">Maybe</label>
+						</div>
+						<div className="input-div">
+								<label htmlFor="invest" className="label">Monthly Income ?<span className="red f3">*</span></label><br/>
+								<input type="radio" id="less" name="invest" value=""
+								handleChange={this.handleChange} required/>
+								<label for="less">Less than 20,000</label><br/>
+
+								<input type="radio" id="20-50" name="invest" value=""
+								handleChange={this.handleChange} required/>
+								<label for="20-50">20,000-50,000</label><br/>
+
+								<input type="radio" id="50-75" name="invest" value=""
+								handleChange={this.handleChange} required/>
+								<label for="50-75">50,000-75,000</label><br/>
+
+								<input type="radio" id="more" name="invest" value=""
+								handleChange={this.handleChange} required/>
+								<label for="more">More than 75,000</label><br/>
+						</div>
+						<div className="input-div">
+								<label htmlFor="invest" className="label">Monthly Savings ?<span className="red f3">*</span></label><br/>
+								<input type="radio" id="less_save" name="invest" value=""
+								handleChange={this.handleChange} required/>
+								<label for="less_save">Less than 5,000</label><br/>
+
+								<input type="radio" id="5-15" name="invest" value=""
+								handleChange={this.handleChange} required/>
+								<label for="5-15">5,000-15,000</label><br/>
+
+								<input type="radio" id="more_save" name="invest" value=""
+								handleChange={this.handleChange} required/>
+								<label for="more_save">More than 15,000</label><br/>
+
+								<input type="radio" id="no_save" name="invest" value=""
+								handleChange={this.handleChange} required/>
+								<label for="no_save">No savings at all</label><br/>
+						</div>
+					</form>
+			</div>
+		)
+	}
+}
+
+export default SurveyForm;
+
+{/*<form onSubmit ={this.handleSubmit} className="form-container2  black">
+								
+								
+								<div className="mt3 mb3">
+									
+									
+								</div>
+
+								
+								
+								
+								<br/>
+								
+								
+
+							<div className="mt3 mb3">
+								
 							</div>
 
 							<div className="mt3 mb3">
-								<label htmlFor="savepermonth" className="label">How much do you save per month?<span className="red f3">*</span></label>
-								<input
-								className="inputform"
-								name="savepermonth"
-								placeholder="₹"
-								type="text"
-								value={this.state.name}
-								handleChange={this.handleChange}
-								required
-								/><br/>
+								
 								<label htmlFor="aimtosave" className="label">How much do you aim at saving per month?<span className="red f3">*</span></label>
 								<input
 								name="aimtosave"
@@ -309,11 +399,4 @@ class SurveyForm extends React.PureComponent {
 							<div className="center">
 								<CustomButton onClick={this.handleForm}>Submit</CustomButton>
 							</div>
-							</form>
-		        </div>
-					</div>
-		)
-	}
-}
-
-export default SurveyForm;
+							</form>*/}

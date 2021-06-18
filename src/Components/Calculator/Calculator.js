@@ -92,11 +92,11 @@ const Calculator =()=>
                 </form>
                 <h2>Pay only</h2>
                   <div className="result-grid">
-                    <div className="tc ph3" style={{borderRight:'1.5px solid green'}}>
+                    <div className="tc ph3" style={{borderRight:'1.5px solid #0075ff'}}>
                        <h3>Yearly</h3>
                        <p>{total1}</p>
                     </div>
-                    <div className="tc ph3" style={{borderRight:'1.5px solid green'}}>
+                    <div className="tc ph3" style={{borderRight:'1.5px solid #0075ff'}}>
                        <h3>Monthly</h3>
                        <p>{total2}</p>
                     </div>

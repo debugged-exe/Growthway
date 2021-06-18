@@ -7,17 +7,22 @@ import OurServices from "../../Components/OurServices/OurServices";
 import OurClients from '../../Components/OurClients/OurClients';
 import TaglineCarousel from '../../Components/TaglineCarousel/TaglineCarousel.jsx';
 import Footer from "../../Components/Footer/Footer";
+import Services from '../../Components/Aboutus/Services';
+import LandingPage from '../../Components/Aboutus/LandingPage';
+import Blogs from '../../Components/Blogs/Blogs';
 
 const HomePage = () => {
 	return (
 		<div>
 			<Header/>
 			<TaglineCarousel/>
-			<Pricing/>
+			<LandingPage />
+			<Services />
 			<CallBack/>
-      		<Calculator/>
-			<OurServices />
 			<OurClients />
+			<OurServices />
+			<Calculator/>
+			<Blogs />
 		</div>
 	)
 }
