@@ -4,6 +4,7 @@ import 'tachyons';
 
 const Calculator =()=>
 {
+   const [show, setShow] = useState(false);
    const [number1, setNumber1] = useState();
    const [number2, setNumber2] = useState();
    const [total, setTotal] = useState();
@@ -33,9 +34,19 @@ const Calculator =()=>
      }
 
     return (
-       <div className="flex flex-column justify-center items-center">
+      <div>
+      <div className="claculator-box">
+         <p className="calc-head fw6" style={{fontSize:'35px'}}>Get to check your profit now!!</p>
+         <div className="button-div">
+           <button onClick={()=>setShow(true)} className=" fw6 bg-white black pa3 ph4 f4 grow pointer" style={{borderRadius:'8px',border:'none'}}>
+           Calculator
+           </button>
+        </div>
+       </div>
+
+       <div className={`${show==true?'show':'hide'}`}>
          <div className="profit-div shadow-2 tc ma5">
-            <h2>Profit <span style={{color:'green'}}>Calculator</span></h2>
+            <h2>Profit <span style={{color:'blue'}}>Calculator</span></h2>
             <p className="calc-def">You must know the calculation before investing in any plan, so you never make mistakes. Check the calculation and you will get as our calculator says.</p>
               <form className="form-calc pa2 flex flex-column justify-center align-items" onSubmit ={e=>handleSubmit(e.preventDefault())}>
                 <div className="calc-1">
@@ -97,36 +108,10 @@ const Calculator =()=>
                   </div>
           </div>
        </div>
+
+
+      </div>
     );
   }
 
 export default Calculator;
-
-
-// <label className="f4">Per Year</label>
-// <input
-// className="inputfield"
-// placeholder="pay only ₹/yr"
-// name="Yearly"
-// type="number"
-// value={total1}
-// disabled={true}
-// />
-// <label className="f4">Per Month</label>
-// <input
-// className="inputfield"
-// placeholder="pay only ₹/mo"
-// name="monthly"
-// type="number"
-// value={total2}
-// disabled={true}
-// />
-// <label className="f4 ">Per Quater</label>
-// <input
-// className="inputfield"
-// placeholder="pay only ₹/quater"
-// name="quater"
-// type="number"
-// value={total3}
-// disabled={true}
-// />

@@ -6,7 +6,7 @@ import { Taglines } from './Taglines';
 
 const TaglineComponent = ({quote,author}) => {
     return(
-        <div className="tagline-component flex flex-column justify-center ma5">
+        <div className="grow tagline-component flex flex-column justify-center ma4">
             <FaQuoteLeft/>
             <p className="i f4">{quote}</p>
             <FaQuoteRight/>
@@ -19,16 +19,16 @@ const TaglineComponent = ({quote,author}) => {
 const TaglineCarousel = () => {
     const breakPoints = [
         { width: 1, itemsToShow: 1 },
-        { width: 550, itemsToShow: 2 },
-        { width: 850, itemsToShow: 2 },
+        { width: 550, itemsToShow: 1 },
+        { width: 850, itemsToShow: 1 },
         { width: 1150, itemsToShow: 3 },
         { width: 1450, itemsToShow: 3 },
         { width: 1750, itemsToShow: 3 },
     ]
 
     return(
-        <div className=" flex justify-center items-center" style={{marginLeft:"20%"}}>
-            <Carousel breakPoints={breakPoints}>
+        <div className=" flex justify-center items-center tagline-carousel-container">
+            <Carousel breakPoints={breakPoints} showArrows={false}>
                 {
                     Taglines.map((item)=>{
                         return(
