@@ -307,9 +307,6 @@ class SurveyForm extends React.PureComponent {
 								handleChange={this.handleChange} required/>
 								<label for="better_return">Looking for better options</label><br/>
 						</div>
-						<div className="input-div">
-							
-						</div>
 						<div className="input-div">	
 								<label htmlFor="risk" className="label">Do you like taking risks on your Investments?<span className="red f3">*</span></label><br/>
 								<input type="radio" id="yes_risk" name="risk" value="Yes"
