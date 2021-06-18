@@ -56,7 +56,7 @@ function Faqs () {
 
 
   return (
-    <div className="white bg-dark-gray">
+    <div style={{background: 'rgba(236, 243, 255)'}}>
      <p className="tc pa3 f1 fw6">Faq's</p>
       <div className="faqs">
         {faqs.map((faq, i) => (
