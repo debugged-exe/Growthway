@@ -1,0 +1,231 @@
+.footer-section{
+  background-color: black;
+  color: white;
+}
+.footer-container{
+
+}
+.footer-responsive-grid{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.footer-col-1{
+
+}
+.footer-col-2{
+
+}
+.footer-col-3{
+
+}
+.footer-col-4{
+
+}
+.footer-about-list-item-link-1{
+  position: relative;
+}
+.footer-about-list-item-link-1:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.footer-about-list-item-link-1:hover:before{
+  visibility: visible;
+  width: 45px;
+}
+.footer-about-list-item-link-2{
+  position: relative;
+}
+.footer-about-list-item-link-2:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.footer-about-list-item-link-2:hover:before{
+  visibility: visible;
+  width: 40px;
+}
+.footer-about-list-item-link-3{
+  position: relative;
+}
+.footer-about-list-item-link-3:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.footer-about-list-item-link-3:hover:before{
+  visibility: visible;
+  width: 62px;
+}
+.footer-about-list-item-link-4{
+  position: relative;
+}
+.footer-about-list-item-link-4:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.footer-about-list-item-link-4:hover:before{
+  visibility: visible;
+  width: 50px;
+}
+.footer-about-list-item-link-5{
+  position: relative;
+}
+.footer-about-list-item-link-5:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.footer-about-list-item-link-5:hover:before{
+  visibility: visible;
+  width: 60px;
+}
+.footer-contact-email{
+  position: relative;
+}
+.footer-contact-email:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.footer-contact-email:hover:before{
+  visibility: visible;
+  width: 95%;
+}
+.footer-contact-phone{
+  position: relative;
+}
+.footer-contact-phone:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.footer-contact-phone:hover:before{
+  visibility: visible;
+  width: 95%;
+}
+.footer-instagram-row{
+  display: grid;
+  grid-template-columns: 33.3% 33.4% 33.3%;
+}
+.footer-links-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.footer-links-bottom-link-container-link-item-1{
+  position: relative;
+}
+.footer-links-bottom-link-container-link-item-1:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.footer-links-bottom-link-container-link-item-1:hover:before{
+  visibility: visible;
+  width: 65%;
+}
+.footer-links-bottom-link-container-link-item-2{
+  position: relative;
+}
+.footer-links-bottom-link-container-link-item-2:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.footer-links-bottom-link-container-link-item-2:hover:before{
+  visibility: visible;
+  width: 68%;
+}
+.footer-links-bottom-link-container-link-item-3{
+  position: relative;
+}
+.footer-links-bottom-link-container-link-item-3:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.footer-links-bottom-link-container-link-item-3:hover:before{
+  visibility: visible;
+  width: 68%;
+}
+@media only screen and (max-width: 768px){
+  .footer-responsive-grid{
+    grid-template-columns: 50% 50%;
+  }
+  .footer-links-bottom{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-links-bottom-link-container{
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 500px){
+  .footer-responsive-grid{
+    grid-template-columns: 100% ;
+  }
+}

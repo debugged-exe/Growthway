@@ -6,6 +6,7 @@ import Calculator from '../../Components/Calculator/Calculator.js';
 import OurServices from "../../Components/OurServices/OurServices";
 import OurClients from '../../Components/OurClients/OurClients';
 import TaglineCarousel from '../../Components/TaglineCarousel/TaglineCarousel.jsx';
+import Footer from "../../Components/Footer/Footer";
 
 const HomePage = () => {
 	return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       		<Calculator/>
 			<OurServices />
 			<OurClients />
+			<Footer />
 		</div>
 	)
 }
