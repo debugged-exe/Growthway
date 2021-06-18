@@ -1,14 +1,14 @@
 import React from 'react';
 import './OurServices.scss';
-import wallpaper from "./IMG1.jpg";
+import Wallet from "./wallet.svg";
 import * as BsIcons from "react-icons/bs";
 
 const OurServices = () => {
     return (
         <section className={"section-div"}>
-            <div className={"image-container"}>
+            <div className={"image-container pa5"}>
                 <img
-                    src={wallpaper}
+                    src={Wallet}
                     alt={"not available"}
                     style={{object: "fit cover", width: "100%", height: "100%"}}
                 />

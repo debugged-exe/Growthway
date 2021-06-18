@@ -20,6 +20,7 @@ const NavBar =()=>
           </div>
           <Nav className={`mr-auto Navbar-text-color nav ${visible?' toggle':''}`}>
              <Link className=" links" to='/' ><span className={` f4 ${location.pathname==='/'?'active':''} `} >Home</span></Link>
+              <Link className=" links" to='/services' ><span className={` f4 ${location.pathname==='/services'?'active':''} `} >Services</span></Link>
              <Link className=" links" to='/surveyform' ><span className={` f4 ${location.pathname==='/surveyform'?'active':''} `}   >Survey</span></Link>
              <Link className=" links" to='/about' ><span className={` f4 ${location.pathname==='/about'?'active':''} `} >About Us</span></Link>
               <Link className=" links" to='/workwithus' ><span className={` f4 ${location.pathname==='/workwithus'?'active':''} `} >Work with Us</span></Link>

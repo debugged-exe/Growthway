@@ -3,6 +3,7 @@ import NavBar from './Components/Navbar/Navbar.js';
 import HomePage from './Pages/HomePage/HomePage.js';
 import BlogPage from './Pages/BlogPage/BlogPage.js';
 import AboutPage from './Pages/AboutPage/AboutPage.js';
+import ServicesPage from './Pages/ServicesPage/ServicesPage.js';
 import ReachUsAt from './Components/ReachUsAt/ReachUsAt.js';
 import Work from './Components/WorkTogether/Work.js';
 
@@ -29,6 +30,7 @@ class App extends React.Component {
            <Route exact path="/blog" component={BlogPage} />
 					 <Route exact path='/about' component={AboutPage}/>
            <Route exact path='/workwithus' component={Work}/>
+           <Route exact path='/services' component={ServicesPage}/>
            <Route exact path='/surveyform' component={SurveyForm}/>
          </Switch>
          <ReachUsAt/>

@@ -7,6 +7,7 @@ const Blogs = () => {
 
 	return (
 		<div className="flex flex-column justify-center items-center">
+		 <h1>Latest Blogs</h1>
 			<div className="blog-container">
 			 <Link to="/about">
 			   <div className="item shadow-2">
