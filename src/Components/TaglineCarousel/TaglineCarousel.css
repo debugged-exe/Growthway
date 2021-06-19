@@ -12,3 +12,10 @@
 .tagline-carousel-container{
     margin-top: -13%;
 }
+
+@media only screen and (max-width: 400px)  {
+    
+    .tagline-carousel-container{
+        margin-top: -26%;
+    }
+}

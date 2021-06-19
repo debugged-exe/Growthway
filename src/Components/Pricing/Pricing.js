@@ -12,7 +12,7 @@ const Pricing = () => {
 	const [plan, setPlan] = useState("");
 
 	return (
-    <div>
+    <div className={`${showPayment===true?"bg-dark":"''"}`}>
 		<div className="head-bg1 flex tc flex-column justify-center items-center white b">
 			<p className="ma0 pa0 f1">Our Services</p>
 		</div>
@@ -55,7 +55,11 @@ const Pricing = () => {
 													 <p><TiTick color="blue"/>{plan.subHeading2}</p>
 													 <p><TiTick color="blue"/>{plan.subHeading3}</p>
 													 <p><TiTick color="blue"/>{plan.subHeading4}</p>
-												 <div onClick={()=>setShowPayment(true)}>
+												 <div onClick={()=>
+													{
+														setShowPayment(true);
+														setPlan(plan.planType)
+												 }}>
 														<button className="button mv6"><span>Pay Now!</span></button>
 												 </div>
 											</div>
