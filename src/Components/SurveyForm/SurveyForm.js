@@ -6,11 +6,11 @@ import {BsFillPersonFill} from 'react-icons/bs';
 import 'tachyons';
 
 const initialState = {
+	email: '',
 	name: '',
-	phone: '',
-	query:'',
-  option:'',
-  others:true
+	age: '',
+	gender: '',
+	
 }
 
 class SurveyForm extends React.PureComponent {
