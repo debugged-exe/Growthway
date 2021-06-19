@@ -1,10 +1,16 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Pricing.scss';
 import {Plans} from './Plans.js';
 import {TiTick} from 'react-icons/ti';
 import 'tachyons';
-
+import PaymentForm from '../PaymentForm/PaymentForm';
+import {AiOutlineClose} from 'react-icons/ai';
+ 
 const Pricing = () => {
+
+	const [showPayment, setShowPayment] = useState(false);
+	const [plan, setPlan] = useState("");
+
 	return (
     <div>
 		<div className="head-bg1 flex tc flex-column justify-center items-center white b">
@@ -49,7 +55,7 @@ const Pricing = () => {
 													 <p><TiTick color="blue"/>{plan.subHeading2}</p>
 													 <p><TiTick color="blue"/>{plan.subHeading3}</p>
 													 <p><TiTick color="blue"/>{plan.subHeading4}</p>
-												 <div>
+												 <div onClick={()=>setShowPayment(true)}>
 														<button className="button mv6"><span>Pay Now!</span></button>
 												 </div>
 											</div>
@@ -59,6 +65,12 @@ const Pricing = () => {
 						}
 					</div>
       </div>
+	  <div className={`${showPayment===true?"showPayment":"hidePayment"} bg-payment-div`}>
+		  <div className="flex flex-wrap justify-center items-start"> 
+		  	<PaymentForm plan={plan}/>
+			<span style={{backgroundColor:"tomato",borderRadius:"50%"}} className="pa2 pointer" onClick={() => setShowPayment(false)}><AiOutlineClose size="1.6rem"/></span>
+		  </div>
+	  </div>
 		  <div className="tc">
 			  <p style={{fontSize:'40px',fontWeight:'600'}} className="mb1">Start working together?</p>
 			  <p>You can learn the investment and finance basics by interning with us. Click below to know more.</p>
