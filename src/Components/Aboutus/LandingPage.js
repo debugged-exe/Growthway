@@ -1,5 +1,5 @@
 import React,{Component,useState} from 'react';
-import {BiBug} from 'react-icons/bi';
+import {GiReceiveMoney} from 'react-icons/gi';
 import './LandingPage.scss';
 import 'tachyons';
 
@@ -8,20 +8,17 @@ const LandingPage =()=>
   return(
     <div className="landing-div pa5">
      <div className="left-div">
-       <p style={{fontSize:'45px',fontWeight:'600'}}>Awesome landing <span style={{color:'blue'}}>page design</span></p>
-       <p className="f4">We learn from landing page's best practices and great landing pages in order to create a clear,
-        crisp design that suits all your needs for a responsive landing site.</p>
+       <p style={{fontSize:'45px',fontWeight:'600'}}>What is <span style={{color:'blue'}}>Growthway Investments?</span></p>
+       <p className="f4">Pioneered in 2020, GrowthWay Investments is a budding firm to assist our clients with all the investments and finances, in order to achieve a balance of their best interests. </p>
      </div>
      <div className="flex flex-column">
           <div>
-           <p className="f3 b"><BiBug color="blue"/> Debugged.exe</p>
-           <p>Since its establishment in 2000, Brook Creative has been focusing on project management &
-              implementation through cooperation.</p>
-          </div>
-          <div>
-           <p className="f3 b"><BiBug color="blue"/> Unique designs</p>
-           <p>In total, Brook Creative has created more than 2000 projects related to constructional designing
-              and landscaping industries worldwide.</p>
+           <p className="f3 b"><GiReceiveMoney color="blue" size="1.8rem"/>Services provided</p>
+           <p>•	Investment advisory and management services</p>
+           <p>•	Investment analysis services</p>
+           <p>•	Cryptocurrency investment and exchange services</p>
+           <p>•	Real estate agency and investment services</p>
+           <p>•	Venture capital financing</p>
           </div>
      </div>
   </div>
