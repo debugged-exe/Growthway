@@ -1,7 +1,10 @@
 import React from 'react';
 import './OurServices.scss';
 import Wallet from "./wallet.svg";
-import * as BsIcons from "react-icons/bs";
+import {RiFundsFill} from "react-icons/ri";
+import {GiTakeMyMoney} from "react-icons/gi";
+import {BiBuildingHouse} from "react-icons/bi";
+import {SiBitcoin} from "react-icons/si";
 
 const OurServices = () => {
     return (
@@ -15,69 +18,56 @@ const OurServices = () => {
             </div>
             <div className={"data-container"}>
                 <h1 className={"data-container-heading"}>
-                    Section 1.10.33 of "de Finibus Bonorum et Malorum", written by
-                    Cicero in 45 BC
+                   We at Growthway provide following four main services.
                 </h1>
                 <div className={"data-box-container"}>
                     <div className={"data-row-1"}>
                         <div className={"data-row-1-col-1"}>
                             <div className={'flex justify-between items-center'}>
-                                <BsIcons.BsFillAwardFill size={"3rem"}/>
+                                <GiTakeMyMoney size={"3rem"}/>
                                 <h2 className={'pl1'}>
-                                    1914 translation by H. Rackham
+                                    Financial and Fund investment services
                                 </h2>
                             </div>
                             <div className={'pa'}>
-                                <p style={{paddingLeft: "1.5rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry. Lorem Ipsum has been the industry's standard dummy
-                                    text ever since the 1500s, when an unknown printer took a galley
-                                    of type and scrambled it to make a type specimen book.
+                                <p style={{paddingLeft: "1.5rem"}}>Financial and Fund services cover two broad categories: General Insurance (automotive, home, medical, fire, travel, etc.) and Life Insurance (term-life, money-back, unit-linked, pension plans, etc.)
                                 </p>
                             </div>
 
                         </div>
                         <div className={"data-row-1-col-2"}>
                             <div className={'flex justify-between items-center'}>
-                                <BsIcons.BsFillAwardFill size={"3rem"}/>
+                                <RiFundsFill size={"3rem"}/>
                                 <h2 className={'pl1'}>
-                                    1914 translation by H. Rackham
+                                    Investment advisory and management services
                                 </h2>
                             </div>
                             <div className={'pa'}>
-                                <p style={{paddingLeft: "1.5rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry. Lorem Ipsum has been the industry's standard dummy
-                                    text ever since the 1500s, when an unknown printer took a galley
-                                    of type and scrambled it to make a type specimen book.
+                                <p style={{paddingLeft: "1.5rem"}}>Investment advisory and management provides a holistic solution in aspects of wealth management, budgeting, savings etc.
                                 </p>
                             </div>
                         </div>
                         <div className={"data-row-2-col-1"}>
                             <div className={'flex justify-between items-center'}>
-                                <BsIcons.BsFillAwardFill size={"3rem"}/>
+                                <SiBitcoin size={"3rem"}/>
                                 <h2>
-                                    1914 translation by H. Rackham
+                                    Cryptocurrency investment and exchange services
                                 </h2>
                             </div>
                             <div className={'pa'}>
-                                <p style={{paddingLeft: "1.5rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry. Lorem Ipsum has been the industry's standard dummy
-                                    text ever since the 1500s, when an unknown printer took a galley
-                                    of type and scrambled it to make a type specimen book.
+                                <p style={{paddingLeft: "1.5rem"}}>Cryptocurrencies are decentralized networks based on blockchain technology. It presents major strides in economic growth and freedom under economic sanctions.
                                 </p>
                             </div>
                         </div>
                         <div className={"data-row-2-col-2"}>
                             <div className={'flex justify-between items-center'}>
-                                <BsIcons.BsFillAwardFill size={"3rem"}/>
+                                <BiBuildingHouse size={"3rem"}/>
                                 <h2>
-                                    1914 translation by H. Rackham
+                                    Real estate agency and investment services
                                 </h2>
                             </div>
                             <div className={'pa'}>
-                                <p style={{paddingLeft: "1.5rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry. Lorem Ipsum has been the industry's standard dummy
-                                    text ever since the 1500s, when an unknown printer took a galley
-                                    of type and scrambled it to make a type specimen book.
+                                <p style={{paddingLeft: "1.5rem"}}>Investment in real estate is one of the hot topic in India. This industry is the second biggest employer after agriculture. It involves four sub-areas- housing, commercial, retail and hospitality.
                                 </p>
                             </div>
                         </div>

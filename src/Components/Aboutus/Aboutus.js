@@ -4,7 +4,6 @@ import './Aboutus.scss';
 import 'tachyons';
 
 // components
-import img from './aboutimage.jpg';
 import {BiUserCircle} from 'react-icons/bi';
 import {GiReceiveMoney} from 'react-icons/gi';
 import {FaHandHoldingUsd} from 'react-icons/fa';

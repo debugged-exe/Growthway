@@ -9,7 +9,7 @@ import './BlogPage.scss';
 
 const BlogPage = () => {
 	return (
-		<div className="blog-page">
+		<div className="blog-page" id="#blog">
 			<BlogDisplay/>
 		</div>
 	)

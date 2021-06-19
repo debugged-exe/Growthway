@@ -261,7 +261,7 @@ class SurveyForm extends React.PureComponent {
 								handleChange={this.handleChange} required/>
 								<label for="none">None</label>
 						</div>
-						<div className="input-div">	
+						<div className="input-div">
 								<label htmlFor="invest" className="label">What makes you trust a financial institution with your money?<span className="red f3">*</span></label><br/>
 								<input type="radio" id="peers" name="trust" value=""
 								handleChange={this.handleChange} required/>
@@ -279,7 +279,7 @@ class SurveyForm extends React.PureComponent {
 								handleChange={this.handleChange} required/>
 								<label for="dontknow">Don't know</label>
 						</div>
-						<div className="input-div">	
+						<div className="input-div">
 								<label htmlFor="delay" className="label">
 										Have you ever experienced any delays/deductions/hidden charges on maturity amounts of your investment?
 								<span className="red f3">*</span></label><br/>
@@ -291,7 +291,7 @@ class SurveyForm extends React.PureComponent {
 								handleChange={this.handleChange} required/>
 								<label for="no_delay">No</label><br/>
 						</div>
-						<div className="input-div">	
+						<div className="input-div">
 								<label htmlFor="return" className="label">
 										Are you satisfied with the rate of return you are currently being offered?
 								<span className="red f3">*</span></label><br/>
@@ -307,7 +307,7 @@ class SurveyForm extends React.PureComponent {
 								handleChange={this.handleChange} required/>
 								<label for="better_return">Looking for better options</label><br/>
 						</div>
-						<div className="input-div">	
+						<div className="input-div">
 								<label htmlFor="risk" className="label">Do you like taking risks on your Investments?<span className="red f3">*</span></label><br/>
 								<input type="radio" id="yes_risk" name="risk" value="Yes"
 								handleChange={this.handleChange} required/>
@@ -394,45 +394,45 @@ class SurveyForm extends React.PureComponent {
 export default SurveyForm;
 
 {/*<form onSubmit ={this.handleSubmit} className="form-container2  black">
-								
-								
+
+
 								<div className="mt3 mb3">
-									
-									
+
+
 								</div>
 
-								
-								
-								
+
+
+
 								<br/>
-								
-								
+
+
 
 							<div className="mt3 mb3">
-								
+
 							</div>
 
 							<div className="mt3 mb3">
-								
-								
+
+
 							</div>
 
-							
+
 
 								<div className="mt3 mb3">
-									
+
 								</div>
 
 								<div className="mt3 mb3">
-									
+
 								</div>
 
 								<div className="mt3 mb3">
-									
+
 								</div>
 
 								<div className="mt3 mb3">
-									
+
 								</div>
 
 								<div className="mt3 mb3">
@@ -448,15 +448,15 @@ export default SurveyForm;
 								</div>
 
 								<div className="mt3 mb3">
-							
+
 								</div>
 
-									
 
-							
+
+
 
 							<div className="mt3 mb3">
-								
+
 							</div>
-							
+
 							</form>*/}
