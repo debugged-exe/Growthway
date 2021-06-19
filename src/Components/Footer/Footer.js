@@ -17,9 +17,7 @@ const Footer = () => {
                     <div className={'footer-col-1 pl0-ns pl4'}>
                         <h1>Growthway</h1>
                         <p style={{lineHeight: "1.5"}}>
-                            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                            demonstrate the visual form of a document or a typeface without relying on meaningful
-                            content.
+                        Pioneered in 2020, GrowthWay Investments is a budding firm to assist our clients with all the investments and finances, in order to achieve a balance of their best interests.
                         </p>
                     </div>
                     <div className={'footer-col-2'}>
@@ -84,10 +82,10 @@ const Footer = () => {
                     <Link className={'footer-links-bottom-link-container-link-item-3 pb2'}>Contact Us</Link>
                 </div>
                 <div className={'tr-l tc'}>
-                    @2020 GrowthWay.<span className={'hover-dark-blue'}>All Rights Reserved</span>
+                    @2020 GrowthWay Investments. <span className={'hover-dark-blue'}>All Rights Reserved</span>
                 </div>
             </footer>
-            <footer className={'flex justify-center items-center pt2-ns pt1 pb2-ns pb1 bg-white black'}>
+            <footer className={'flex justify-center items-center pt2-ns pt1 pb2-ns pb1 bg-black white'}>
                 © DEVELOPED BY DEBUGGED.EXE
             </footer>
         </section>

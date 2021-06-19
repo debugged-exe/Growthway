@@ -14,8 +14,8 @@ const Pricing = () => {
     <div className="main-container" style={{lineHeight:'1.5'}}>
       <div className="features-div">
 			   <div className="sub-div">
-				   <h1>Are you willing to do that? </h1>
-					 <p>Your risk is only limited to trusting us. We will take care of the rest.</p>
+				   <h1>Are you wondering about the risks in investment? </h1>
+					 <p>Well, your risk is only limited to trusting us. We will take care of the rest. Explained below are our precious gems which will provide you excellent rates of interest on your investments. Not to mention are the benefits and features alongside.</p>
 				 </div>
 			   <div className="sub-div">
 				   <h3 style={{color:'blue'}}>Features</h3>
@@ -60,7 +60,8 @@ const Pricing = () => {
 					</div>
       </div>
 		  <div className="tc">
-			  <p style={{fontSize:'40px',fontWeight:'600'}}>Start working together?</p>
+			  <p style={{fontSize:'40px',fontWeight:'600'}} className="mb1">Start working together?</p>
+			  <p>You can learn the investment and finance basics by interning with us. Click below to know more.</p>
 				<button className="mb4 fw6 white pa3 ph4 f5 grow pointer" style={{borderRadius:'8px',border:'none',backgroundColor:'blue'}}>Find Out More</button>
 			</div>
 		</div>

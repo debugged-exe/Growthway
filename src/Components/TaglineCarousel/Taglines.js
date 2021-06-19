@@ -1,18 +1,18 @@
 export const Taglines=[
     {
-      quote:"Great service thats on time per agreed upon schedule.The communication staff and the service technicians are always willing to work around the customer's schedule.Hats off to them! ",
-      author:"Shabbir Kachwala"
+      quote:"An investment in knowledge pays the best interest.",
+      author:"Benjamin Franklin"
     },
     {
-      quote:"I can recommend debugged.exe team with confidence as I belive them to be specialists that offer a quick turnaround and high quality of service at an affordable price.",
-      author:"Harshika Mishra"
+      quote:"Bottoms in the investment world don't end with four-year lows; they end with 10- or 15-year lows.",
+      author:"Jim Rogers"
     },
     {
-      quote:"I can recommend debugged.exe team with confidence as I belive them to be specialists that offer a quick turnaround and high quality of service at an affordable price. ",
-      author:"Tejas Machkar"
+      quote:"Don't look for the needle in the haystack. Just buy the haystack!",
+      author:"John Bogle"
   
     },
     {
-      quote:"Great service thats on time per agreed upon schedule.The communication staff and the service technicians are always willing to work around the customer's schedule.Hats off to them! ",
-      author:"Sumedh Ovhal"
+      quote:"I don't look to jump over seven-foot bars; I look around for one-foot bars that I can step over.",
+      author:"Warren Buffett"
     }];
