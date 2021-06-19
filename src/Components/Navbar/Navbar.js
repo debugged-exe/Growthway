@@ -13,6 +13,7 @@ const NavBar =()=>
 
 
   const location = useLocation();
+  console.log(location);
     return (
       <Navbar style={{overflow:'hidden'}} fixed="top" variant="dark" className="Navbar-color" expand="lg">
           <div className="white show-ham" onClick={()=>{setVisible(!visible)}} >
@@ -24,7 +25,7 @@ const NavBar =()=>
              <Link className=" links" to='/surveyform' ><span className={` f4 ${location.pathname==='/surveyform'?'active':''} `}   >Survey</span></Link>
              <Link className=" links" to='/about' ><span className={` f4 ${location.pathname==='/about'?'active':''} `} >About Us</span></Link>
               <Link className=" links" to='/workwithus' ><span className={` f4 ${location.pathname==='/workwithus'?'active':''} `} >Work with Us</span></Link>
-             <Link className=" links" to='/blog' ><span className={` f4 ${location.pathname==='/blog'?'active':''} `} >Blogs</span></Link>
+             <Link className=" links" to='/blog/#blog' ><span className={` f4 ${location.pathname==='/blog/' && location.hash==='#blog'?'active':''} `} >Blogs</span></Link>
           </Nav>
 
       </Navbar>

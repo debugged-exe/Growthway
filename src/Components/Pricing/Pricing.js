@@ -7,10 +7,10 @@ import 'tachyons';
 const Pricing = () => {
 	return (
     <div className="main-container" style={{lineHeight:'1.5'}}>
-		  <div className="background-div" >
-			  <p style={{fontSize:'50px',fontWeight:'600'}}>Our Services</p>
-			</div>
-
+		<div className="head-bg1 flex tc flex-column justify-center items-center white b">
+			<p className="ma0 pa0 f1">Growthway Investments</p>
+			<p className="ma0 pa0 f4">Since, 2020</p>
+		</div>
 
       <div className="features-div">
 			   <div className="sub-div">
