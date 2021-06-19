@@ -10,7 +10,7 @@ import calling_bg from './calling_img.svg';
 
 const initialState = {
 	name: '',
-	phone: '',
+	phoneno: '',
 	query: '',
 	show: false
 }
@@ -28,21 +28,39 @@ class CallBack extends React.PureComponent {
 	showfunction = (e) => {
 		this.setState({ show: e }, () => console.log(this.state.show));
 	}
-	handleForm = (event) => {
-		event.preventDefault();
-		this.showfunction(true);
-
-	}
+	handleForm = () =>{
+	fetch('http://localhost:3000/', {
+			method: 'post',
+			headers: {'Content-Type': 'application/json'},
+			body: JSON.stringify({
+				name: this.state.name,
+				phoneno: this.state.phoneno,
+				query: this.state.query
+		})
+	})
+	.then(response => response.json())
+	.then(resp => {
+		if(resp==='Success')
+		{
+		alert('Your message was recieved successfully.Thank you for your feedback.')
+		}
+	})
+	.catch(err => {
+		console.log(err)
+		alert('OOPS....something went wrong.Please try again.')
+	})
+	this.setState({name: '', phoneno: '', query: '',show:true});
+}
 
 	handleChange = (event) => {
 		const { value, name } = event.target;
 		this.setState({ [name]: value });
+		console.log(this.state.name,this.state.phoneno);
 	}
 
 	render() {
 		return (
-			<div className="callback-container " style={{ overflow: 'hidden' }}>
-
+			<div  className="callback-container " style={{ overflow: 'hidden' }}>
 				<div className="grid-design white" style={{ marginLeft: '6%' }}>
 					<img src={calling_bg} alt=""/>
 				</div>
@@ -63,9 +81,10 @@ class CallBack extends React.PureComponent {
 								/>
 								<FormInput
 									label="Phone no."
-									name="phone"
-									type="text"
-									value={this.state.phone}
+									name="phoneno"
+									type="tel"
+									pattern="[0-9]{10}"
+									value={this.state.phoneno}
 									handleChange={this.handleChange}
 									required
 								/>
@@ -78,7 +97,7 @@ class CallBack extends React.PureComponent {
 									required
 								/>
 
-								<CustomButton style={{backgroundColor:'blue',border:'1px solid blue'}} type='submit'>Submit</CustomButton>
+								<CustomButton  style={{backgroundColor:'blue',border:'1px solid blue'}} type='submit'>Submit</CustomButton>
 							</form>
 							<div className={` ${this.state.show === true ? 'alert' : 'hidden'}`} >
 								<span onClick={() => this.showfunction(false)} className={`${this.state.show === true ? 'closebtn' : ' hidden'}`}><AiOutlineClose /></span>

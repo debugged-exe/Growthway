@@ -24,7 +24,7 @@ class App extends React.Component {
         return (
             <div style={{overflow: 'hidden'}}>
 
-                <Router basename="/">
+                <Router>
                     <NavBar/>
                     <Switch>
                         <Route exact path='/' component={HomePage}/>
