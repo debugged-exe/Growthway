@@ -63,7 +63,7 @@ class SurveyForm extends React.PureComponent {
 		} = this.state;
 
 		event.preventDefault();
-		fetch('http://localhost:3000/surveyform', {
+		fetch('https://stormy-escarpment-39477.herokuapp.com/surveyform', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
