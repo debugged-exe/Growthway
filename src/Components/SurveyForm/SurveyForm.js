@@ -20,7 +20,7 @@ const initialState = {
 	invest: [],
 	trust: '',
 	delay: '',
-	return: '',
+	return3: '',
 	risk: '',
 	shortterm: '',
 	shorttermplan: '',
@@ -38,7 +38,69 @@ class SurveyForm extends React.PureComponent {
 	handleSubmit = (event) =>
 	{
 		console.log(this.state);
+		const {
+			name,
+			email,
+			age,
+			gender,
+			phone,
+			education,
+			occupation,
+			location,
+			income,
+			savings,
+			short_term_invest,
+			invest,
+			trust,
+			delay,
+			return3,
+			risk,
+			shortterm,
+			shorttermplan,
+			view_365,
+			know,
+			communication
+		} = this.state;
+
 		event.preventDefault();
+		fetch('http://localhost:3000/surveyform', {
+			method: 'post',
+			headers: {'Content-Type': 'application/json'},
+			body: JSON.stringify({
+				name: name,
+				email: email,
+				age: age,
+				gender: gender,
+				phone: phone,
+				education: education,
+				occupation: occupation,
+				location: location,
+				income: income,
+				savings: savings,
+				short_term_invest: short_term_invest,
+				invest: invest,
+				trust: trust,
+				delay: delay,
+				return: return3,
+				risk: risk,
+				shortterm: shortterm,
+				shorttermplan: shorttermplan,
+				view_365: view_365,
+				know: know,
+				communication: communication
+			})
+		})
+		.then(response => response.json())
+		.then(resp => {
+			if(resp==='Success')
+			{
+				alert('Insert success message here');
+			}
+		})
+		.catch(err => {
+			console.log(err);
+			alert('OOPS....something went wrong.Please try again.');
+		})
 	}
 
   enable = (e) =>{
@@ -325,15 +387,15 @@ class SurveyForm extends React.PureComponent {
 								<label htmlFor="return" className="label">
 										Are you satisfied with the rate of return you are currently being offered?
 								<span className="red f3">*</span></label><br/>
-								<input type="radio" id="yes_return" name="return" value="Yes"
+								<input type="radio" id="yes_return" name="return3" value="Yes"
 								onChange={this.handleChange} required/>
 								<label for="yes_return">Yes</label><br/>
 
-								<input type="radio" id="no_return" name="return" value="No"
+								<input type="radio" id="no_return" name="return3" value="No"
 								onChange={this.handleChange} required/>
 								<label for="no_return">No</label><br/>
 
-								<input type="radio" id="better_return" name="return" value="lookinForBetter"
+								<input type="radio" id="better_return" name="return3" value="lookinForBetter"
 								onChange={this.handleChange} required/>
 								<label for="better_return">Looking for better options</label><br/>
 						</div>

@@ -67,7 +67,7 @@ $main-color:gray;
 	cursor: pointer;
 	height:7.5vh;
 	border: none;
-	border-bottom: 2px solid #b3e5b4;
+	border-bottom: 1.5px solid #0075ff;
 	margin:3%;
 	transition: all 0.3s ease-out;
 
@@ -84,7 +84,7 @@ $main-color:gray;
 		width: 50%;
 		height:5%;
 		border: none;
-		border-bottom: 2px solid #b3e5b4;
+		border-bottom: 1.5px solid #0075ff;
 		margin:3%;
 		transition: all 0.3s ease-in;
 
@@ -130,11 +130,17 @@ input[type="radio"], input[type="checkbox"]
 		width: 90vw;
 	}
 
-	.inputform
+	.input-div
 	{
 		width: 95%;
 		padding: 4%;
-		margin: 2% 0% 2% 0%;
+		margin: 3% 0% 3% 0%;
+	}
+
+	input[type="radio"], input[type="checkbox"]
+	{
+		margin:5%;
+		transform: scale(1.5);
 	}
 
 	.form-card{
@@ -151,10 +157,10 @@ input[type="radio"], input[type="checkbox"]
 
 @media only screen and (max-width: 321px) {
 	.survey-form-container{
-		width: 95vw;
+		width: 90vw;
 	}
 
-	.inputform
+	.input-div
 	{
 		width: 100%;
 	}
