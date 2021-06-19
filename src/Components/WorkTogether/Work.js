@@ -40,8 +40,8 @@ class Work extends React.PureComponent {
 			<div>
 			 <div className="tc" style={{lineHeight:'1.5'}}>
 			   <h1>Work with us</h1>
-				 <p className="f4 ph6-ns ph2">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
-				  or a typeface without relying on meaningful content.</p>
+				 <p className="f4 ph6-ns ph2">Are you interested in learning investment and finance basics?
+				  Join us as an intern to gain experience in financial and investment advising.</p>
 			 </div>
 			<div className="work-div">
 			  <div><img src={Image}/></div>

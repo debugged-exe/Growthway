@@ -14,27 +14,24 @@ const Pricing = () => {
     <div className="main-container" style={{lineHeight:'1.5'}}>
       <div className="features-div">
 			   <div className="sub-div">
-				   <h1>Choose your plan</h1>
-					 <p>If you are unsure which pricing plan to choose, then register
-					    for a 14-day free trial to start building your business.</p>
+				   <h1>Are you willing to do that? </h1>
+					 <p>Your risk is only limited to trusting us. We will take care of the rest.</p>
 				 </div>
 			   <div className="sub-div">
 				   <h3 style={{color:'blue'}}>Features</h3>
-					   <p><TiTick color="blue"/> Business Architecture</p>
-						 <p><TiTick color="blue"/> Cognitive Architecture</p>
-						 <p><TiTick color="blue"/> Interior Architecture</p>
-						 <p><TiTick color="blue"/> Landscape Architecture</p>
-             <p><TiTick color="blue"/> UI/UX designs</p>
-						 <p><TiTick color="blue"/> SEO marketing</p>
+					   <p><TiTick color="blue"/>	High rate of interest</p>
+						 <p><TiTick color="blue"/>	Guaranteed returns</p>
+						 <p><TiTick color="blue"/>  Zero risk</p>
+						 <p><TiTick color="blue"/> 	Clear and precise documentation in order to avoid any fraudulent</p>
 				 </div>
 				 <div className="sub-div">
 						 <h3 style={{color:'blue'}}>Benefits</h3>
-							<p><TiTick color="blue"/> Business Architecture</p>
-							<p><TiTick color="blue"/> Cognitive Architecture</p>
-							<p><TiTick color="blue"/> Interior Architecture</p>
-							<p><TiTick color="blue"/> Landscape Architecture</p>
-						  <p><TiTick color="blue"/> UI/UX designs</p>
-							<p><TiTick color="blue"/> SEO marketing</p>
+							<p><TiTick color="blue"/> Free consultation</p>
+							<p><TiTick color="blue"/> No more botheration of the market fluctuations</p>
+							<p><TiTick color="blue"/>	An emergency fund ready 24*7</p>
+							<p><TiTick color="blue"/> Get the best value on your money  </p>
+						  <p><TiTick color="blue"/> Secure your long-term services</p>
+							<p><TiTick color="blue"/> Get a sound sleep and sound mind</p>
 				 </div>
 			</div>
         <p className="tc fw5" style={{fontSize:'2.5rem'}}>Pricing Panel</p>
