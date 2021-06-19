@@ -1,0 +1,59 @@
+import React from 'react';
+import './MySkills.css';
+import myskills from "./myskills.svg";
+
+function MySkills(){
+    return(
+        <div className=" my-skills flex justify-around w-100 pa3 " >
+            <div className="skills-text pa2 ">
+                <h2>My Skills</h2>
+                <p>
+                I focus on creating creative, original, and conceptual works for editorial illustrations, magazines, covers, <br />and brands as well as online visual organizations.<br/> Through constant learning and improving, my works excel in designing.
+                </p>
+                <div >
+                    <div >
+                        <div className="percent-bars flex inline justify-between ">
+                            <p style={{textAlign:"left"}}>UI/UX</p>
+                            <p style={{textAlign:"right"}}>85%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-per-ui" per="90"></div>
+                        </div>
+                    </div>
+                    <div >
+                        <div className="percent-bars flex inline justify-between">
+                            <p style={{textAlign:"left"}}>Ideas</p>
+                            <p style={{textAlign:"right"}}>85%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-per-ideas" per="90"></div>
+                        </div>
+                    </div>
+                    <div >
+                        <div className="percent-bars flex inline justify-between">
+                            <p style={{textAlign:"left"}}>Marketing</p>
+                            <p style={{textAlign:"right"}}>85%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-per-marketing" per="90"></div>
+                        </div>
+                    </div>
+                    <div >
+                        <div className="percent-bars flex inline justify-between">
+                            <p style={{textAlign:"left"}}>Consultation</p>
+                            <p style={{textAlign:"right"}}>85%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-per-consultation" per="90"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="flex justify-center skills-img">
+                <img src={myskills} className="skills-image"/>
+            </div>
+        </div>
+    )
+}
+
+export default MySkills;
