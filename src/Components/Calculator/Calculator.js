@@ -44,7 +44,7 @@ const Calculator =()=>
         </div>
        </div>
 
-       <div className={`${show==true?'show':'hide'}`}>
+       <div className={`${show===true?'show':'hide'}`}>
          <div className="profit-div shadow-2 tc ma5">
             <h2>Profit <span style={{color:'blue'}}>Calculator</span></h2>
             <p className="calc-def">You must know the calculation before investing in any plan, so you never make mistakes. Check the calculation and you will get as our calculator says.</p>
