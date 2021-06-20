@@ -105,7 +105,7 @@ class Work extends React.PureComponent {
 								 <option value="Volunteer">Volunteer</option>
 							 </select>
 							 <p className="tc ph4">Please attach Resume, Proof of residence, PAN card <span className="red">*</span></p>
-							 <button type="submit" className="button-upload "><a href={`mailto:harshikasmishra@outlook.com?subject=Want to apply for the position of ${this.state.role} &body=I am ${this.state.name} and would like to apply for position of ${this.state.role} as a ${this.state.job} job.Land in Miami The air was hot from summer rain.Sweat dripping off me Before I even knew her name, la-la-la It felt like ooh, la-la-la.Yeah, no`}>Upload</a></    button>
+							 <button type="submit" className="button-upload "><a href={`mailto:harshikasmishra@outlook.com?subject=Want to apply for the position of ${this.state.role} &body=I am ${this.state.name} and would like to apply for position of ${this.state.role} as a ${this.state.job} job.`}>Upload</a></    button>
 							</form>
 
 				</div>
@@ -116,15 +116,3 @@ class Work extends React.PureComponent {
 }
 
 export default Work;
-
-// <div className="work-background pt5 white flex flex-column justify-center items-center">
-// 	<div  className="work-main-div flex flex-column shadow-4 mb6 justify-center items-center bg-black">
-// 		<div className="work-image tc">
-// 			<p className="f1 ">Let's work together</p>
-// 			<p className="f4 ">Lorem Ipsum is a dummy or placeholder text. It's often used in laying out print, infographics, or web design. </p>
-// 		</div>
-// 		<div style={{width:'100%'}}>
-//
-// 		</div>
-// 	</div>
-// </div>
