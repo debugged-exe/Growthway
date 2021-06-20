@@ -9,11 +9,12 @@ const Blogs = ({history}) => {
 		<div className="flex flex-column justify-center items-center">
 		 <h1>Latest Blogs</h1>
 			<div className="blog-container">
-
+			<Link to="/blog/#blog">
 			   <div className="item shadow-2" onClick={()=>history.push('/blog/#blogtop')}>
 				   <h3 className="ma3">1950's upto now pop-music design</h3>
 					 <p className="ma3">May 21st 2018 | Genre</p>
 				 </div>
+				 </Link>
 
 				<Link to="/blog/#blog">
 				 <div className="item shadow-2">

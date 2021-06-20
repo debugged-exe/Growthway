@@ -31,7 +31,7 @@ const testimonial = [
 
 const OurClients = () => {
 	return (
-		<div className="our-clients">
+		<div className="our-clients" data-aos="fade-up" data-aos-duration="2000">
 			<h2>Our Clients</h2>
 			<div className="testimonial-grid">
 				{
