@@ -39,7 +39,7 @@ class Work extends React.PureComponent {
 		return (
 			<div className="pt6">
 			 <div className="tc" style={{lineHeight:'1.5'}}>
-			   <h1>Work with us</h1>
+			   <h1>Work <span style={{color:'#0069FF'}}>with us</span></h1>
 				 <p className="f4 ph6-ns ph2">Are you interested in learning investment and finance basics?
 				  Join us as an intern to gain experience in financial and investment advising.</p>
 			 </div>

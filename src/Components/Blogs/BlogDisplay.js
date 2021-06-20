@@ -32,11 +32,11 @@ const BlogDisplay = () => {
                   </div>
                   <div className="content">
                     <h2>{item.heading}</h2>
-									  <p><BsCalendar/> {item.date}</p>
+									  <p><BsCalendar color="#0069FF"/> {item.date}</p>
                     <p>{item.description}</p>
                   </div>
                 </div>
-							<p className="center" style={{width:'100px',borderBottom:'2px solid blue'}}></p>
+							<p className="center" style={{width:'100px',borderBottom:'2px solid #0069FF'}}></p>
             </>
 							);
             }
@@ -53,7 +53,7 @@ const BlogDisplay = () => {
                     <img src={item.image} alt="hehe" style={{width: '100%', objectFit: 'cover'}}/>
                   </div>
                 </div>
-							<p className="center" style={{width:'100px',borderBottom:'2px solid blue'}}></p>
+							<p className="center" style={{width:'100px',borderBottom:'2px solid #0069FF'}}></p>
 							</>
               )
 
@@ -63,7 +63,7 @@ const BlogDisplay = () => {
       </div>
       <div className="pointer" onClick={showMoreItems}>
         <p className={`center ${visible >= len ? 'hide' : ''}`} style= {{textAlign: 'center'}}>Show More</p>
-        <BsChevronDoubleDown className={` arrowdown code ${visible >= len ? 'hide' : ''}`} size="2rem" style= {{width:'100%', textAlign: 'center'}}/>
+        <BsChevronDoubleDown className={` arrowdown code ${visible >= len ? 'hide' : ''}`} size="2rem" style= {{color:'#0069FF',width:'100%', textAlign: 'center'}}/>
       </div>
     </div>
 

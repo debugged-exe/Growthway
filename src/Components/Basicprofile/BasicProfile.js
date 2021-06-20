@@ -15,11 +15,11 @@ function BasicProfile(){
                 <h2 className="pl3-m">Basic Profile</h2>
                 <div className="basic-profile-data  flex justify-space-around  w-100 " >
                     <div className="w-50-l w-50-m-ns pl3-m w-100 pl0-ns pl3" >
-                        <h4>Biography</h4>
+                        <h4 style={{color:'#0069FF'}}>Biography</h4>
                         <p style={{lineHeight:"1.5"}}>We work with clients from all over the world. We had worked with and serving over 2000 customers and 1000 global companies  across 13 countries with over 90% satisfaction rate achieved.</p>
                     </div>
                     <div className="w-50-l w-50-m-ns pl3-m w-100 pl0-ns pl3" >
-                        <h4 className="pl3-ns">Our focus</h4>
+                        <h4 className="pl3-ns" style={{color:'#0069FF'}}>Our focus</h4>
                         <p style={{lineHeight:"1.5"}} className="pl3-ns">We aim at providing prioritized services to our clients in the sectors of investment and finances.</p>
                     </div>
                 </div>

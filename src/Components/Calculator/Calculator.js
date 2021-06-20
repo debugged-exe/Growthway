@@ -46,7 +46,7 @@ const Calculator =()=>
 
        <div className={`${show===true?'show':'hide'}`}>
          <div className="profit-div shadow-2 tc ma5">
-            <h2>Profit <span style={{color:'blue'}}>Calculator</span></h2>
+            <h2>Profit <span style={{color:'#0069FF'}}>Calculator</span></h2>
             <p className="calc-def">You must know the calculation before investing in any plan, so you never make mistakes. Check the calculation and you will get as our calculator says.</p>
               <form className="form-calc pa2 flex flex-column justify-center align-items" onSubmit ={e=>handleSubmit(e.preventDefault())}>
                 <div className="calc-1">

@@ -18,19 +18,19 @@ const Aboutus = () => {
 
 			<div className="about-grid">
 				<div className="circle-div" style={{zIndex:'5'}}>
-					<div className="bg-white blue shadow-5" style={{borderRadius:'50%',height:'180px',width:'180px', paddingTop: '12%'}}>
+					<div className="bg-white shadow-5" style={{color:'#0069FF',borderRadius:'50%',height:'180px',width:'180px', paddingTop: '12%'}}>
 				    	<BiUserCircle size="5rem"/>
 					</div>
 					<p className="f3 fw5">01 Create Account</p>
 				</div>
 				<div className=" circle-div" style={{zIndex:'5'}}>
-				    <div className="bg-white blue shadow-5" style={{borderRadius:'50%',height:'180px',width:'180px', paddingTop: '11%'}}>
+				    <div className="bg-white shadow-5" style={{color:'#0069FF',borderRadius:'50%',height:'180px',width:'180px', paddingTop: '11%'}}>
 				    	<FaHandHoldingUsd size="5rem"/>
 					</div>
 					<p className="f3 fw5">02 Invest to plan</p>
 				</div>
 				<div className=" circle-div" style={{zIndex:'5'}}>
-				    <div className="bg-white blue shadow-5" style={{borderRadius:'50%',height:'180px',width:'180px', paddingTop: '11%'}}>
+				    <div className="bg-white shadow-5" style={{color:'#0069FF',borderRadius:'50%',height:'180px',width:'180px', paddingTop: '11%'}}>
 					    <GiReceiveMoney size="5rem"/>
 					</div>
 					<p className="f3 fw5">03 Get profit</p>

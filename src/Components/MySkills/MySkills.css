@@ -8,30 +8,30 @@
 .skill-bar {
   max-width:300px;
     height: 10px;
-    background-color: black;
+    background-color:darkgray;
     border-radius: 8px;
   }
   .skill-per-ui {
     height: 10px;
-    background-color: blue;
+    background-color:#0069FF;
     border-radius: 8px;
     width: 60%;
   }
   .skill-per-ideas {
     height: 10px;
-    background-color: blue;
+    background-color:#0069FF;
     border-radius: 8px;
     width: 80%;
   }
   .skill-per-marketing {
     height: 10px;
-    background-color: blue;
+    background-color:#0069FF;
     border-radius: 8px;
     width: 75%;
   }
   .skill-per-consultation {
     height: 10px;
-    background-color: blue;
+    background-color:#0069FF;
     border-radius: 8px;
     width: 80%;
   }
@@ -39,7 +39,7 @@
 .skills-text{
   width:50%;
 }
- 
+
   @media only screen and (max-width:768px){
     .my-skills{
       display:flex;
@@ -52,7 +52,7 @@
     .skills-text{
       width:100%;
     }
-  } 
+  }
 
   .percent-bars{
     max-width:300px;
