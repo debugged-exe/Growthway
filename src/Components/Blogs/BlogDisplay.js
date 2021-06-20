@@ -17,13 +17,13 @@ const BlogDisplay = () => {
 
 	return (
 
-    <div id="blogtop" className="mt5">
+    <div id="blogtop" className="pt6">
       <h1 className="tc">Blogs</h1>
       <div className="flex flex-column justify-center items-center">
         {
           BlogsList.slice(0,visible)
           .map((item,index) => {
-            if(item.display=="left"){
+            if(item.display==="left"){
               return(
 								<>
                 <div className="blog-item">

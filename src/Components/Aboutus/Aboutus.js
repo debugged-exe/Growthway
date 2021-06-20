@@ -12,7 +12,7 @@ import {FaHandHoldingUsd} from 'react-icons/fa';
 const Aboutus = () => {
 	return (
 
-		<div className="tc" >
+		<div className="tc pt5" >
 		<div className="about-div pt4">
 				<p className="f1 fw6 white">Steps for Growth...</p>
 

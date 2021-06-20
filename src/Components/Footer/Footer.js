@@ -2,12 +2,6 @@ import React from 'react';
 import './Footer.scss';
 import * as AiIcons from 'react-icons/ai';
 import * as FaIcons from 'react-icons/fa';
-import photo1 from './photo1.jpg';
-import photo2 from './photo2.jpg';
-import photo3 from './photo3.jpg';
-import photo4 from './photo4.jpg';
-import photo5 from './photo5.jpg';
-import photo6 from './photo6.jpg';
 import {Link} from 'react-router-dom';
 const Footer = () => {
     return (
@@ -54,22 +48,22 @@ const Footer = () => {
                         <p className={'b'}>Instagram</p>
                         <div className={'footer-instagram-row'}>
                             <div className={'ma1'}>
-                                <img src={photo1} style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img1'}/>
+                                <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img1'}/>
                             </div>
                             <div className={'ma1'}>
-                                <img src={photo2} style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img2'}/>
+                                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img2'}/>
                             </div>
                             <div className={'ma1'}>
-                                <img src={photo3} style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img3'}/>
+                                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img3'}/>
                             </div>
                             <div className={'ma1'}>
-                                <img src={photo4} style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img4'}/>
+                                <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img4'}/>
                             </div>
                             <div className={'ma1'}>
-                                <img src={photo5} style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img5'}/>
+                                <img src="https://images.unsplash.com/photo-1552083375-1447ce886485?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img5'}/>
                             </div>
                             <div className={'ma1'}>
-                                <img src={photo6} style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img6'}/>
+                                <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img6'}/>
                             </div>
                         </div>
                     </div>
