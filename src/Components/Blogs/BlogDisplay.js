@@ -17,7 +17,7 @@ const BlogDisplay = () => {
 
 	return (
 
-    <div id="blogtop">
+    <div id="blogtop" className="mt5">
       <h1 className="tc">Blogs</h1>
       <div className="flex flex-column justify-center items-center">
         {

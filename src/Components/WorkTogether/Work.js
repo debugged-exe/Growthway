@@ -37,7 +37,7 @@ class Work extends React.PureComponent {
   }
 	render() {
 		return (
-			<div>
+			<div className="mt5">
 			 <div className="tc" style={{lineHeight:'1.5'}}>
 			   <h1>Work with us</h1>
 				 <p className="f4 ph6-ns ph2">Are you interested in learning investment and finance basics?

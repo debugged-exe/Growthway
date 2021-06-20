@@ -140,7 +140,7 @@ class SurveyForm extends React.PureComponent {
 
 	render() {
 		return (
-			<div className="survey-div">
+			<div className="survey-div mt5">
 					<h1 className="survey-header">
 						Survey Form
 					</h1>

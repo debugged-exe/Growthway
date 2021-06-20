@@ -4,9 +4,10 @@ import './Pricing.scss';
 import {Plans} from './Plans.js';
 import {TiTick} from 'react-icons/ti';
 import 'tachyons';
+import { Link} from "react-router-dom";
 import PaymentForm from '../PaymentForm/PaymentForm';
 import {AiOutlineClose} from 'react-icons/ai';
- 
+
 const Pricing = () => {
 
 	const [showPayment, setShowPayment] = useState(false);
@@ -70,7 +71,7 @@ const Pricing = () => {
 							}
 						</div>
 			</div>
-			<Modal isOpen={showPayment} 
+			<Modal isOpen={showPayment}
 				style={
 					{
 						overlay:{
@@ -85,7 +86,7 @@ const Pricing = () => {
 					}
 				}
 			>
-				<div className="flex flex-wrap justify-center items-start mt4"> 
+				<div className="flex flex-wrap justify-center items-start mt4">
 				<span style={{backgroundColor:"tomato",borderRadius:"50%"}} className="pa2 pointer" onClick={() => setShowPayment(false)}><AiOutlineClose size="1.6rem"/></span>
 				<PaymentForm plan={plan}/>
 				</div>
@@ -93,7 +94,7 @@ const Pricing = () => {
 				<div className="tc">
 					<p style={{fontSize:'40px',fontWeight:'600'}} className="mb1">Start working together?</p>
 					<p>You can learn the investment and finance basics by interning with us. Click below to know more.</p>
-					<button className="mb4 fw6 white pa3 ph4 f5 grow pointer" style={{borderRadius:'8px',border:'none',backgroundColor:'blue'}}>Find Out More</button>
+					<Link to="/workwithus"><button className="mb4 fw6 white pa3 ph4 f5 grow pointer" style={{borderRadius:'8px',border:'none',backgroundColor:'blue'}}>Find Out More</button></Link>
 				</div>
 		</div>
 			)}
