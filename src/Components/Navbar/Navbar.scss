@@ -1,8 +1,13 @@
 
 .Navbar-color {
   background-color:black;
-  padding:2%;
+  padding:1%;
   text-align: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 .nav{
   display:flex;

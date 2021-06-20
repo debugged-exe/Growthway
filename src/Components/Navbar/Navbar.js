@@ -19,7 +19,7 @@ const NavBar =()=>
           <div className="white show-ham" onClick={()=>{setVisible(!visible)}} >
             <BiMenu/>
           </div>
-          <Nav className={`mr-auto Navbar-text-color nav ${visible?' toggle':''}`}>
+          <Nav className={`mr-auto nav ${visible?' toggle':''}`}>
              <Link className=" links" to='/' ><span className={` f4 ${location.pathname==='/'?'active':''} `} >Home</span></Link>
               <Link className=" links" to='/services' ><span className={` f4 ${location.pathname==='/services'?'active':''} `} >Services</span></Link>
              <Link className=" links" to='/surveyform' ><span className={` f4 ${location.pathname==='/surveyform'?'active':''} `}   >Survey</span></Link>
