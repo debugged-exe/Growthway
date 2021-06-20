@@ -1,7 +1,6 @@
 
 .Navbar-color {
-  background-color:black;
-  padding:1%;
+  background-color:rgb(255, 255, 255);
   text-align: right;
   position: fixed;
   top: 0;
@@ -12,13 +11,14 @@
 .nav{
   display:flex;
   flex-wrap:wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
 }
 .links{
   padding:0% 2% 0% 2%;
 }
 .active{
-  color:blue;
+  font-weight: bold;
 }
 .toggle{
   display:block;

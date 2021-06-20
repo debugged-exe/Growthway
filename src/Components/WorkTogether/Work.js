@@ -37,14 +37,14 @@ class Work extends React.PureComponent {
   }
 	render() {
 		return (
-			<div className="mt5">
+			<div className="pt6">
 			 <div className="tc" style={{lineHeight:'1.5'}}>
 			   <h1>Work with us</h1>
 				 <p className="f4 ph6-ns ph2">Are you interested in learning investment and finance basics?
 				  Join us as an intern to gain experience in financial and investment advising.</p>
 			 </div>
 			<div className="work-div">
-			  <div><img src={Image}/></div>
+			  <div><img src={Image} alt="Work-with-us"/></div>
 				<div>
 			  	<form onSubmit ={this.handleSubmit} className="center" >
 							 <input
