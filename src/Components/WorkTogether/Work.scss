@@ -60,7 +60,7 @@
    width:90vw;
  }
  .inputval{
-   height:12vh;
+   height:10vh;
  }
  .button-upload{
    margin:5% 5% 5% 23%;
@@ -75,6 +75,9 @@
   .work-div{
     grid-template-columns:100%;
     padding:2%;
+  }
+  .inputval{
+    height: 8vh;
   }
 }
 @media only screen

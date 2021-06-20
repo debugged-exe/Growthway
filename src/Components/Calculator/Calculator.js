@@ -78,7 +78,7 @@ const Calculator =()=>
 
           </div>
           <div className="profit-div shadow-2 ma4">
-            <h2>Wanna know how much to pay to achieve your goal amount?</h2>
+            <h2 className="ph2 tc">How much to pay to achieve your goal amount?</h2>
               <form className="form-calc pa2 flex flex-column justify-center align-items" onSubmit ={e=>handleSubmit(e.preventDefault())}>
                 <input
                 className="inputfield"

@@ -53,7 +53,7 @@ const Pricing = () => {
 															<h2>{plan.planType}</h2>
 															<h3>( {plan.planPrice} )</h3>
 
-															<p className="pa2 ph5 tj"><TiTick color="#0069FF"/>{plan.subHeading1}</p>
+															<p className="ph5-ns ph4-m ph3 tj"><TiTick color="#0069FF"/>{plan.subHeading1}</p>
 														<div onClick={()=>
 														{
 															setShowPayment(true);
