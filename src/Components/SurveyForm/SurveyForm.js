@@ -1,8 +1,6 @@
 import React from 'react';
 import './SurveyForm.scss';
 import CustomButton from './CustomButton/CustomButton.js';
-import {FaPhoneAlt} from 'react-icons/fa';
-import {BsFillPersonFill} from 'react-icons/bs';
 import 'tachyons';
 
 const initialState = {

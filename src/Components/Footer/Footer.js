@@ -37,11 +37,11 @@ const Footer = () => {
                             </p>
                         </div>
                         <div>
-                            <AiIcons.AiFillFacebook className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineTwitter className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineInstagram className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineDribbble className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
-                            <FaIcons.FaPinterest className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
+                            <AiIcons.AiFillFacebook className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
+                            <AiIcons.AiOutlineTwitter className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
+                            <AiIcons.AiOutlineInstagram className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
+                            <AiIcons.AiOutlineDribbble className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
+                            <FaIcons.FaPinterest className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
                         </div>
                     </div>
                     <div className={'footer-col-4 pt3 pl4-m pl0-ns pl4 pr0-ns pr4'}>
@@ -76,7 +76,7 @@ const Footer = () => {
                     <Link className={'footer-links-bottom-link-container-link-item-3 pb2'}>Contact Us</Link>
                 </div>
                 <div className={'tr-l tc'}>
-                    @2020 GrowthWay Investments. <span className={'hover-dark-blue'}>All Rights Reserved</span>
+                    @2020 GrowthWay Investments. <span className={'hover-social-icons'}>All Rights Reserved</span>
                 </div>
             </footer>
             <footer className={'flex justify-center items-center pt2-ns pt1 pb2-ns pb1 bg-black white'}>

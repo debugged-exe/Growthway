@@ -16,7 +16,7 @@ const Pricing = () => {
 	return (
     <div className={`${showPayment===true?"bg-dark":"''"}`}>
 			<div className="head-bg1 flex tc flex-column justify-center items-center white b">
-				<p className="ma0 pa0 f1">Our Services</p>
+				<p style={{fontSize:"4rem"}} className="ma0 pa0">Our Services</p>
 			</div>
 
 			<div className="main-container" style={{lineHeight:'1.5'}}>
@@ -53,16 +53,13 @@ const Pricing = () => {
 															<h2>{plan.planType}</h2>
 															<h3>( {plan.planPrice} )</h3>
 
-															<p><TiTick color="#0069FF"/>{plan.subHeading1}</p>
-															<p><TiTick color="#0069FF"/>{plan.subHeading2}</p>
-															<p><TiTick color="#0069FF"/>{plan.subHeading3}</p>
-															<p><TiTick color="#0069FF"/>{plan.subHeading4}</p>
+															<p className="pa2 ph5 tj"><TiTick color="#0069FF"/>{plan.subHeading1}</p>
 														<div onClick={()=>
 														{
 															setShowPayment(true);
 															setPlan(plan.planType)
 														}}>
-															<button className="button mv6"><span>Pay Now!</span></button>
+															<button style={{marginTop:`${plan.marginTop}`}} className="button mv6 "><span>Pay Now!</span></button>
 														</div>
 												</div>
 											</div>

@@ -7,9 +7,9 @@ import { Taglines } from './Taglines';
 const TaglineComponent = ({quote,author}) => {
     return(
         <div className="grow tagline-component flex flex-column justify-center ma4">
-            <FaQuoteLeft/>
+            <FaQuoteLeft color="#0066ef"/>
             <p className="i f4">{quote}</p>
-            <FaQuoteRight/>
+            <FaQuoteRight color="#0066ef"/>
             <p className="b f3">- {author}</p>
         </div>
     );

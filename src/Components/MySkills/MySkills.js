@@ -13,8 +13,8 @@ function MySkills(){
                 <div >
                     <div >
                         <div className="percent-bars flex inline justify-between ">
-                            <p style={{textAlign:"left"}}>UI/UX</p>
-                            <p style={{textAlign:"right"}}>85%</p>
+                            <p style={{textAlign:"left"}}>Cryptocurrency</p>
+                            <p style={{textAlign:"right"}}>60%</p>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-per-ui" per="90"></div>
@@ -22,7 +22,7 @@ function MySkills(){
                     </div>
                     <div >
                         <div className="percent-bars flex inline justify-between">
-                            <p style={{textAlign:"left"}}>Ideas</p>
+                            <p style={{textAlign:"left"}}>Fund Managment</p>
                             <p style={{textAlign:"right"}}>85%</p>
                         </div>
                         <div class="skill-bar">
@@ -32,7 +32,7 @@ function MySkills(){
                     <div >
                         <div className="percent-bars flex inline justify-between">
                             <p style={{textAlign:"left"}}>Marketing</p>
-                            <p style={{textAlign:"right"}}>85%</p>
+                            <p style={{textAlign:"right"}}>75%</p>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-per-marketing" per="90"></div>
@@ -50,7 +50,7 @@ function MySkills(){
                 </div>
             </div>
             <div className="flex justify-center skills-img">
-                <img src={myskills} className="skills-image"/>
+                <img src={myskills} className="skills-image" alt="skills"/>
             </div>
         </div>
     )

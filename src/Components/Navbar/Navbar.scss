@@ -8,6 +8,10 @@
   width: 100%;
   z-index: 10;
 }
+.font-weight-nav{
+  font-weight: 500;
+}
+
 .nav{
   display:flex;
   flex-wrap:wrap;
@@ -30,6 +34,18 @@
   .show-ham{
     display: none;
   }
+
+  @media only screen and (max-width:426px){
+    .navbar-right{
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+
 @media only screen and (max-width:426px){
   .Navbar-color {
     padding:5%;
@@ -42,8 +58,7 @@
    display:flex;
    flex-direction:column;
    justify-content:center;
-   align-items:flex-start;
-   padding-left:10%;
+   align-items:center;
  }
  .show-ham{
    display:block;

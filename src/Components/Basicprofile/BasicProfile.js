@@ -24,11 +24,11 @@ function BasicProfile(){
                     </div>
                 </div>
                 <div className="pt4">
-                            <AiIcons.AiFillFacebook className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineTwitter className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineInstagram className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineDribbble className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
-                            <FaIcons.FaPinterest className={'pa2 grow-large hover-dark-blue'} size={'1.8rem'}/>
+                            <AiIcons.AiFillFacebook className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
+                            <AiIcons.AiOutlineTwitter className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
+                            <AiIcons.AiOutlineInstagram className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
+                            <AiIcons.AiOutlineDribbble className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
+                            <FaIcons.FaPinterest className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
                  </div>
             </div>
         </div>
