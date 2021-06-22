@@ -31,7 +31,7 @@ const Footer = () => {
                         <div style={{lineHeight: "2"}}>
                             <p>2005 Stokes Isle Apt. 896,
                                 Venaville 10010, USA<br/>
-                                <Link className={'footer-contact-email pb1'}>11111@gmail.com</Link>
+                                <Link className={'footer-contact-email pb1'}>growthwayinvestments@gmail.com</Link>
                                 <br/>
                                 <Link className={'footer-contact-phone pb1'}>9990009990</Link>
                             </p>

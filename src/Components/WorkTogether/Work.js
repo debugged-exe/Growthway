@@ -105,7 +105,7 @@ class Work extends React.PureComponent {
 								 <option value="Volunteer">Volunteer</option>
 							 </select>
 							 <p className="tc ph4">Please attach Resume, Proof of residence, PAN card <span className="red">*</span></p>
-							 <button type="submit" className="button-upload "><a href={`mailto:harshikasmishra@outlook.com?subject=Want to apply for the position of ${this.state.role} &body=I am ${this.state.name} and would like to apply for position of ${this.state.role} as a ${this.state.job} job.`}>Upload</a></    button>
+							 <button type="submit" className="button-upload "><a href={`mailto:growthwayinvestments.com@gmail.com?subject=Want to apply for the position of ${this.state.role} &body=I am ${this.state.name} and would like to apply for position of ${this.state.role} as a ${this.state.job} job.`}>Upload</a></    button>
 							</form>
 
 				</div>
