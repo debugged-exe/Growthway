@@ -2,6 +2,7 @@ import React, { useState,useEffect} from 'react';
 import FAQ from './FAQ';
 import './faqfun.css';
 import 'tachyons';
+import QuestionInput from './QuestionInput';
 
 function Faqs () {
   const [faqs, setfaqs] = useState([]);
@@ -35,7 +36,7 @@ function Faqs () {
 
 
   return (
-    <div style={{background: 'rgba(236, 243, 255)'}}>
+    <div className="pb4" style={{background: 'rgba(236, 243, 255)'}}>
      <p className="tc pa3 f1 fw6">Faq's</p>
       <div className="faqs">
         {faqs.map((faq, i) => (
@@ -45,6 +46,7 @@ function Faqs () {
         ))}
 
       </div>
+      <QuestionInput/>
     </div>
   );
 }
