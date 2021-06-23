@@ -27,22 +27,24 @@ const Pricing = () => {
 						</div>
 					<div className="sub-div">
 						<h3 style={{color:'#0069FF'}}>Features</h3>
-							<p><TiTick color="#0069FF"/>	High rate of interest</p>
-								<p><TiTick color="#0069FF"/>	Guaranteed returns</p>
-								<p><TiTick color="#0069FF"/>  Zero risk</p>
-								<p><TiTick color="#0069FF"/> 	Clear and precise documentation in order to avoid any fraudulent</p>
+							<p><TiTick color="#0069FF"/>High rate of interest</p>
+								<p><TiTick color="#0069FF"/>Guaranteed returns</p>
+								<p><TiTick color="#0069FF"/>Zero risk</p>
+								<p><TiTick color="#0069FF"/>No hidden charges</p>
+								<p><TiTick color="#0069FF"/>No hidden deductions/commissions</p>
+								<p><TiTick color="#0069FF"/>Clear and precise documentation in order to avoid any fraudulent</p>
 						</div>
 						<div className="sub-div">
 								<h3 style={{color:'#0069FF'}}>Benefits</h3>
 								<p><TiTick color="#0069FF"/> Free consultation</p>
 								<p><TiTick color="#0069FF"/> No more botheration of the market fluctuations</p>
-								<p><TiTick color="#0069FF"/>	An emergency fund ready 24*7</p>
+								<p><TiTick color="#0069FF"/> An emergency fund ready 24*7</p>
 								<p><TiTick color="#0069FF"/> Get the best value on your money  </p>
-								<p><TiTick color="#0069FF"/> Secure your long-term services</p>
-								<p><TiTick color="#0069FF"/> Get a sound sleep and sound mind</p>
+								<p><TiTick color="#0069FF"/> Secured long-term investments</p>
+								<p><TiTick color="#0069FF"/> No stress and sound sleep</p>
 						</div>
 				</div>
-			<p className="tc fw5" style={{fontSize:'2.5rem'}}>Pricing Panel</p>
+			<p className="tc fw5" style={{fontSize:'2.5rem'}}>Growmax 365</p>
 						<div className="price-grid">
 							{
 								Plans.map((plan, index) => {
