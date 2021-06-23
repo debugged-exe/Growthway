@@ -4,6 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 import {ImTumblr2} from 'react-icons/im';
 import {GrLinkedin} from 'react-icons/gr';
 import basicprofile from './basicprofile.svg';
+import CountUp from 'react-countup';
 
 function BasicProfile(){
     return(
@@ -17,7 +18,9 @@ function BasicProfile(){
                 <div className="basic-profile-data  flex justify-space-around  w-100 " >
                     <div className="w-50-l w-50-m-ns pl3-m w-100 pl0-ns pl3" >
                         <h4 style={{color:'#0069FF'}}>Biography</h4>
-                        <p style={{lineHeight:"1.5"}}>We work with clients from all over the world. We had worked with and serving over 2000 customers and 1000 global companies  across 13 countries with over 90% satisfaction rate achieved.</p>
+                        <p style={{lineHeight:"1.5"}}><span className="f2 b"><CountUp end={100} duration={5}/> +</span> Clients</p>
+                        <p style={{lineHeight:"1.5"}}><span className="b f2"><CountUp end={100} duration={5}/> +</span> Clients</p>
+                        <p style={{lineHeight:"1.5"}}><span className="b f2"><CountUp end={100} duration={5}/> +</span> Clients</p>
                     </div>
                     <div className="w-50-l w-50-m-ns pl3-m w-100 pl0-ns pl3" >
                         <h4 className="pl3-ns" style={{color:'#0069FF'}}>Our focus</h4>
