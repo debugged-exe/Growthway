@@ -2,6 +2,8 @@ import React from 'react';
 import './Footer.scss';
 import * as AiIcons from 'react-icons/ai';
 import * as FaIcons from 'react-icons/fa';
+import {ImTumblr2} from 'react-icons/im';
+import {GrLinkedin} from 'react-icons/gr';
 import {Link} from 'react-router-dom';
 const Footer = () => {
     return (
@@ -16,32 +18,30 @@ const Footer = () => {
                     </div>
                     <div className={'footer-col-2'}>
                         <div className={'justify-center items-center pt3 pl5-l '}>
-                            <p className={'pl4 b'}>About us</p>
+                            <p className={'pl4 b'}>Quick Links</p>
                             <ul className={''} style={{listStyle: "none", lineHeight: "2", }}>
                                 <li><Link className={'footer-about-list-item-link-1 pb2'}>About</Link></li>
-                                <li><Link className={'footer-about-list-item-link-2 pb2'}>Team</Link></li>
-                                <li><Link className={'footer-about-list-item-link-3 pb2'}>Services</Link></li>
+                                <li><Link className={'footer-about-list-item-link-2 pb2'}>Services</Link></li>
+                                <li><Link className={'footer-about-list-item-link-3 pb2'}>Survey Form</Link></li>
                                 <li><Link className={'footer-about-list-item-link-4 pb2'}>Career</Link></li>
-                                <li><Link className={'footer-about-list-item-link-5 pb2'}>Contact</Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className={'footer-col-3 pt3 pr5 pl0-ns pl4'}>
                         <p className={'b'}>Contact</p>
                         <div style={{lineHeight: "2"}}>
-                            <p>2005 Stokes Isle Apt. 896,
-                                Venaville 10010, USA<br/>
+                            <p>#261, Growthway Investments Gurudwara Road Dharmashala - (H.P.) 176215<br/>
                                 <Link className={'footer-contact-email pb1'}>growthwayinvestments@gmail.com</Link>
                                 <br/>
-                                <Link className={'footer-contact-phone pb1'}>9990009990</Link>
+                                <Link className={'footer-contact-phone pb1'}>01-892796821</Link>
                             </p>
                         </div>
                         <div>
-                            <AiIcons.AiFillFacebook className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineTwitter className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineInstagram className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineDribbble className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
-                            <FaIcons.FaPinterest className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
+                            <a href="https://www.facebook.com/growthwayinvestments/"><AiIcons.AiFillFacebook className={'pointer pa2 grow-large hover-social-icons'} size={'1.8rem'}/></a>
+                            <a href="https://twitter.com/GrowthwayI?s=09"><AiIcons.AiOutlineTwitter className={'pointer pa2 grow-large hover-social-icons'} size={'1.8rem'}/></a>
+                            <a href="http://growthwayinvestments.tumblr.com"><ImTumblr2 className={'pointer pa2 grow-large hover-social-icons'} size={'1.8rem'}/></a>
+                            <a href="https://instagram.com/growthwayinvestments?utm_medium=copy_link"><AiIcons.AiOutlineInstagram className={'pointer pa2 grow-large hover-social-icons'} size={'1.8rem'}/></a>
+                            <a href="https://www.linkedin.com/company/growthwayinvestments"><GrLinkedin className={'pointer pa2 grow-large hover-social-icons'} size={'1.8rem'}/></a>
                         </div>
                     </div>
                     <div className={'footer-col-4 pt3 pl4-m pl0-ns pl4 pr0-ns pr4'}>
@@ -71,9 +71,9 @@ const Footer = () => {
             </footer>
             <footer className={'footer-links-bottom ph6-l ph4-m pb3'}>
                 <div className={'footer-links-bottom-link-container flex w-50-l w-100-m w-100 pt0-ns pt2 pb0-ns pb2'}>
-                    <Link className={'footer-links-bottom-link-container-link-item-1 pb2'}>Our Blogs</Link>
-                    <Link className={'footer-links-bottom-link-container-link-item-2 pb2'}>Latest Page</Link>
-                    <Link className={'footer-links-bottom-link-container-link-item-3 pb2'}>Contact Us</Link>
+                    <Link className={'footer-links-bottom-link-container-link-item-1 pb2 pr3'} to="/blog"> Our Blogs</Link>
+                    <Link className={'footer-links-bottom-link-container-link-item-2 pb2 pr3'} to="/"> Home</Link>
+                    <Link className={'footer-links-bottom-link-container-link-item-3 pb2 pr3'} to="/services"> Growmax 365</Link>
                 </div>
                 <div className={'tr-l tc'}>
                     @2020 GrowthWay Investments. <span className={'hover-social-icons'}>All Rights Reserved</span>
