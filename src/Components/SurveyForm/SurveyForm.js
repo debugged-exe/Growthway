@@ -140,7 +140,7 @@ class SurveyForm extends React.PureComponent {
 		return (
 			<div className="survey-div pt6">
 					<h1 className="survey-header">
-						Survey Form
+						Help us understand yor investing needs better.
 					</h1>
 					<form className="survey-form-container" onSubmit={this.handleSubmit}>
 						<div className="input-div">

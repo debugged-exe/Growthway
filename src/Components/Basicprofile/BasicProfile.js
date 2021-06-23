@@ -1,7 +1,8 @@
 import React from 'react';
 import './Basicprofile.css';
 import * as AiIcons from 'react-icons/ai';
-import * as FaIcons from 'react-icons/fa';
+import {ImTumblr2} from 'react-icons/im';
+import {GrLinkedin} from 'react-icons/gr';
 import basicprofile from './basicprofile.svg';
 
 function BasicProfile(){
@@ -24,11 +25,11 @@ function BasicProfile(){
                     </div>
                 </div>
                 <div className="pt4">
-                            <AiIcons.AiFillFacebook className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineTwitter className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineInstagram className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
-                            <AiIcons.AiOutlineDribbble className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
-                            <FaIcons.FaPinterest className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/>
+                            <a className="black" href="https://www.facebook.com/growthwayinvestments/"><AiIcons.AiFillFacebook className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/></a>
+                            <a className="black" href="https://twitter.com/GrowthwayI?s=09"><AiIcons.AiOutlineTwitter className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/></a>
+                            <a className="black" href="https://instagram.com/growthwayinvestments?utm_medium=copy_link"><ImTumblr2 className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/></a>
+                            <a className="black" href="http://growthwayinvestments.tumblr.com"><AiIcons.AiOutlineInstagram className={'pa2 grow-large hover-social-icons'} size={'1.9rem'}/></a>
+                            <a className="black" href="https://www.linkedin.com/company/growthwayinvestments"><GrLinkedin className={'pa2 grow-large hover-social-icons'} size={'1.8rem'}/></a>
                  </div>
             </div>
         </div>

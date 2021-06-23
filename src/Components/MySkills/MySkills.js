@@ -4,16 +4,19 @@ import myskills from "./myskills.svg";
 
 function MySkills(){
     return(
-        <div className=" my-skills flex justify-around w-100 pa3 " >
+        <div className=" my-skills flex justify-around items-center w-100 pa3 " >
             <div className="skills-text pa2 ">
-                <h2>My Skills</h2>
+                <h2>Our Skills</h2>
                 <p>
-                I focus on creating creative, original, and conceptual works for editorial illustrations, magazines, covers, <br />and brands as well as online visual organizations.<br/> Through constant learning and improving, my works excel in designing.
+                We focus on providing short term investing solutions with guaranteed returns at<span className="b"> Zero Risk.</span>
+                </p>
+                <p>
+                We have professionals for every need.
                 </p>
                 <div >
                     <div >
                         <div className="percent-bars flex inline justify-between ">
-                            <p style={{textAlign:"left"}}>Cryptocurrency</p>
+                            <p style={{textAlign:"left"}}>Cryptocurrency investment</p>
                             <p style={{textAlign:"right"}}>60%</p>
                         </div>
                         <div class="skill-bar">
@@ -22,7 +25,7 @@ function MySkills(){
                     </div>
                     <div >
                         <div className="percent-bars flex inline justify-between">
-                            <p style={{textAlign:"left"}}>Fund Managment</p>
+                            <p style={{textAlign:"left"}}>Health Insurance</p>
                             <p style={{textAlign:"right"}}>85%</p>
                         </div>
                         <div class="skill-bar">
@@ -31,7 +34,7 @@ function MySkills(){
                     </div>
                     <div >
                         <div className="percent-bars flex inline justify-between">
-                            <p style={{textAlign:"left"}}>Marketing</p>
+                            <p style={{textAlign:"left"}}>Legal and tax advisory</p>
                             <p style={{textAlign:"right"}}>75%</p>
                         </div>
                         <div class="skill-bar">
@@ -40,7 +43,16 @@ function MySkills(){
                     </div>
                     <div >
                         <div className="percent-bars flex inline justify-between">
-                            <p style={{textAlign:"left"}}>Consultation</p>
+                            <p style={{textAlign:"left"}}>Professional training provider in stock market trading and investing</p>
+                            <p style={{textAlign:"right"}}>85%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-per-consultation" per="90"></div>
+                        </div>
+                    </div>
+                    <div >
+                        <div className="percent-bars flex inline justify-between">
+                            <p style={{textAlign:"left"}}>Real estate - investing, decor</p>
                             <p style={{textAlign:"right"}}>85%</p>
                         </div>
                         <div class="skill-bar">

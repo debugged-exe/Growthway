@@ -41,7 +41,7 @@ class Work extends React.PureComponent {
 			 <div className="tc" style={{lineHeight:'1.5'}}>
 			   <h1>Work <span style={{color:'#0069FF'}}>with us</span></h1>
 				 <p className="f4 ph6-ns ph2">Are you interested in learning investment and finance basics?
-				  Join us as an intern to gain experience in financial and investment advising.</p>
+				  Join our team to gain experience in financial and investment advising. Our platform is open to all professionals as well as new learners.</p>
 			 </div>
 			<div className="work-div">
 			  <div><img src={Image} alt="Work-with-us"/></div>
