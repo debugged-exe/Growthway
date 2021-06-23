@@ -2,7 +2,7 @@ import React, { useState,useEffect} from 'react';
 import FAQ from './FAQ';
 import './faqfun.css';
 import 'tachyons';
-import QuestionInput from './QuestionInput';
+import QuestionInput from './QuestionInput.js';
 
 function Faqs () {
   const [faqs, setfaqs] = useState([]);

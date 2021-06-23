@@ -22,7 +22,7 @@ class CallBack extends React.PureComponent {
 	}
 
 	handleSubmit = (event) => {
-		event.prefentDefault();
+		event.preventDefault();
 	}
 
 	showfunction = (e) => {
