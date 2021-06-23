@@ -1,6 +1,5 @@
 import React, {useState, useEffect } from 'react';
 import {BsChevronDoubleDown, BsCalendar } from "react-icons/bs";
-import { BlogsList } from './BlogsList.js';
 import { Link } from "react-router-dom";
 import 'tachyons';
 import './BlogDisplay.scss';
@@ -30,7 +29,7 @@ const BlogDisplay = () => {
 
    })
  },[])
- 
+
 	return (
 
     <div id="blogtop" className="pt6">

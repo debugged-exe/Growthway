@@ -68,7 +68,7 @@ class CallBack extends React.PureComponent {
 
 				<div className="form-start">
 					<div className=" pb4" style={{height: 'auto' }}>
-						<h2 className="tc"><FaPhoneAlt className="pr3" color="#0069FF"/> Request a Call!</h2>
+						<h2 className="tc"><FaPhoneAlt className="pr3" color="#0069FF"/>Book a Call!</h2>
 						<p className="tc">Consultation Call for <span className=" b f3" style={{color:'#0069FF'}}> FREE/-</span></p>
 						<p className="tc">In this session over the call, we provide Legal, Tax and Financial Planning Advice.</p>
 						<div className="contact-container1">
