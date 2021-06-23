@@ -20,10 +20,10 @@ const Footer = () => {
                         <div className={'justify-center items-center pt3 pl5-l '}>
                             <p className={'pl4 b'}>Quick Links</p>
                             <ul className={''} style={{listStyle: "none", lineHeight: "2", }}>
-                                <li><Link className={'footer-about-list-item-link-1 pb2'}>About</Link></li>
-                                <li><Link className={'footer-about-list-item-link-2 pb2'}>Services</Link></li>
-                                <li><Link className={'footer-about-list-item-link-3 pb2'}>Survey Form</Link></li>
-                                <li><Link className={'footer-about-list-item-link-4 pb2'}>Career</Link></li>
+                                <li><Link to="/about" className={'footer-about-list-item-link-1 pb2'}>About</Link></li>
+                                <li><Link to="/services" className={'footer-about-list-item-link-2 pb2'}>Services</Link></li>
+                                <li><Link to="/surveyform" className={'footer-about-list-item-link-3 pb2'}>Survey Form</Link></li>
+                                <li><Link to="/workwithus" className={'footer-about-list-item-link-4 pb2'}>Career</Link></li>
                             </ul>
                         </div>
                     </div>

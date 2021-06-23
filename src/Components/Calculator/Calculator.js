@@ -29,8 +29,8 @@ const Calculator =()=>
 
     function calculateAimvalue() {
         setTotal1(aim-(aim*0.25));
-         setTotal2(aim-(aim*0.18));
-         setTotal3(aim-(aim*0.20));
+         setTotal2((aim-(aim*0.18))/12);
+         setTotal3((aim-(aim*0.20))/4);
      }
 
     return (
@@ -94,15 +94,15 @@ const Calculator =()=>
                   <div className="result-grid">
                     <div className="tc ph3" style={{borderRight:'1.5px solid #0075ff'}}>
                        <h3>Yearly</h3>
-                       <p>{total1}</p>
+                       <p>{total1}/yr</p>
                     </div>
                     <div className="tc ph3" style={{borderRight:'1.5px solid #0075ff'}}>
                        <h3>Monthly</h3>
-                       <p>{total2}</p>
+                       <p>{total2}/mo</p>
                     </div>
                     <div className="tc ph3">
-                       <h3>Quatarly</h3>
-                       <p>{total3}</p>
+                       <h3>Quaterly</h3>
+                       <p>{total3}/qtr</p>
                     </div>
 
                   </div>
