@@ -6,7 +6,7 @@ import {Nav,Navbar,NavDropdown} from 'react-bootstrap'
 import { BiMenu } from "react-icons/bi";
 import { ImCross } from "react-icons/im";
 import { HashLink as Link } from 'react-router-hash-link';
-import Logo from './growthwaylogo.png';
+import Logo from './Growthway-04.png';
 
 const NavBar =()=>
 {
@@ -22,7 +22,7 @@ const NavBar =()=>
           </div>
           <Nav className={`mr-auto nav ${visible?' toggle':''}`}>
             <div className="">
-            <img src={Logo} alt="Logo" style={{height:"70px", width:"138px"}} className=""></img>
+            <img src={Logo} alt="Logo" style={{height:"60px", width:"146px"}} className="pa2"></img>
             </div>
 
             <div className="w-80 navbar-right">
