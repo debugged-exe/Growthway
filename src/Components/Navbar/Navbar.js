@@ -4,6 +4,7 @@ import './Navbar.scss';
 import { useLocation } from 'react-router-dom';
 import {Nav,Navbar,NavDropdown} from 'react-bootstrap'
 import { BiMenu } from "react-icons/bi";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { ImCross } from "react-icons/im";
 import { HashLink as Link } from 'react-router-hash-link';
 import Logo from './Growthway-04.png';
@@ -16,6 +17,15 @@ const NavBar =()=>
   const location = useLocation();
   console.log(location);
     return (
+      <div>
+        <a style={{
+          position:"fixed",
+          bottom:"20px",
+          right:"2px",
+          zIndex:"10"
+        }} href="https://wa.me/917832890455" rel="noreferrer" target="_blank" className="pa2">
+          <IoLogoWhatsapp className="bg-white br4 shadow-5" size="3rem" color="#25D366"/>
+        </a>
       <Navbar style={{overflow:'hidden'}} fixed="top" variant="dark" className="Navbar-color shadow-5" expand="lg">
           <div className="black show-ham" onClick={()=>{setVisible(!visible)}} >
             <BiMenu/>
@@ -34,8 +44,8 @@ const NavBar =()=>
               <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/blog' ><span className={` f5 ${location.pathname==='/blog' ?'active':''} `} >Blogs</span></Link>
             </div>
           </Nav>
-
       </Navbar>
+      </div>
     );
   }
 
