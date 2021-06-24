@@ -30,7 +30,7 @@ const Footer = () => {
                     <div className={'footer-col-3 pt3 pr5 pl0-ns pl4'}>
                         <p className={'b'}>Contact</p>
                         <div style={{lineHeight: "2"}}>
-                            <p>#261, Growthway Investments Gurudwara Road Dharmashala - (H.P.) 176215<br/>
+                            <p>#261, Growthway Investments Gurudwara Road Dharmashala - (H.P.) 176215<br/><br/>
                                 <a href="mailto:growthwayinvestments@gmail.com" className={'footer-contact-email pb1'}>growthwayinvestments@gmail.com</a>
                                 <br/>
                                 <a href="tel:01892796821" className={'footer-contact-phone pb1'}>01-892796821</a>
