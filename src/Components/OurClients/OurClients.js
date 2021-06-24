@@ -35,7 +35,7 @@ const OurClients = () => {
 		<div className="our-clients" style={{overflow:'hidden'}} data-aos="fade-up" data-aos-duration="2000">
 			<h2>Our Clients</h2>
 		<Carousel className="carousel-div" breakPoints={breakPoints} showArrows={false}>
-		{
+		  {
 					testimonial.map((item, index) => {
 						if(index===0 || (index%2)===0){
 							return(
@@ -51,7 +51,6 @@ const OurClients = () => {
 										</div>
 										<div className="">
 											<h3 className="">{item.name}</h3>
-											<p className="">{item.designation}</p>
 										</div>
 									</div>
 									<div className="flex justify-end items-center" style={{height: '12%', width: '100%'}}>
@@ -74,7 +73,6 @@ const OurClients = () => {
 											</div>
 											<div className="">
 												<h3 className="">{item.name}</h3>
-												<p className="">{item.designation}</p>
 											</div>
 										</div>
 										<div className="flex justify-end items-center" style={{height: '12%', width: '100%'}}>

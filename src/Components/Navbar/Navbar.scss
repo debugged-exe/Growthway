@@ -35,22 +35,16 @@
     display: none;
   }
 
-  @media only screen and (max-width:426px){
-    .navbar-right{
-      flex-direction: column;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-
-
-@media only screen and (max-width:426px){
+@media only screen and (max-width:768px){
   .Navbar-color {
     padding:5%;
   }
-
+  .navbar-right{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .nav{
     display: none;
   }

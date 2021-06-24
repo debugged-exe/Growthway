@@ -27,8 +27,9 @@ const NavBar =()=>
           <IoLogoWhatsapp className="bg-white br4 shadow-5" size="3rem" color="#25D366"/>
         </a>
       <Navbar style={{overflow:'hidden'}} fixed="top" variant="dark" className="Navbar-color shadow-5" expand="lg">
-          <div className="black show-ham" onClick={()=>{setVisible(!visible)}} >
-            <BiMenu/>
+          <div className="black show-ham flex items-center" onClick={()=>{setVisible(!visible)}} >
+            <img className={`mr-auto nav ${visible?'':'toggle'}`} src={Logo} alt="logo" style={{height:'30px',width:'70px',float:'left'}}/>
+            <BiMenu size='1.8rem'/>
           </div>
           <Nav className={`mr-auto nav ${visible?' toggle':''}`}>
             <div className="">
