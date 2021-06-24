@@ -7,7 +7,7 @@
   grid-template-columns:70% 30%;
   justify-content:center;
   align-items:center;
-} 
+}
 .calc-head{
   padding:0% 8% 0% 8%;
 }
@@ -82,6 +82,9 @@
   justify-content: center;
   align-items: center;
 }
+.pay{
+  border-right:1.5px solid #0075ff;
+}
 .calc-def{
   padding:0% 5% 0% 5%;
 }
@@ -116,6 +119,10 @@
   .claculator-box{
     height:auto;
   }
+  .result-grid{
+    width:100%;
+    margin:2%;
+  }
 
 }
 
@@ -137,7 +144,12 @@
     width:100%;
   }
   .result-grid{
+    display:flex;
+    flex-direction: column;
     width:100%;
+  }
+  .pay{
+    border:none;
   }
   .calc-def{
     padding:2%;

@@ -28,9 +28,9 @@ const Calculator =()=>
     }
 
     function calculateAimvalue() {
-        setTotal1(aim-(aim*0.25));
-         setTotal2((aim-(aim*0.18))/12);
-         setTotal3((aim-(aim*0.20))/4);
+        setTotal1((aim-(aim*0.25)).toFixed(2));
+         setTotal2(((aim-(aim*0.18))/12).toFixed(2));
+         setTotal3(((aim-(aim*0.20))/4).toFixed(2));
      }
 
     return (
@@ -92,11 +92,11 @@ const Calculator =()=>
                 </form>
                 <h2>Pay only</h2>
                   <div className="result-grid">
-                    <div className="tc ph3" style={{borderRight:'1.5px solid #0075ff'}}>
+                    <div className="tc ph3 pay">
                        <h3>Yearly</h3>
                        <p>{total1}/yr</p>
                     </div>
-                    <div className="tc ph3" style={{borderRight:'1.5px solid #0075ff'}}>
+                    <div className="tc ph3 pay">
                        <h3>Monthly</h3>
                        <p>{total2}/mo</p>
                     </div>
