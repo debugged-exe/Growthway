@@ -34,9 +34,8 @@ const OurClients = () => {
 	return (
 		<div className="our-clients" style={{overflow:'hidden'}} data-aos="fade-up" data-aos-duration="2000">
 			<h2>Our Clients</h2>
-		<Carousel breakPoints={breakPoints} showArrows={false}>
-			<div className="testimonial-grid">
-				{
+		<Carousel className="carousel-div" breakPoints={breakPoints} showArrows={false}>
+		{
 					testimonial.map((item, index) => {
 						if(index===0 || (index%2)===0){
 							return(
@@ -86,8 +85,8 @@ const OurClients = () => {
 						}
 
 					})
-				}
-			</div>
+		}
+
 			</Carousel>
 		</div>
 	)
