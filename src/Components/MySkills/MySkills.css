@@ -11,29 +11,35 @@
     background-color:darkgray;
     border-radius: 8px;
   }
-  .skill-per-ui {
+  .skill-per-customer-satisfaction{
     height: 10px;
     background-color:#0069FF;
     border-radius: 8px;
-    width: 60%;
+    width: 92%;
   }
-  .skill-per-ideas {
+  .skill-per-health-insurance {
     height: 10px;
     background-color:#0069FF;
     border-radius: 8px;
-    width: 80%;
+    width: 85%;
   }
-  .skill-per-marketing {
+  .skill-per-legal-tax {
     height: 10px;
     background-color:#0069FF;
     border-radius: 8px;
     width: 75%;
   }
-  .skill-per-consultation {
+  .skill-per-customer-royalty {
     height: 10px;
     background-color:#0069FF;
     border-radius: 8px;
-    width: 80%;
+    width: 87%;
+  }
+  .skill-per-real-estate {
+    height: 10px;
+    background-color:#0069FF;
+    border-radius: 8px;
+    width: 85%;
   }
 
 .skills-text{

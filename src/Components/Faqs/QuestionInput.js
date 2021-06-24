@@ -46,8 +46,8 @@ render(){
       <p className="calc-head fw6" style={{fontSize:'35px'}}>Got few doubts? Send them up</p>
       <div>
 
-      <div className="button-div-faq" >
-      <form onSubmit={(event) => this.handleForm(event)}>
+      <div className="pa2" >
+      <form onSubmit={(event) => this.handleForm(event)} className="button-div-faq">
           <textarea type="text" className="mr2-ns br2"
           style={{
               outline:"none",
@@ -59,7 +59,7 @@ render(){
           required
           />
             <button type="submit" className="fw6 bg-white black pa3 ph4 f4 grow pointer" style={{borderRadius:'8px',border:'none'}}>
-            Submit
+            Submit 
             </button>
         </form>
      </div>

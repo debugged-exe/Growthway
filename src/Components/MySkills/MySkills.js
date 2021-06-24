@@ -16,38 +16,44 @@ function MySkills(){
                 <div >
                     <div >
                         <div className="percent-bars flex inline justify-between ">
-                            <p style={{textAlign:"left"}}>Cryptocurrency investment</p>
-                            <p style={{textAlign:"right"}}>60%</p>
+                            <p style={{textAlign:"left"}}>Customer Satisfaction</p>
+                            <p style={{textAlign:"right"}}>92%</p>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-per-ui" per="90"></div>
+                            <div class="skill-per-customer-satisfaction" per="92"></div>
                         </div>
                     </div>
+
+
                     <div >
                         <div className="percent-bars flex inline justify-between">
                             <p style={{textAlign:"left"}}>Health Insurance</p>
                             <p style={{textAlign:"right"}}>85%</p>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-per-ideas" per="90"></div>
+                            <div class="skill-per-health-insurance" per="90"></div>
                         </div>
                     </div>
+
+
                     <div >
                         <div className="percent-bars flex inline justify-between">
                             <p style={{textAlign:"left"}}>Legal and tax advisory</p>
                             <p style={{textAlign:"right"}}>75%</p>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-per-marketing" per="90"></div>
+                            <div class="skill-per-legal-tax" per="75"></div>
                         </div>
                     </div>
+
+
                     <div >
                         <div className="percent-bars flex inline justify-between">
-                            <p style={{textAlign:"left"}}>Professional training provider in stock market trading and investing</p>
-                            <p style={{textAlign:"right"}}>85%</p>
+                            <p style={{textAlign:"left"}}>Customer Royalty Rate</p>
+                            <p style={{textAlign:"right"}}>87%</p>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-per-consultation" per="90"></div>
+                            <div class="skill-per-customer-royalty" per="87"></div>
                         </div>
                     </div>
                     <div >
@@ -56,7 +62,7 @@ function MySkills(){
                             <p style={{textAlign:"right"}}>85%</p>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-per-consultation" per="90"></div>
+                            <div class="skill-per-real-estate" per="85"></div>
                         </div>
                     </div>
                 </div>
