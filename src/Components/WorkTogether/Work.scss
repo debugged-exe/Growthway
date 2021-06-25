@@ -2,7 +2,9 @@
 // .work-container{
 //   width:100%;
 // }
-
+.file-div{
+  margin-left:30%;
+}
 .work-div{
   display:grid;
   grid-template-columns:50% 50%;
@@ -65,6 +67,9 @@
  .button-upload{
    margin:5% 5% 5% 23%;
  }
+ .file-div{
+   margin-left:20%;
+ }
 }
 @media only screen
    and (max-width :426px)
@@ -79,11 +84,15 @@
   .inputval{
     height: 8vh;
   }
+
 }
 @media only screen
    and (max-width : 320px)
 {
   .button-upload{
     margin:5% 5% 5% 22%;
+  }
+  .file-div{
+    margin-left:15%;
   }
 }

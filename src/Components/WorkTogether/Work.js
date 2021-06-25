@@ -46,7 +46,7 @@ class Work extends React.PureComponent {
 			<div className="work-div">
 			  <div><img src={Image} alt="Work-with-us"/></div>
 				<div>
-			  	<form onSubmit ={(event)=>this.handleSubmit(event)} className="center" >
+			  	<form onSubmit ={this.handleSubmit} className="center" >
 							 <input
 								placeholder="Name"
 							 className="inputval"
