@@ -1,6 +1,6 @@
 import React from 'react';
 import './TaglineCarousel.css';
-import {FaQuoteLeft, FaQuoteRight} from 'react-icons/fa';
+import {FaQuoteLeft} from 'react-icons/fa';
 import Carousel from 'react-elastic-carousel';
 import { Taglines } from './Taglines';
 
@@ -9,8 +9,7 @@ const TaglineComponent = ({quote,author}) => {
         <div className="grow tagline-component flex flex-column justify-center ma4">
             <FaQuoteLeft color="#0066ef"/>
             <p className="i f4">{quote}</p>
-            <FaQuoteRight color="#0066ef"/>
-            <p className="b f3">- {author}</p>
+            <p className="b f3">{author}</p>
         </div>
     );
 }

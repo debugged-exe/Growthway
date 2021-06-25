@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 const Footer = () => {
     return (
         <section className={'footer-section'}>
-            <footer className={'footer-container pt4-l pb4-l pb2-m pb2 ph6-l pv4-m ph4-m'}>
+            <footer className={'footer-container pt4-l pb4-l pb2-m pb2 ph4-l pv4-m ph4-m'}>
                 <div className={'footer-responsive-grid'}>
                     <div className={'footer-col-1 pl0-ns pl4'}>
                         <h1>Growthway</h1>
@@ -48,22 +48,22 @@ const Footer = () => {
                         <p className={'b'}>Instagram</p>
                         <div className={'footer-instagram-row'}>
                             <div className={'ma1'}>
-                                <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img1'}/>
+                                <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "85px", height: "80px"}} alt={'not available img1'}/>
                             </div>
                             <div className={'ma1'}>
-                                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img2'}/>
+                                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "85px", height: "80px"}} alt={'not available img2'}/>
                             </div>
                             <div className={'ma1'}>
-                                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img3'}/>
+                                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "85px", height: "80px"}} alt={'not available img3'}/>
                             </div>
                             <div className={'ma1'}>
-                                <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img4'}/>
+                                <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "85px", height: "80px"}} alt={'not available img4'}/>
                             </div>
                             <div className={'ma1'}>
-                                <img src="https://images.unsplash.com/photo-1552083375-1447ce886485?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img5'}/>
+                                <img src="https://images.unsplash.com/photo-1552083375-1447ce886485?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "85px", height: "80px"}} alt={'not available img5'}/>
                             </div>
                             <div className={'ma1'}>
-                                <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "100%", height: "100%"}} alt={'not available img6'}/>
+                                <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style={{object: "fit cover", width: "85px", height: "80px"}} alt={'not available img6'}/>
                             </div>
                         </div>
                     </div>
