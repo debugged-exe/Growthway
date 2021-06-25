@@ -18,7 +18,16 @@ const Services =()=>
          <p>With Growthway you don't have to anymore.</p>
          <Link to='/services'><button className="mt3 fw6 white pa3 f5 grow pointer" style={{borderRadius:'8px',border:'none',backgroundColor:'#0069FF'}}>Learn More</button></Link>
       </div>
-      <div className="pa4"><img src={Image1} alt="second"/></div>
+      <div className="service-content bg-white black shadow-5">
+         <h2><span style={{color:"rgb(0, 105, 255)"}}>Worried about finance?</span> A little planning can get things sorted for you</h2>
+         <p>• Next Holiday Trip or travelling</p>
+         <p>• New Mobile Phone</p>
+         <p>• Shopping, Home Appliances, Other Gadgets</p>
+         <p>• Down Payments for your new car/house</p>
+         <p>• Unannounced emergency</p>
+         <p>• Other personal expenses</p>
+         {/* <Link to='/services'><button className="mt3 fw6 white pa3 f5 grow pointer" style={{borderRadius:'8px',border:'none',backgroundColor:'#0069FF'}}>Learn More</button></Link> */}
+      </div>
       <div className="service-content white" style={{backgroundColor:'#0069FF'}}>
         <h2>Investment today is a source of income tomorrow</h2>
         <p className="pb4">Investment is interesting and it is secure enough to sail you through the floods of unannounced expenses that life puts you in! And GrowthWay Investments is here to help you invest smartly and securely.</p>
