@@ -46,13 +46,14 @@ render(){
       <p className="calc-head fw6" style={{fontSize:'35px'}}>Got few doubts? Send them up</p>
       <div>
 
-      <div className="pr2 mr3" >
+      <div className="pr2-ns mr3-ns" >
       <form onSubmit={(event) => this.handleForm(event)} className="button-div-faq">
           <textarea type="text" className=""
           style={{
               outline:"none",
               border:"none",
               width:"500px",
+              height:"41px"
           }}
           name="ques"
           onChange={this.handleChange}

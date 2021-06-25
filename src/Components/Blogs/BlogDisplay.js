@@ -43,7 +43,7 @@ const BlogDisplay = () => {
 								<>
                 <div className="blog-item">
                   <div>
-                    <img src={item.img} alt="blogs" style={{width: '100%', objectFit: 'cover'}}/>
+                    <img src={item.img} loading="lazy" alt="blogs" style={{width: '100%', objectFit: 'cover'}}/>
                   </div>
                   <div className="content">
                     <h2>{item.heading}</h2>
@@ -66,7 +66,7 @@ const BlogDisplay = () => {
                     <p>{item.description}</p>
                   </div>
                   <div>
-                    <img src={item.img} alt="blogs" style={{width: '100%', objectFit: 'cover'}}/>
+                    <img src={item.img} loading="lazy" alt="blogs" style={{width: '100%', objectFit: 'cover'}}/>
                   </div>
                 </div>
 							<p className="center" style={{width:'100px',borderBottom:'2px solid #0069FF'}}></p>
