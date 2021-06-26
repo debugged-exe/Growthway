@@ -104,7 +104,7 @@ class SurveyForm extends React.PureComponent {
 	}
 
   enable = (e) =>{
-    if(e.target.value=="3"){
+    if(e.target.value==="3"){
       this.setState({others:false});
     }else{
       this.setState({others:true});
@@ -131,7 +131,7 @@ class SurveyForm extends React.PureComponent {
   	else
   	{
   		const invest = this.state.invest;
-  		const filtered = invest.filter(item => item!=value);
+  		const filtered = invest.filter(item => item!==value);
   		this.setState({invest: filtered}, () => {
   			console.log('');
   		})
