@@ -6,29 +6,24 @@
 	width: 100%;
 	background: rgba(236, 243, 255);
 }
-
-.testimonial-grid{
-	display: grid;
-	grid-template-columns: 30% 30% 30%;
-	width: 90%;
-	margin: 2%;
-	justify-content: center;
+.carousel-div{
+	padding:0% 4% 0% 4%;
 }
 
-
 .testimon-card{
+	position:relative;
 	background: white;
 	margin: 3.25%;
 	display: flex;
-	height: 40vh;
+	height:50vh;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	padding-left: 3%;
-	padding-right: 3%;
+  padding:0% 4% 0% 4%;
 	transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 	.quote{
+		position:absolute;
+		bottom:3%;
 		color: #0069FF;
 		transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 	}
@@ -65,28 +60,20 @@
 
 @media only screen and (max-width: 1024px){
 	.testimon-card{
-		height: 48vh;
+		height:50vh;
 	}
 }
 
 @media only screen and (max-width: 426px){
 	.testimon-card{
-		height: 53vh;
+		height:auto;
 	}
-
-	.testimonial-grid{
-		grid-template-columns: 100%;
+	.carousel-div{
+		padding:0%;
 	}
-
 	.image-container1{
 		height: 30vh;
 		width: 30vw;
 		margin: 0% 6% 0% 0%;
-	}
-}
-
-@media only screen and (max-width: 321px){
-	.testimon-card{
-		height: 57vh;
 	}
 }

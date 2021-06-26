@@ -8,7 +8,7 @@ import {SiBitcoin} from "react-icons/si";
 
 const OurServices = () => {
     return (
-        <section className={"section-div"}>
+        <section className={"section-div"} style={{lineHeight:"1.5"}}>
             <div className={"image-container pa5"}>
                 <img
                     src={Wallet}
@@ -24,9 +24,9 @@ const OurServices = () => {
                     <div className={"data-row-1"}>
                         <div className={"data-row-1-col-1"}>
                             <div className={'flex justify-between items-center'}>
-                                <GiTakeMyMoney size={"3rem"}/>
+                                <GiTakeMyMoney size={"5rem"} color="#0066ef" className="pr2"/>
                                 <h2 className={'pl1'}>
-                                    Financial and Fund investment services
+                                    Financial & Fund investment services
                                 </h2>
                             </div>
                             <div className={'pa'}>
@@ -37,9 +37,9 @@ const OurServices = () => {
                         </div>
                         <div className={"data-row-1-col-2"}>
                             <div className={'flex justify-between items-center'}>
-                                <RiFundsFill size={"3rem"}/>
+                                <RiFundsFill size={"5rem"} color="#0066ef" className="pr2"/>
                                 <h2 className={'pl1'}>
-                                    Investment advisory and management services
+                                    Investment advisory & management services
                                 </h2>
                             </div>
                             <div className={'pa'}>
@@ -49,9 +49,9 @@ const OurServices = () => {
                         </div>
                         <div className={"data-row-2-col-1"}>
                             <div className={'flex justify-between items-center'}>
-                                <SiBitcoin size={"3rem"}/>
+                                <SiBitcoin size={"5rem"} color="#0066ef" className="pr2"/>
                                 <h2>
-                                    Cryptocurrency investment and exchange services
+                                    Crypto investment & exchange services
                                 </h2>
                             </div>
                             <div className={'pa'}>
@@ -61,9 +61,9 @@ const OurServices = () => {
                         </div>
                         <div className={"data-row-2-col-2"}>
                             <div className={'flex justify-between items-center'}>
-                                <BiBuildingHouse size={"3rem"}/>
+                                <BiBuildingHouse size={"5rem"} color="#0066ef" className="pr2"/>
                                 <h2>
-                                    Real estate agency and investment services
+                                    Real estate agency & investment services
                                 </h2>
                             </div>
                             <div className={'pa'}>

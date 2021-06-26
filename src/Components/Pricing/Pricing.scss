@@ -6,7 +6,7 @@
 }
 .head-bg1{
   background:url('services-bg.png') no-repeat center center/cover;
-  height:100vh;
+  height:70vh;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -29,6 +29,10 @@ left:37%;
 z-index: 10;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
 
 .price{
   width:30vw;
@@ -75,7 +79,7 @@ z-index: 10;
   transition: 0.5s;
 }
 .button:hover{
-  background-color:blue;
+  background-color:#0069FF;
 
 }
 .button:hover span {
@@ -87,12 +91,10 @@ z-index: 10;
   right: 0;
 }
 
-.showPayment{
-  display: block;
-}
-
-.hidePayment{
-  display: none;
+@media only screen and (max-width:768px){
+  .bg-payment-div{
+    left:27%;
+  }
 }
 
 @media only screen and (max-width:426px){
@@ -111,5 +113,11 @@ z-index: 10;
   }
   .main-container{
       align-items:center;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .bg-payment-div{
+    left:27%;
   }
 }

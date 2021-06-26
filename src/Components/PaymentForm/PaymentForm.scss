@@ -1,21 +1,24 @@
 .payment-form-bg{
-    background: white;
-    border: 1px solid black;
-
+ 
 .payment-form{
-    input, select{
+    .width-input{
         outline: none;
         margin: 20px 0;
         border: none;
         border-bottom: 1px solid black ;
         border-radius: 6px;
-        width: 24vw;
         background: none;
+        width: 300px;
     }
     button{
         border: none;
         outline: none;
     }
 }
-
+@media only screen and (max-width:425px) {
+    .width-input{
+        width: 200px;
+    }
 }
+}
+

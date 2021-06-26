@@ -2,7 +2,9 @@
 // .work-container{
 //   width:100%;
 // }
-
+.file-div{
+  margin-left:30%;
+}
 .work-div{
   display:grid;
   grid-template-columns:50% 50%;
@@ -19,7 +21,7 @@
   line-height: 50px;
   padding: 0px 35px;
   font-size: 15px;
-  background-color:blue;
+  background-color:#0069FF;
   color: white;
   text-transform: uppercase;
   font-family: 'Open Sans Condensed';
@@ -60,10 +62,13 @@
    width:90vw;
  }
  .inputval{
-   height:12vh;
+   height:10vh;
  }
  .button-upload{
    margin:5% 5% 5% 23%;
+ }
+ .file-div{
+   margin-left:20%;
  }
 }
 @media only screen
@@ -76,11 +81,18 @@
     grid-template-columns:100%;
     padding:2%;
   }
+  .inputval{
+    height: 8vh;
+  }
+
 }
 @media only screen
    and (max-width : 320px)
 {
   .button-upload{
     margin:5% 5% 5% 22%;
+  }
+  .file-div{
+    margin-left:15%;
   }
 }

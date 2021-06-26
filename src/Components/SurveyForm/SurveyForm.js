@@ -1,8 +1,6 @@
 import React from 'react';
 import './SurveyForm.scss';
 import CustomButton from './CustomButton/CustomButton.js';
-import {FaPhoneAlt} from 'react-icons/fa';
-import {BsFillPersonFill} from 'react-icons/bs';
 import 'tachyons';
 
 const initialState = {
@@ -63,7 +61,7 @@ class SurveyForm extends React.PureComponent {
 		} = this.state;
 
 		event.preventDefault();
-		fetch('http://localhost:3000/surveyform', {
+		fetch('https://stormy-escarpment-39477.herokuapp.com/surveyform', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
@@ -94,7 +92,7 @@ class SurveyForm extends React.PureComponent {
 		.then(resp => {
 			if(resp==='Success')
 			{
-				alert('Insert success message here');
+				alert('Your message was recieved successfully.Thank you for your feedback.');
 			}
 		})
 		.catch(err => {
@@ -140,9 +138,9 @@ class SurveyForm extends React.PureComponent {
 
 	render() {
 		return (
-			<div className="survey-div">
+			<div className="survey-div pt6" id="survey">
 					<h1 className="survey-header">
-						Survey Form
+						Help us understand yor investing needs better.
 					</h1>
 					<form className="survey-form-container" onSubmit={this.handleSubmit}>
 						<div className="input-div">

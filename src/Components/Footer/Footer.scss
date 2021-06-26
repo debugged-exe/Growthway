@@ -2,25 +2,12 @@
   background-color: black;
   color: white;
 }
-.footer-container{
 
-}
 .footer-responsive-grid{
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }
-.footer-col-1{
 
-}
-.footer-col-2{
-
-}
-.footer-col-3{
-
-}
-.footer-col-4{
-
-}
 .footer-about-list-item-link-1{
   position: relative;
 }
@@ -114,6 +101,12 @@
 .footer-contact-email{
   position: relative;
 }
+
+
+.hover-social-icons:hover{
+  color: #0069ff;
+}
+
 .footer-contact-email:before{
   content: "";
   position: absolute;

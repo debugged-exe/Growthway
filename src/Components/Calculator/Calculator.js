@@ -28,9 +28,9 @@ const Calculator =()=>
     }
 
     function calculateAimvalue() {
-        setTotal1(aim-(aim*0.25));
-         setTotal2(aim-(aim*0.18));
-         setTotal3(aim-(aim*0.20));
+        setTotal1((aim-(aim*0.25)).toFixed(2));
+         setTotal2(((aim-(aim*0.18))/12).toFixed(2));
+         setTotal3(((aim-(aim*0.20))/4).toFixed(2));
      }
 
     return (
@@ -46,7 +46,7 @@ const Calculator =()=>
 
        <div className={`${show===true?'show':'hide'}`}>
          <div className="profit-div shadow-2 tc ma5">
-            <h2>Profit <span style={{color:'blue'}}>Calculator</span></h2>
+            <h2>Profit <span style={{color:'#0069FF'}}>Calculator</span></h2>
             <p className="calc-def">You must know the calculation before investing in any plan, so you never make mistakes. Check the calculation and you will get as our calculator says.</p>
               <form className="form-calc pa2 flex flex-column justify-center align-items" onSubmit ={e=>handleSubmit(e.preventDefault())}>
                 <div className="calc-1">
@@ -78,7 +78,7 @@ const Calculator =()=>
 
           </div>
           <div className="profit-div shadow-2 ma4">
-            <h2>Wanna know how much to pay to achieve your goal amount?</h2>
+            <h2 className="ph2 tc">How much to pay to achieve your goal amount?</h2>
               <form className="form-calc pa2 flex flex-column justify-center align-items" onSubmit ={e=>handleSubmit(e.preventDefault())}>
                 <input
                 className="inputfield"
@@ -92,17 +92,17 @@ const Calculator =()=>
                 </form>
                 <h2>Pay only</h2>
                   <div className="result-grid">
-                    <div className="tc ph3" style={{borderRight:'1.5px solid #0075ff'}}>
+                    <div className="tc ph3 pay">
                        <h3>Yearly</h3>
-                       <p>{total1}</p>
+                       <p>{total1}/yr</p>
                     </div>
-                    <div className="tc ph3" style={{borderRight:'1.5px solid #0075ff'}}>
+                    <div className="tc ph3 pay">
                        <h3>Monthly</h3>
-                       <p>{total2}</p>
+                       <p>{total2}/mo</p>
                     </div>
                     <div className="tc ph3">
-                       <h3>Quatarly</h3>
-                       <p>{total3}</p>
+                       <h3>Quaterly</h3>
+                       <p>{total3}/qtr</p>
                     </div>
 
                   </div>
