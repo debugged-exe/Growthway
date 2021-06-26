@@ -71,9 +71,9 @@ const Footer = () => {
             </footer>
             <footer className={'footer-links-bottom ph6-l ph4-m pb3'}>
                 <div className={'footer-links-bottom-link-container flex w-50-l w-100-m w-100 pt0-ns pt2 pb0-ns pb2'}>
-                    <Link className={'footer-links-bottom-link-container-link-item-1 pb2 pr3'} to="/blog"> Our Blogs</Link>
-                    <Link className={'footer-links-bottom-link-container-link-item-2 pb2 pr3'} to="/"> Home</Link>
-                    <Link className={'footer-links-bottom-link-container-link-item-3 pb2 pr3'} to="/services"> Growmax 365</Link>
+                    <Link to="/blog/#blog" className={'footer-links-bottom-link-container-link-item-1 pb2 pr3'}> Our Blogs</Link>
+                    <Link to="/" className={'footer-links-bottom-link-container-link-item-2 pb2 pr3'}> Home</Link>
+                    <Link to="/services/#service"className={'footer-links-bottom-link-container-link-item-3 pb2 pr3'} > Growmax 365</Link>
                 </div>
                 <div className={'tr-l tc'}>
                     @2020 GrowthWay Investments. <span className={'hover-social-icons'}>All Rights Reserved</span>
