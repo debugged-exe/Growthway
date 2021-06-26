@@ -18,10 +18,10 @@ function BasicProfile(){
                 <div className="basic-profile-data  flex justify-space-around  w-100 " >
                     <div className="w-50-l w-50-m-ns pl3-m w-100 pl0-ns pl3" >
                         <h4 style={{color:'#0069FF'}}>Biography</h4>
-                        <p style={{lineHeight:"1.5"}}><span className="f2 b"><CountUp end={752} duration={5}/> +</span> Total clients served</p>
-                        <p style={{lineHeight:"1.5"}}><span className="b f2"><CountUp end={200} duration={5}/> +</span> Present Clients</p>
-                        <p style={{lineHeight:"1.5"}}><span className="b f2"><CountUp end={4} duration={5}/> +</span> Countries of Operation</p>
-                        <p style={{lineHeight:"1.5"}}><span className="b f2">6 : 4 </span> Male/Female Investor Ratio</p>
+                        <p style={{lineHeight:"1.5", fontFamily:"sans-serif"}}><span className="f2 b"><CountUp end={752} duration={5}/> + </span> Total clients served</p>
+                        <p style={{lineHeight:"1.5", fontFamily:"sans-serif"}}><span className="b f2"><CountUp end={200} duration={5}/> + </span> Present Clients</p>
+                        <p style={{lineHeight:"1.5", fontFamily:"sans-serif"}}><span className="b f2"><CountUp end={4} duration={5}/> + </span> Countries of Operation</p>
+                        <p style={{lineHeight:"1.5", fontFamily:"sans-serif"}}><span className="b f2">6 : 4 </span> Male/Female Investor Ratio</p>
                     </div>
                     <div className="w-50-l w-50-m-ns pl3-m w-100 pl0-ns pl3" >
                         <h4 className="pl3-ns" style={{color:'#0069FF'}}>Our focus</h4>
