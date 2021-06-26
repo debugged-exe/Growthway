@@ -4,7 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 import * as FaIcons from 'react-icons/fa';
 import {ImTumblr2} from 'react-icons/im';
 import {GrLinkedin} from 'react-icons/gr';
-import {Link} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 const Footer = () => {
     return (
         <section className={'footer-section'}>
@@ -20,10 +20,10 @@ const Footer = () => {
                         <div className={'justify-center items-center pt3 pl5-l '}>
                             <p className={'pl4 b'}>Quick Links</p>
                             <ul className={''} style={{listStyle: "none", lineHeight: "2", }}>
-                                <li><Link to={{pathname: "/about",hash: "#about"}}className={'footer-about-list-item-link-2 pb2'}>About</Link></li>
-                                <li><Link to={{pathname: "/services",hash: "#service"}} className={'footer-about-list-item-link-2 pb2'}>Services</Link></li>
-                                <li><Link to={{pathname: "/surveyform",hash: "#survey"}} className={'footer-about-list-item-link-3 pb2'}>Survey Form</Link></li>
-                                <li><Link to={{pathname: "/workwithus",hash: "#work"}} className={'footer-about-list-item-link-4 pb2'}>Career</Link></li>
+                                <li><Link to="/about/#about"className={'footer-about-list-item-link-2 pb2'}>About</Link></li>
+                                <li><Link to="/services/#service" className={'footer-about-list-item-link-2 pb2'}>Services</Link></li>
+                                <li><Link to="/surveyform/#survey" className={'footer-about-list-item-link-3 pb2'}>Survey Form</Link></li>
+                                <li><Link to="/workwithus/#work" className={'footer-about-list-item-link-4 pb2'}>Career</Link></li>
                             </ul>
                         </div>
                     </div>

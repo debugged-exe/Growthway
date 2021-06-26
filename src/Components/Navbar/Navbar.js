@@ -38,11 +38,11 @@ const NavBar =()=>
 
             <div className="w-80 navbar-right">
               <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/' ><span className={` f5 ${location.pathname==='/'?'active':''} `} >Home</span></Link>
-              <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/services' ><span className={` f5 ${location.pathname==='/services'?'active':''} `} >Services</span></Link>
-              <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/surveyform' ><span className={` f5 ${location.pathname==='/surveyform'?'active':''} `}   >Survey</span></Link>
-              <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/about' ><span className={` f5 ${location.pathname==='/about'?'active':''} `} >About Us</span></Link>
-              <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/workwithus' ><span className={` f5 ${location.pathname==='/workwithus'?'active':''} `} >Work with Us</span></Link>
-              <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/blog' ><span className={` f5 ${location.pathname==='/blog' ?'active':''} `} >Blogs</span></Link>
+              <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/services/#service' ><span className={` f5 ${location.pathname==='/services/' && location.hash==='#service'?'active':''} `} >Services</span></Link>
+              <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/surveyform/#survey' ><span className={` f5 ${location.pathname==='/surveyform/' && location.hash==='#survey'?'active':''} `}   >Survey</span></Link>
+              <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/about/#about' ><span className={` f5 ${location.pathname==='/about/' && location.hash==='#about'?'active':''} `} >About Us</span></Link>
+              <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/workwithus/#work' ><span className={` f5 ${location.pathname==='/workwithus/' && location.hash==='#work'?'active':''} `} >Work with Us</span></Link>
+              <Link  style={{color:"#002e45"}} className="font-weight-nav links" to='/blog/#blog' ><span className={` f5 ${location.pathname==='/blog/' && location.hash==='#blog'?'active':''} `} >Blogs</span></Link>
             </div>
           </Nav>
       </Navbar>

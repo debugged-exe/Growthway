@@ -32,7 +32,7 @@ const BlogDisplay = () => {
 
 	return (
 
-    <div id="blogtop" className="pt6">
+    <div id="blog" className="pt6">
       <h1 className="tc">Blogs</h1>
       <div className="flex flex-column justify-center items-center">
         {
@@ -41,7 +41,7 @@ const BlogDisplay = () => {
             if(index===0 || (index%2)===0){
               return(
 								<>
-                <div className="blog-item">
+                <div className="blog-item" key={index}>
                   <div>
                     <img src={item.img} loading="lazy" alt="blogs" style={{width: '100%', objectFit: 'cover'}}/>
                   </div>

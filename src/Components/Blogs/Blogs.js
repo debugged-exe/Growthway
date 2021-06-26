@@ -1,16 +1,16 @@
 import React, {useState, useEffect } from 'react';
-import { Link ,withRouter} from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import 'tachyons';
 import './Blog.scss';
 
-const Blogs = ({history}) => {
+const Blogs = () => {
 
 	return (
 		<div className="flex flex-column justify-center items-center">
 		 <h1>Latest Blogs</h1>
 			<div className="blog-container">
 			<Link to="/blog/#blog"  style={{padding:"5%"}}>
-			   <div className="item shadow-2" onClick={()=>history.push('/blog/#blogtop')}>
+			   <div className="item shadow-2">
 				   <h3 className="ma3">1950's upto now pop-music design</h3>
 					 <p className="ma3">May 21st 2018 | Genre</p>
 				 </div>
@@ -33,4 +33,4 @@ const Blogs = ({history}) => {
 	)
 }
 
-export default withRouter(Blogs) ;
+export default Blogs;

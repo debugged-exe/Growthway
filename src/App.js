@@ -23,7 +23,7 @@ const App = () => {
         return (
             <div style={{overflow: 'hidden'}}>
 
-                <Router>
+                <Router basname='/'>
                     <NavBar/>
                     <Switch>
                         <Route exact path='/' component={HomePage}/>

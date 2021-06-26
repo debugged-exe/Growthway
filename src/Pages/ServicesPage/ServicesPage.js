@@ -3,7 +3,7 @@ import Pricing from '../../Components/Pricing/Pricing.js';
 
 const ServicesPage = () => {
 	return (
-		<div>
+		<div id="services">
 			<Pricing/>
 		</div>
 	)

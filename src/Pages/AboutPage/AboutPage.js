@@ -7,7 +7,7 @@ import './AboutPage.scss';
 
 const AboutPage=()=>{
   return (
-    <div>
+    <div id='about'>
       <Aboutus/>
       <BasicProfile/>
       <MySkills/>
