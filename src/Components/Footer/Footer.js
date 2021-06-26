@@ -80,7 +80,7 @@ const Footer = () => {
                 </div>
             </footer>
             <footer className={'flex justify-center items-center pt2-ns pt1 pb2-ns pb1 bg-black white'}>
-                © DEVELOPED BY <a className="b" href="https://debuggedexe.com/" rel="noreferrer" target="_blank"> DEBUGGED.EXE</a>
+                <a href="https://debuggedexe.com/" rel="noreferrer" target="_blank">© DEVELOPED BY <span className="b"> DEBUGGED.EXE</span></a>
             </footer>
         </section>
     );

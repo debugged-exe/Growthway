@@ -91,8 +91,8 @@ const Pricing = () => {
 				</div>
 			</Modal>
 				<div className="tc">
-					<p style={{fontSize:'40px',fontWeight:'600'}} className="mb1">Start working together?</p>
-					<p>You can learn the investment and finance basics by interning with us. Click below to know more.</p>
+					<p style={{fontSize:'40px',fontWeight:'600'}} className="mb1">Want to be a part of our team?</p>
+					<p>Get an insight of how we work by joining our team. We have openings for various positions which you'll find in the form. Click below to find out more.</p>
 					<Link to="/workwithus"><button className="mb4 fw6 white pa3 ph4 f5 grow pointer" style={{borderRadius:'8px',border:'none',backgroundColor:'#0069FF'}}>Find Out More</button></Link>
 				</div>
 		</div>
