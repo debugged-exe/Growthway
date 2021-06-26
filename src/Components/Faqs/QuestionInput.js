@@ -30,7 +30,7 @@ class QuestionInput extends React.PureComponent {
   	.then(resp => {
   		if(resp==='Success')
   		{
-  		alert('Your message was recieved successfully.Thank you for your feedback.')
+  		alert('Your message was recieved successfully.Thank you we will try to solve your query as soon as possible.')
   		}
   	})
   	.catch(err => {
@@ -61,7 +61,7 @@ render(){
           required
           />
             <button type="submit" className="fw6 bg-white black pa2 ph3 f5 grow pointer faq-hover" style={{height:"41px", border:'none'}}>
-            Submit 
+            Submit
             </button>
         </form>
      </div>

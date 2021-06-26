@@ -14,7 +14,7 @@ const Aboutus = () => {
 
 		<div className="tc pt5" >
 		<div className="about-div pt4">
-				<p className="f1 fw6 white">Pathway towards Investment</p>
+				<p className="f1 fw6 white" id="about">Pathway towards Investment</p>
 
 			<div className="about-grid">
 				<div className="circle-div" style={{zIndex:'5'}}>

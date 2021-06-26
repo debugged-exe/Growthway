@@ -92,7 +92,7 @@ class SurveyForm extends React.PureComponent {
 		.then(resp => {
 			if(resp==='Success')
 			{
-				alert('Insert success message here');
+				alert('Your message was recieved successfully.Thank you for your feedback.');
 			}
 		})
 		.catch(err => {

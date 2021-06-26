@@ -43,7 +43,7 @@ class CallBack extends React.PureComponent {
 	.then(resp => {
 		if(resp==='Success')
 		{
-		alert('Your message was recieved successfully.Thank you for your feedback.')
+		alert('Your message was recieved successfully.')
 		}
 	})
 	.catch(err => {
