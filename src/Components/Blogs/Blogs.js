@@ -3,31 +3,49 @@ import { HashLink as Link } from 'react-router-hash-link';
 import 'tachyons';
 import './Blog.scss';
 
-const Blogs = () => {
- 
+const Blogs = ({blogs}) => {
+
 	return (
 		<div className="flex flex-column justify-center items-center">
 		 <h1>Latest Blogs</h1>
 			<div className="blog-container">
-			<Link to="/blog/#blog"  style={{padding:"5%"}}>
-			   <div className="item shadow-2">
-				   <h3 className="ma3">Your financial decisions are in the governments hands.</h3>
-					 <p className="ma3">May 21st 2018 | Genre</p>
-				 </div>
-				 </Link>
+			{
+       blogs.map((item,index)=>{
+				 if(index===0){
+					 return(
+	 					<Link to="/blog/#blog"  style={{padding:"5%"}}>
+	 	 	 			   <div className="item shadow-2">
+	 	 	 				   <h3 className="ma3">{item.heading}</h3>
+	 	 	 					 <p className="ma3">{item.date}</p>
+	 	 	 				 </div>
+	  	 				 </Link>
+	 				)
+				 }
+				 else if(index===1)
+				 {
+					 return(
+ 					 <Link to="/blog/#blog"  style={{padding:"5%"}}>
+ 							<div className="item1 shadow-2">
+ 								<h3 className="ma3">{item.heading}</h3>
+ 								<p className="ma3">{item.date}</p>
+ 							</div>
+ 							</Link>
+ 				 )
+				 }
+				 else if (index===2) {
+					 return(
+ 					 <Link to="/blog/#blog"  style={{padding:"5%"}}>
+ 							<div className="item2 shadow-2">
+ 								<h3 className="ma3">{item.heading}</h3>
+ 								<p className="ma3">{item.date}</p>
+ 							</div>
+ 							</Link>
+ 				 )
+				 }
 
-				<Link to="/blog/#blog" style={{padding:"5%"}}>
-				 <div className="item1 shadow-2">
-				   <h3 className="ma3">Your financial decisions are in the governments hands.</h3>
-					 <p className="ma3">May 21st 2018 | Genre</p>
-				 </div>
-				</Link>
-				<Link to="/blog/#blog" style={{padding:"5%"}}>
-				 <div className="item2 shadow-2">
-				   <h3 className="ma3">Your financial decisions are in the governments hands.</h3>
-					 <p className="ma3">May 21st 2018 | Genre</p>
-				 </div>
-				</Link>
+
+			 })
+			}
 			</div>
   </div>
 	)

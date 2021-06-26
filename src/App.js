@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NavBar from './Components/Navbar/Navbar.js';
@@ -17,6 +17,24 @@ import SurveyForm from './Components/SurveyForm/SurveyForm.js';
 
 
 const App = () => {
+    const[blogs,setBlogs]=useState([]);
+    const [len, setLen] = useState(0);
+
+    useEffect(()=>{
+      fetch('https://stormy-escarpment-39477.herokuapp.com/blog')
+      .then(response=>response.json())
+      .then(resp=>{
+        if(resp[0].heading){
+          setBlogs(resp);
+          setLen(resp.length);
+          console.log(resp.length);
+        }
+      })
+      .catch(err => {
+       console.log(err)
+
+     })
+   },[])
 
     AOS.init();
 
@@ -26,8 +44,8 @@ const App = () => {
                 <Router basname='/'>
                     <NavBar/>
                     <Switch>
-                        <Route exact path='/' component={HomePage}/>
-                        <Route exact path='/blog' component={BlogPage}/>
+                        <Route exact path='/' component={()=><HomePage blogs={blogs}/>}/>
+                        <Route exact path='/blog' component={()=><BlogPage blogs={blogs} len={len}/>}/>
                         <Route exact path='/about' component={AboutPage}/>
                         <Route exact path='/workwithus' component={Work}/>
                         <Route exact path='/services' component={ServicesPage}/>

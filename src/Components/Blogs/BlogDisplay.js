@@ -4,31 +4,14 @@ import { Link } from "react-router-dom";
 import 'tachyons';
 import './BlogDisplay.scss';
 
-const BlogDisplay = () => {
+const BlogDisplay = ({blogs,len}) => {
 
-	const[items,setItems]=useState([]);
 	const [visible, setVisible] = useState(3);
-	const [len, setLen] = useState(0);
 
 	const showMoreItems = () => {
 		setVisible((prev) => prev + 3);
 	}
 
-	useEffect(()=>{
-    fetch('https://stormy-escarpment-39477.herokuapp.com/blog')
-    .then(response=>response.json())
-    .then(resp=>{
-      if(resp[0].heading){
-        setItems(resp);
-        setLen(resp.length);
-        console.log(resp.length);
-      }
-    })
-    .catch(err => {
-     console.log(err)
-
-   })
- },[])
 
 	return (
 
@@ -36,7 +19,7 @@ const BlogDisplay = () => {
       <h1 className="tc">Blogs</h1>
       <div className="flex flex-column justify-center items-center">
         {
-          items.slice(0,visible)
+          blogs.slice(0,visible)
           .map((item,index) => {
             if(index===0 || (index%2)===0){
               return(

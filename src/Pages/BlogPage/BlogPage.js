@@ -7,12 +7,12 @@ import BlogDisplay from '../../Components/Blogs/BlogDisplay.js';
 // css
 import './BlogPage.scss';
 
-const BlogPage = () => {
+const BlogPage = ({blogs,len}) => {
 	return (
 
 		<div className="blog-page" >
 		 <span id="blog"></span>
-			<BlogDisplay/>
+			<BlogDisplay blogs={blogs} len={len}/>
 		</div>
 	)
 }

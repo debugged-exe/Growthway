@@ -9,7 +9,7 @@ import Services from '../../Components/Aboutus/Services';
 import LandingPage from '../../Components/Aboutus/LandingPage';
 import Blogs from '../../Components/Blogs/Blogs';
 
-const HomePage = () => {
+const HomePage = ({blogs}) => {
 	return (
 		<div>
 			<Header/>
@@ -20,7 +20,7 @@ const HomePage = () => {
 			<OurClients />
 			<OurServices />
 			<Calculator/>
-			<Blogs />
+			<Blogs blogs={blogs}/>
 		</div>
 	)
 }
