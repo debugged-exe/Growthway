@@ -15,7 +15,7 @@ const Pricing = () => {
 
 	return (
     <div className={`${showPayment===true?"bg-dark":"''"}`}>
-			<div className="head-bg1 flex tc flex-column justify-center items-center white b">
+			<div id="service" className="head-bg1 flex tc flex-column justify-center items-center white b">
 				<p style={{fontSize:"3.6rem"}} className="ma0 pa0">Our Services</p>
 			</div>
 

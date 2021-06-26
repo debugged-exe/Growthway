@@ -138,7 +138,7 @@ class SurveyForm extends React.PureComponent {
 
 	render() {
 		return (
-			<div className="survey-div pt6">
+			<div className="survey-div pt6" id="survey">
 					<h1 className="survey-header">
 						Help us understand yor investing needs better.
 					</h1>
