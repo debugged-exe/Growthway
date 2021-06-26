@@ -5,9 +5,9 @@
 
 }
 
-.item{
-  height:40vh;
-  width:28vw;
+.item, .item1 ,.item2{
+  height:43vh;
+  width:26vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,21 +17,42 @@
   color: black;
 }
 .item:hover{
-     background:url('cryptocurrency-market.jpg') no-repeat center center/cover;
+     background:url('https://images.unsplash.com/photo-1620206934908-1a16670e6bd3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU2fHxjcnlwdG9jdXJyZW5jeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+     color:white;
+     background-color: rgba(0,0,0,0.5);
+     background-blend-mode: darken;
+     opacity:0.9;
+}
+.item1:hover{
+     background:url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3J5cHRvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+     color:white;
+     background-color: rgba(0,0,0,0.5);
+     background-blend-mode: darken;
+     opacity:0.9;
+}
+.item2:hover{
+     background:url('https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW52ZXN0bWVudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
      color:white;
      background-color: rgba(0,0,0,0.5);
      background-blend-mode: darken;
      opacity:0.9;
 }
 
+@media only screen and (max-width: 768px) {
+
+    .item, .item1 ,.item2{
+      width:30vw;
+      height:40vh;
+      margin:0;
+    }
+}
 @media only screen and (max-width: 426px) {
     .blog-container{
         grid-template-columns: 100%;
-
     }
-    .item{
+    .item, .item1 ,.item2{
       width:80vw;
-      height:40vh;
+      height:50vh;
       margin:0;
     }
 }

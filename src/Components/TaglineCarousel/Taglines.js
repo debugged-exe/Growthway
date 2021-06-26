@@ -12,16 +12,16 @@ export const Taglines=[
       author:"Invest in what you understand."
     },
     {
-      quote:"An investment is not worth if if is taking way",
+      quote:"An investment is not worth it if is taking way",
       author:"Your Sleep"
     },
     {
       quote:"No more paying any maintenance charges on your own money! We take your money to grow it for you.",
       author:"Growhway Investments"
-  
+
     },
     {
       quote:"They take your money and when you want it back, they want to know if you are good for it.",
       author:"Don't fall for this."
     },
-  ]; 
+  ];
