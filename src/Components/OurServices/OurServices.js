@@ -1,5 +1,6 @@
 import React from 'react';
 import './OurServices.scss';
+import {GiReceiveMoney} from 'react-icons/gi';
 import Wallet from "./wallet.svg";
 import {RiFundsFill} from "react-icons/ri";
 import {GiTakeMyMoney} from "react-icons/gi";
@@ -17,64 +18,21 @@ const OurServices = () => {
                 />
             </div>
             <div className={"data-container"}>
-                <h1 className={"data-container-heading"}>
-                   We at Growthway provide following four main services.
-                </h1>
-                <div className={"data-box-container"}>
-                    <div className={"data-row-1"}>
-                        <div className={"data-row-1-col-1"}>
-                            <div className={'flex justify-between items-center'}>
-                                <GiTakeMyMoney size={"5rem"} color="#0066ef" className="pr2"/>
-                                <h2 className={'pl1'}>
-                                    Financial & Fund investment services
-                                </h2>
-                            </div>
-                            <div className={'pa'}>
-                                <p style={{paddingLeft: "1.5rem"}}>Financial and Fund services cover two broad categories: General Insurance (automotive, home, medical, fire, travel, etc.) and Life Insurance (term-life, money-back, unit-linked, pension plans, etc.)
-                                </p>
-                            </div>
-
-                        </div>
-                        <div className={"data-row-1-col-2"}>
-                            <div className={'flex justify-between items-center'}>
-                                <RiFundsFill size={"5rem"} color="#0066ef" className="pr2"/>
-                                <h2 className={'pl1'}>
-                                    Investment advisory & management services
-                                </h2>
-                            </div>
-                            <div className={'pa'}>
-                                <p style={{paddingLeft: "1.5rem"}}>Investment advisory and management provides a holistic solution in aspects of wealth management, budgeting, savings etc.
-                                </p>
-                            </div>
-                        </div>
-                        <div className={"data-row-2-col-1"}>
-                            <div className={'flex justify-between items-center'}>
-                                <SiBitcoin size={"5rem"} color="#0066ef" className="pr2"/>
-                                <h2>
-                                    Crypto investment & exchange services
-                                </h2>
-                            </div>
-                            <div className={'pa'}>
-                                <p style={{paddingLeft: "1.5rem"}}>Cryptocurrencies are decentralized networks based on blockchain technology. It presents major strides in economic growth and freedom under economic sanctions.
-                                </p>
-                            </div>
-                        </div>
-                        <div className={"data-row-2-col-2"}>
-                            <div className={'flex justify-between items-center'}>
-                                <BiBuildingHouse size={"5rem"} color="#0066ef" className="pr2"/>
-                                <h2>
-                                    Real estate agency & investment services
-                                </h2>
-                            </div>
-                            <div className={'pa'}>
-                                <p style={{paddingLeft: "1.5rem"}}>Investment in real estate is one of the hot topic in India. This industry is the second biggest employer after agriculture. It involves four sub-areas- housing, commercial, retail and hospitality.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="flex flex-column">
+                 <div style={{fontSize:'1.2rem'}}>
+                  <p className="f3 b"><GiReceiveMoney color="#0069FF" size="1.8rem"/>Services provided</p>
+                  <p data-aos="fade-up" data-aos-delay="100">•	Investment advisory, analysis and management</p>
+                  <p data-aos="fade-up" data-aos-delay="300">•	Cryptocurrency investment and exchange</p>
+                  <p data-aos="fade-up" data-aos-delay="300">•	Events (Educational, Sports and Social)</p>
+                  <p data-aos="fade-up" data-aos-delay="300">•	Health Insurance</p>
+                  <p data-aos="fade-up" data-aos-delay="300">•	Legal and tax advisory</p>
+                  <p data-aos="fade-up" data-aos-delay="300">•	Professional training provider in stock market trading and investing</p>
+                  <p data-aos="fade-up" data-aos-delay="200">•	Real estate - investing, decor</p>
+                  <p data-aos="fade-up" data-aos-delay="500">•	Venture capital financing and investing</p>
+                 </div>
             </div>
-        </section>
+        </div>
+      </section>
     );
 }
 

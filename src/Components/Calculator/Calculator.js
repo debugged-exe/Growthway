@@ -62,12 +62,14 @@ const Calculator =()=>
                   name="amount"
                   type="number"
                   onChange={e => setNumber1(+e.target.value)}
+                  style={{fontFamily:'sans-serif'}}
                   required
                   />
                 </div>
                 <input
                  className="inputfield-result"
                  placeholder="0.00"
+                 style={{fontFamily:'sans-serif'}}
                  name="result"
                  type="number"
                  value={total}
@@ -86,6 +88,7 @@ const Calculator =()=>
                 name="amount"
                 type="number"
                 onChange={e => setAim(e.target.value)}
+                style={{fontFamily:'sans-serif'}}
                 required
                 />
                 <button type='submit' onClick={calculateAimvalue} class="button-style">Check</button>
@@ -93,16 +96,16 @@ const Calculator =()=>
                 <h2>Pay only</h2>
                   <div className="result-grid">
                     <div className="tc ph3 pay">
-                       <h3>Yearly</h3>
-                       <p>{total1}/yr</p>
+                       <p className="f4">Yearly</p>
+                       <p className="b f4" style={{fontFamily:'sans-serif'}}>{total1}/year</p>
                     </div>
                     <div className="tc ph3 pay">
-                       <h3>Monthly</h3>
-                       <p>{total2}/mo</p>
+                       <p className="f4">Monthly</p>
+                       <p className="b f4" style={{fontFamily:'sans-serif'}}>{total2}/month</p>
                     </div>
                     <div className="tc ph3">
-                       <h3>Quaterly</h3>
-                       <p>{total3}/qtr</p>
+                       <p className="f4">Quaterly</p>
+                       <p className="b f4" style={{fontFamily:'sans-serif'}}>{total3}/qtr</p>
                     </div>
 
                   </div>

@@ -4,7 +4,7 @@ import 'tachyons';
 import './Blog.scss';
 
 const Blogs = () => {
-
+ 
 	return (
 		<div className="flex flex-column justify-center items-center">
 		 <h1>Latest Blogs</h1>
